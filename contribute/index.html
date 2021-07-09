@@ -1,0 +1,942 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="GCC for Windows 64 & 32 bits">
+      
+      
+      
+      
+        <link rel="canonical" href="https://mingw-w64.org/contribute/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Contribute - Mingw-w64</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contribute" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mingw-w64" class="md-header__button md-logo" aria-label="Mingw-w64" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mingw-w64
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contribute
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mingw-w64" class="md-nav__button md-logo" aria-label="Mingw-w64" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    Mingw-w64
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloads/" class="md-nav__link">
+        Downloads
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Contribute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Contribute
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#win32-api-and-runtime" class="md-nav__link">
+    Win32 API and Runtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seh-for-32bits" class="md-nav__link">
+    SEH for 32bits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanitizers-asan-tsan-usan" class="md-nav__link">
+    Sanitizers (ASAN, TSAN, USAN)
+  </a>
+  
+    <nav class="md-nav" aria-label="Sanitizers (ASAN, TSAN, USAN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thorough-status-report-for-sanitizers-asan-tsan-usan" class="md-nav__link">
+    Thorough Status Report for Sanitizers (asan, tsan, usan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-remaining-bits-in-asan-tsan-or-usan-see-above" class="md-nav__link">
+    Fixing remaining bits in asan, tsan or usan (see above)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-time-optimization-lto" class="md-nav__link">
+    Link-Time Optimization (LTO)
+  </a>
+  
+    <nav class="md-nav" aria-label="Link-Time Optimization (LTO)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thorough-status-report-for-lto" class="md-nav__link">
+    Thorough Status Report for LTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-remaining-bits-in-lto" class="md-nav__link">
+    Fixing remaining bits in LTO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-plugin-for-visual-studio" class="md-nav__link">
+    Compiler plugin for Visual Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug-infos" class="md-nav__link">
+    Debug Infos
+  </a>
+  
+    <nav class="md-nav" aria-label="Debug Infos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-of-the-pdb-file-format" class="md-nav__link">
+    Documentation of the PDB file-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-of-pdb-files" class="md-nav__link">
+    Creation of PDB files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-of-pdb-in-gdb" class="md-nav__link">
+    Handling of PDB in GDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translation-fromto-pdb" class="md-nav__link">
+    Translation from/to PDB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c11-and-c11-threading-support" class="md-nav__link">
+    C11 and C++11 Threading Support
+  </a>
+  
+    <nav class="md-nav" aria-label="C11 and C++11 Threading Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c11-threading-and-atomics" class="md-nav__link">
+    C11 Threading and Atomics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of-c11-and-c11-threading-support-without-winpthreads" class="md-nav__link">
+    Implementation of C11 and C++11 Threading Support Without Winpthreads
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation of C11 and C++11 Threading Support Without Winpthreads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcfgthread" class="md-nav__link">
+    mcfgthread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donate/" class="md-nav__link">
+        Donate
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Documentation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/configure/" class="md-nav__link">
+        Notable Configure Options
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#win32-api-and-runtime" class="md-nav__link">
+    Win32 API and Runtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seh-for-32bits" class="md-nav__link">
+    SEH for 32bits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanitizers-asan-tsan-usan" class="md-nav__link">
+    Sanitizers (ASAN, TSAN, USAN)
+  </a>
+  
+    <nav class="md-nav" aria-label="Sanitizers (ASAN, TSAN, USAN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thorough-status-report-for-sanitizers-asan-tsan-usan" class="md-nav__link">
+    Thorough Status Report for Sanitizers (asan, tsan, usan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-remaining-bits-in-asan-tsan-or-usan-see-above" class="md-nav__link">
+    Fixing remaining bits in asan, tsan or usan (see above)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-time-optimization-lto" class="md-nav__link">
+    Link-Time Optimization (LTO)
+  </a>
+  
+    <nav class="md-nav" aria-label="Link-Time Optimization (LTO)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thorough-status-report-for-lto" class="md-nav__link">
+    Thorough Status Report for LTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-remaining-bits-in-lto" class="md-nav__link">
+    Fixing remaining bits in LTO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-plugin-for-visual-studio" class="md-nav__link">
+    Compiler plugin for Visual Studio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug-infos" class="md-nav__link">
+    Debug Infos
+  </a>
+  
+    <nav class="md-nav" aria-label="Debug Infos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-of-the-pdb-file-format" class="md-nav__link">
+    Documentation of the PDB file-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-of-pdb-files" class="md-nav__link">
+    Creation of PDB files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-of-pdb-in-gdb" class="md-nav__link">
+    Handling of PDB in GDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translation-fromto-pdb" class="md-nav__link">
+    Translation from/to PDB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c11-and-c11-threading-support" class="md-nav__link">
+    C11 and C++11 Threading Support
+  </a>
+  
+    <nav class="md-nav" aria-label="C11 and C++11 Threading Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c11-threading-and-atomics" class="md-nav__link">
+    C11 Threading and Atomics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of-c11-and-c11-threading-support-without-winpthreads" class="md-nav__link">
+    Implementation of C11 and C++11 Threading Support Without Winpthreads
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation of C11 and C++11 Threading Support Without Winpthreads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcfgthread" class="md-nav__link">
+    mcfgthread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/edit/source/web/contribute.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="contribute">Contribute</h1>
+<p>Mingw-w64 and the ecosystem surrounding it are stable and with many features.
+There are however some topics for which developer-time has been scarce. This
+page lists tasks that are relatively simple and can be worked on without the
+need for a huge background while still being important and high on the
+wish-lists of users.</p>
+<p>In order to avoid duplicate efforts, if you take on one of these tasks, please
+mention it on the
+<a href="http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public">mailing-list</a>.</p>
+<p>The tasks below have been split enough to be simple and fairly well-contained
+while still being useful on their own. Most could be internship topics.</p>
+<p>There are references to other websites on this page; their presence does not
+constitute an endorsement in any way.</p>
+<h2 id="win32-api-and-runtime">Win32 API and Runtime</h2>
+<p>Mingw-w64 is constantly looking for updates to its win32 API headers from <a href="https://msdn.microsoft.com/en-us/library/">MSDN
+Library</a>. If you believe you have
+found an API that is not available in Mingw-w64 but is documented as part of
+MSDN or a mistake in Mingw-w64, please do not hesitate to contact us through the
+<a href="http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public">mailing-list</a>.</p>
+<p>For patch submissions, please remember to use sign-off your git commits before
+submitting the patches to the
+<a href="http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public">mailing-list</a>.
+Both git send-email and git format-patch forms are allowed. From past
+experiences however, if you do use an email client to attach individual patches,
+please use the .txt extension, especially for Google Mail users so the patch
+does not get treated as a binary.</p>
+<h2 id="seh-for-32bits">SEH for 32bits</h2>
+<p>The patent for SEH for 32bits has now expired and while new computers
+are all 64 bits, Intel has continued selling Atom CPUs that only handled
+32 bits very late and some applications are still 32 bits. Projects such
+as Wine and ReactOS will also benefit from 32bits SEH. Overall the need
+is still there and will continue for years to come and will outlast
+Microsoft's support for 32bits.</p>
+<p>Note that you will need FSF paperwork since the work has to be done
+inside GCC. Check CC's page on contributing.</p>
+<ul>
+<li><a href="http://www.google.com/patents/US5628016">The now-expired patent on SEH</a></li>
+<li><a href="http://www.microsoft.com/msj/0197/exception/exception.aspx">A Crash Course on the Depths of Win32™ Structured Exception Handling</a></li>
+<li><a href="http://www.codeproject.com/Articles/82701/Win-Exceptions-OS-Level-Point-of-View">Win32 Exceptions – OS Level Point of View</a></li>
+<li><a href="http://www.codeproject.com/Articles/2126/How-a-C-compiler-implements-exception-handling">How a C++ compiler implements exception handling</a></li>
+<li><a href="http://www.gamedev.net/page/resources/_/technical/general-programming/structured-exception-handling-basics-r1272">Structured Exception Handling Basics</a></li>
+<li><a href="http://www.gamedev.net/page/resources/_/technical/general-programming/windows-seh-and-c-exception-handling-r1291">Windows' SEH and C++ Exception Handling</a></li>
+<li><a href="http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx">Structured Exception Handling Considered Harmful</a></li>
+<li><a href="http://www.codeproject.com/Articles/422/SEH-and-C-Exceptions-catch-all-in-one">SEH and C++ Exceptions - catch all in one</a></li>
+<li><a href="https://gcc.gnu.org/git/?p=gcc.git">GCC sources</a> and
+  <a href="https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=libgcc/unwind-seh.c;hb=HEAD">unwind-seh.c</a>
+  in particular. Note that 32-bit SEH is stack-based and requires
+  code-generation unlike 64bits SEH which is simply table-based (that difference
+  explains why the patent only mattered to 32bits).</li>
+</ul>
+<h2 id="sanitizers-asan-tsan-usan">Sanitizers (ASAN, TSAN, USAN)</h2>
+<p>Sanitizers are runtime checks for a number of situations which have
+usually required instrumentation with tools that cause an important
+slowdown (like Valgrind).</p>
+<p>They are relatively new and much lighter than other approaches.</p>
+<h3 id="thorough-status-report-for-sanitizers-asan-tsan-usan">Thorough Status Report for Sanitizers (asan, tsan, usan)</h3>
+<p>ASAN, TSAN and USAN are great technologies which are available in GCC.
+Unfortunately they are not completely usable on Windows. A proper review
+and tests are needed before anything.</p>
+<h3 id="fixing-remaining-bits-in-asan-tsan-or-usan-see-above">Fixing remaining bits in asan, tsan or usan (see above)</h3>
+<p>Once a report on the status is available, work on it can be started.</p>
+<h2 id="link-time-optimization-lto">Link-Time Optimization (LTO)</h2>
+<p>Optimizations in C cannot cross compilation units and many of them are
+therefore missed in large applications and when using libraries. LTO
+runs some optimizations during linking, when the toolchain can see all
+the objects at once and run cross-unit optimizations.</p>
+<h3 id="thorough-status-report-for-lto">Thorough Status Report for LTO</h3>
+<p>LTO has recently been improved a lot in GCC and binutils. There are
+still some issues on Windows though. The first step to making it work is
+to get a proper and up-to-date test and to identify the
+platform-specific bugs.</p>
+<h3 id="fixing-remaining-bits-in-lto">Fixing remaining bits in LTO</h3>
+<p>Fix the issues found by the status report from above. The actual bug
+list will be updated as it becomes available.</p>
+<h2 id="compiler-plugin-for-visual-studio">Compiler plugin for Visual Studio</h2>
+<p>A compiler plugin would make GCC, binutils tools and GDB available from
+the Visual Studio IDE. Most people state they stick with VS because of
+the IDE; such a plugin would allow mixing the two.</p>
+<p><a href="http://www.visualgdb.com/">VisualGDB</a> (commercial) provides such a plugin,
+apparently meant for compiling to micro-controllers and Linux (Android or not).</p>
+<h2 id="debug-infos">Debug Infos</h2>
+<p>PDB is the file-format used by Microsoft to store debug info.
+Unfortunately it is undocumented.</p>
+<h3 id="documentation-of-the-pdb-file-format">Documentation of the PDB file-format</h3>
+<p>Since the format is undocumented, first step is to document it.
+Fortunately, during the past few years, reader and possibly writer code
+has appeared, mostly out of Microsoft.</p>
+<ul>
+<li>
+<p>A <a href="https://github.com/luser/dump_syms.git">library named ''dump_syms''</a> is
+  available. It can read PDB files at least to some extent. Licensing and origin
+  need to be checked.</p>
+</li>
+<li>
+<p>Microsoft has released <a href="http://roslyn.codeplex.com/">Roslyn, a ".NET Compiler
+  Platform"</a>. It contains a <a href="https://roslyn.codeplex.com/SourceControl/latest#Src/Compilers/Core/Portable/PEWriter/PdbWriter.cs">PDB writer
+  implementation</a>.
+  This may be an actual implementation or only an interface to the actual one.
+  It is difficult to say without further analysis.</p>
+</li>
+<li>
+<p>Microsoft has also released <a href="http://ccimetadata.codeplex.com/">CCI Metadata</a>
+  under the <a href="http://opensource.org/licenses/ms-pl.html">MS-PL</a>. It contains <a href="http://ccimetadata.codeplex.com/SourceControl/latest#Sources/PdbReader/">PDB
+  reader
+  implementation</a>
+  that should constitute an appropriate source.</p>
+</li>
+</ul>
+<h3 id="creation-of-pdb-files">Creation of PDB files</h3>
+<p>Creating PDB files will allow the Microsoft tools to make meaningful
+backtraces when code built with free compilers is involved.</p>
+<h3 id="handling-of-pdb-in-gdb">Handling of PDB in GDB</h3>
+<p>Reading PDB files will allow free tools to make meaningful backtraces
+when code built with MSVC is involved.</p>
+<h3 id="translation-fromto-pdb">Translation from/to PDB</h3>
+<p>Most often debug informations will only be available in a single format. Being
+able to convert between them when needed will be useful.</p>
+<h2 id="c11-and-c11-threading-support">C11 and C++11 Threading Support</h2>
+<h3 id="c11-threading-and-atomics">C11 Threading and Atomics</h3>
+<p>The C11 standard has a section on threading which is still left unimplemented on
+several platforms. The API follows pthreads' quite closely and it is left to the
+implementor to decide whether to base it on winpthreads or directly on the (&gt;=
+Vista) Win32 API.</p>
+<p><a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">The final C11 draft</a>
+is identical to the standard but is available freely.</p>
+<p>Note that you will need FSF paperwork since the work has to be done inside GCC.
+Check <a href="https://gcc.gnu.org/contribute.html">GCC's page on contributing</a>.</p>
+<h3 id="implementation-of-c11-and-c11-threading-support-without-winpthreads">Implementation of C11 and C++11 Threading Support Without Winpthreads</h3>
+<h4 id="mcfgthread">mcfgthread</h4>
+<p>The <a href="https://github.com/lhmouse/mcfgthread">mcfgthread</a> library aims at
+providing an efficient implementation of thread support for GCC that is required
+by the C11 and C++11 standard. It uses a lot of undocumented Windows NT syscalls
+to ensure performance. Its introduction and manual can be found from its <a href="https://github.com/lhmouse/mcfgthread/wiki">wiki
+pages</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../downloads/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Downloads" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Downloads
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../support/" class="md-footer__link md-footer__link--next" aria-label="Next: Support" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Support
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,798 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="GCC for Windows 64 & 32 bits">
+      
+      
+      
+      
+        <link rel="canonical" href="https://mingw-w64.org/changelog/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Changelog - Mingw-w64</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mingw-w64" class="md-header__button md-logo" aria-label="Mingw-w64" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mingw-w64
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mingw-w64" class="md-nav__button md-logo" aria-label="Mingw-w64" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    Mingw-w64
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Changelog
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v900-2021-05-22" class="md-nav__link">
+    v9.0.0: 2021-05-22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v800-2020-09-18" class="md-nav__link">
+    v8.0.0: 2020-09-18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v700-2019-11-10" class="md-nav__link">
+    v7.0.0: 2019-11-10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v600-2018-09-17" class="md-nav__link">
+    v6.0.0: 2018-09-17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v504-2018-06-04" class="md-nav__link">
+    v5.0.4: 2018-06-04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v503-2017-11-04" class="md-nav__link">
+    v5.0.3: 2017-11-04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v502-2017-03-28" class="md-nav__link">
+    v5.0.2: 2017-03-28
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v501-2017-01-06" class="md-nav__link">
+    v5.0.1: 2017-01-06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v500-2016-10-19" class="md-nav__link">
+    v5.0.0: 2016-10-19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v4" class="md-nav__link">
+    v4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v3" class="md-nav__link">
+    v3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v2" class="md-nav__link">
+    v2
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downloads/" class="md-nav__link">
+        Downloads
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        Contribute
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donate/" class="md-nav__link">
+        Donate
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Documentation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/configure/" class="md-nav__link">
+        Notable Configure Options
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v900-2021-05-22" class="md-nav__link">
+    v9.0.0: 2021-05-22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v800-2020-09-18" class="md-nav__link">
+    v8.0.0: 2020-09-18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v700-2019-11-10" class="md-nav__link">
+    v7.0.0: 2019-11-10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v600-2018-09-17" class="md-nav__link">
+    v6.0.0: 2018-09-17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v504-2018-06-04" class="md-nav__link">
+    v5.0.4: 2018-06-04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v503-2017-11-04" class="md-nav__link">
+    v5.0.3: 2017-11-04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v502-2017-03-28" class="md-nav__link">
+    v5.0.2: 2017-03-28
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v501-2017-01-06" class="md-nav__link">
+    v5.0.1: 2017-01-06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v500-2016-10-19" class="md-nav__link">
+    v5.0.0: 2016-10-19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v4" class="md-nav__link">
+    v4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v3" class="md-nav__link">
+    v3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v2" class="md-nav__link">
+    v2
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/edit/source/web/changelog.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="changelog">Changelog</h1>
+<h2 id="v900-2021-05-22">v9.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/37287751/">2021-05-22</a></h2>
+<p>Notable changes:</p>
+<ul>
+<li>UCRT updates by Biswapriyo Nat</li>
+<li>Wine updates by Jacek Caba</li>
+<li>Various new and updated API headers by Biswapriyo Nath and Liu Ha</li>
+<li>Various UCRT and MSVCRT fixes by Martin Storsj</li>
+<li><code>at_quick_exit</code> implementation by Martin Storsj</li>
+<li>dism API by Biswapriyo Nat</li>
+<li>idl fixes by Steve Lhomm</li>
+<li>Winpthreads fixes by Liu Ha</li>
+<li>gettimeofday precision increase by Christian Franke</li>
+</ul>
+<h2 id="v800-2020-09-18">v8.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/37111166/">2020-09-18</a></h2>
+<p>Notable changes:</p>
+<ul>
+<li>New Hyper-V headers and libraries by Biswapriyo Nat</li>
+<li>Many headers updated from Wine by Jacek Caban</li>
+<li>ARM math improvements by Martin Storsj</li>
+<li>floating point fixes by Liu Ha</li>
+<li>many <code>*printf</code> compatibility fixes by Liu Hao and Martin Storsj</li>
+<li>massive Windows App Store API updates by Steve Lhomm</li>
+<li>winstorecompat library updates by Martin Storsj</li>
+<li><code>USE_MINGW_ANSI_STDIO</code> now automatically enabled in C99 and C11mode when not using UCRT by Pali Rohá</li>
+<li>wdm and ddk updates by Zebediah Figur</li>
+<li>UCRT for Windows Store Apps (-lucrtapp) by Martin Storsj</li>
+<li>Audioclient and ActivateAudioInterfaceAsync API updates by Liu Ha</li>
+<li>DirectX SDKs are now always installed</li>
+</ul>
+<h2 id="v700-2019-11-10">v7.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36804945/">2019-11-10</a></h2>
+<p>Notable changes:</p>
+<ul>
+<li><code>_FORTIFY_SOURCE</code> support thanks to Christian Franke.</li>
+<li>Lots of math fixes from Martin Storsjö.</li>
+<li>Many headers updated from Wine by Jacek Caban.</li>
+<li>UCRT support by Martin Storsjö.</li>
+</ul>
+<p>And many other additions thanks to, but not limited to (in Alphabetical
+order)</p>
+<p>Alexey Pavlov, Antoine Cœur, Biswapriyo Nath, Chris Charabaruk, Christian
+Franke, Hugo Beauzée-Luyssen, Jacek Caban, James Ross-Gowan, Johannes Pfau, Kai
+Tietz, Liu Hao, Marisa-Chan, Martin Storsjö, Marvin Scholz, Mateusz Brzostek,
+Matthew Palermo, Nikolay Sivov, Pierre Lamot, Richard Pospesel, Ruslan Garipov,
+sezero, SquallATF, Steve Lhomme, Tomáš Golembiovský, Tom Ritter, xnor, Zach
+Bacon, Zebediah Figura, Руслан Ижбулатов</p>
+<h2 id="v600-2018-09-17">v6.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36416777/">2018-09-17</a></h2>
+<p>Notable changes:</p>
+<ul>
+<li>C++ <code>__cxa_atexit</code> thanks to Martin Storsjö and Liu Ha</li>
+<li>Massive additions to support UCRT thanks to Martin Storsj</li>
+<li>Sync COM interface headers with Wine development thanks to JacekCaba</li>
+<li>WinRT additions thanks to Hugo Beauzée-Luysse</li>
+<li>ARM32 and ARM64 additions thanks to Martin Storsj</li>
+<li>CRT library api-ms-win-core additions thanks to Martin Storsj</li>
+<li>CRT library def file reorganization thanks to Martin Storsjö</li>
+</ul>
+<p>And many other additions thanks to, but not limited to (in Alphabetical
+order)</p>
+<p>Alexey Pavlov Alon Bar-Lev André Hentschel Arthur Edelstein Corinna
+Vinschen David Grayson David Wohlferd Ebrahim Byagowi Guy Helmer Hugo
+Beauzée-Luyssen Ihsan Akmal Jacek Caban James Ross-Gowan Jean-Baptiste
+Kempf Jonathan Yong Jon Turney Kai Tietz Liu Hao Martell Malone Martin
+Storsjö Mateusz Matheus Izvekov mati865 Michał Janiszewski Nikolay Sivov
+niXman Petri Hodju Ray Donnelly Ruben Van Boxem Ruslan Garipov Samuel D.
+Leslie sezero Soar Qin Tamar Christina Tamir Duberstein Tim Hutt Tom
+Ritter Yuta Nakai Алексей Павлов Руслан Ижбулатов 宋冬生</p>
+<h2 id="v504-2018-06-04">v5.0.4: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36333746/">2018-06-04</a></h2>
+<ul>
+<li>Fix gcc-8.1.0 compatibility regarding _xgetbv</li>
+<li><code>%e</code> printf specifier will now produce at least 2 digits for the
+    exponent.</li>
+</ul>
+<h2 id="v503-2017-11-04">v5.0.3: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36103143/">2017-11-04</a></h2>
+<ul>
+<li>pseudo-reloc will now try to restore page protection settings prior
+    to manipulating it, rather than simply assuming it was read-only
+    with execute.</li>
+<li>winpthreads: Fix undefined <code>__divmoddi4</code> when compiling with newly
+    bootstrapped gcc-7</li>
+<li>Fixed modf family segfault due to eax clobbering.</li>
+</ul>
+<h2 id="v502-2017-03-28">v5.0.2: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35754067/">2017-03-28</a></h2>
+<ul>
+<li>RegSetKeyValueW now has proper wide arguments.</li>
+<li>Fix some crashes in winpthreads due to misaligned memory access when
+    used with some SSE instructions.</li>
+<li>Fix pdh.h function calls to have proper stdcall decorators.</li>
+</ul>
+<h2 id="v501-2017-01-06">v5.0.1: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35588585/">2017-01-06</a></h2>
+<ul>
+<li>Don't use feature <code>(__attribute__((gcc_struct)))</code> that isn'tsupported on
+  clang when compiling on clang thanks to David Wohlferd</li>
+<li>Various ARM math fixes thanks to Martin Storsj</li>
+<li>Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen</li>
+<li>Define <code>IN6_IS_ADDR_</code> macros to conform to Posix Specm thanks toJean-Baptiste
+  Kemp</li>
+<li>dxva.h: Add support for VP8/9 in DxVA2 thanks to Yuta Nakai</li>
+</ul>
+<h2 id="v500-2016-10-19">v5.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35437019/">2016-10-19</a></h2>
+<ul>
+<li>Fixes to the <code>__mingw_printf</code> family of functions.</li>
+<li>DirectX updates from Wine.</li>
+<li>Various updates to support Windows 7 and 10.</li>
+<li>Various header typo fixes.</li>
+</ul>
+<h2 id="v4">v4</h2>
+<ul>
+<li>32bit ARM thumb software math (Thanks to André Hentschel!).</li>
+<li>New ftw() support for gcc-5.x support.</li>
+<li>Experimental printf changes - Ability to print 128bit integers
+  (%I128*) and Decimal Floats (%H, %D), disabled by default. Build
+  the CRT with <code>--enable-experimental</code> to use.</li>
+<li>Updated OpenGL 4.5 headers.</li>
+<li>Better DirectX 11 support.</li>
+<li>Better Windows 7, 8/8.1 API support.</li>
+</ul>
+<h2 id="v3">v3</h2>
+<ul>
+<li>Required for GCC 4.8.</li>
+<li>Much improved floating point math performance.</li>
+<li>Improved MSVC intrinsics performance.</li>
+<li>Addition of wide variants in C99 printf and scanf.</li>
+<li>Partial C1X secure CRT support.</li>
+<li>Partial MS Secure CRT templates for C++.</li>
+<li>Vastly improved Windows 7 and 8 win32 API support.</li>
+<li>POSIX-style Large File Support.</li>
+<li>Winpthread: new library, pthreads implementation for Windows.</li>
+<li>Winstorecompat: new library for Windows Store compatibility (WIP).</li>
+</ul>
+<h2 id="v2">v2</h2>
+<ul>
+<li>Expanded Windows Vista/7 API support.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../downloads/" class="md-footer__link md-footer__link--next" aria-label="Next: Downloads" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Downloads
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
