@@ -1,0 +1,64 @@
+name: github pages
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+          architecture: 'x64'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip wheel
+          python3 -m pip install -r ./requirements.txt
+
+      - run: mkdocs build
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: website
+          path: ./site
+
+  deploy:
+    runs-on: ubuntu-18.04
+    needs: build
+    concurrency: ci-${{ github.ref }}
+    permissions:
+      contents: write
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/source'
+    steps:
+      - name: Download Results
+        uses: actions/download-artifact@v2
+        with:
+          name: website
+          path: ./site
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: main
+
+

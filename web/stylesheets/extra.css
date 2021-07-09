@@ -1,0 +1,36 @@
+.md-typeset ol li,
+.md-typeset ul li {
+    margin-bottom: 0;
+}
+
+.md-typeset,
+.md-nav {
+    font-size: .7rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+    font-weight: 600;
+}
+
+.md-typeset h1 {
+    margin-bottom: 0.75em;
+}
+
+.md-typeset h2 {
+    margin-top: 1.25em;
+}
+
+.md-grid {
+    max-width: 65rem;
+}
+
+.md-main__inner {
+    margin-top: 1rem;
+}
+
+.md-header__title {
+    margin-left: 0;
+}

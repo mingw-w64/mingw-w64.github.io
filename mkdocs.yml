@@ -1,0 +1,55 @@
+site_name: Mingw-w64
+site_description: GCC for Windows 64 & 32 bits
+docs_dir: web/
+theme:
+    logo: logo.png
+    name: material
+    font:
+      text: Roboto
+      code: Roboto Mono
+    palette:
+        primary: 'white'
+        accent: 'indigo'
+    features:
+        - navigation.instant
+
+extra_css:
+    - 'stylesheets/extra.css'
+
+site_url: https://lazka.github.io/mingw-w64-web/
+repo_url: https://github.com/lazka/mingw-w64-web
+edit_uri: edit/source/web/
+
+markdown_extensions:
+    - meta
+    - attr_list
+    - codehilite
+    - sane_lists
+    - admonition
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+
+nav:
+  - index.md
+  - changelog.md
+  - downloads.md
+  - contribute.md
+  - support.md
+  - donate.md
+  - Documentation:
+    - docs/overview.md
+    - docs/configure.md
