@@ -60,5 +60,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           publish_branch: main
+          cname: www.mingw-w64.net
 
 

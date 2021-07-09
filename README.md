@@ -7,7 +7,7 @@ repo is the `source` branch and any new commits will auto deploy a new build to
 the `main` branch using [a GitHub
 action](https://github.com/peaceiris/actions-gh-pages). The `main` branch is
 connected to [GitHub pages](https://pages.github.com) and is reachable under
-https://mingw-w64.github.io and https://www.mingw-w64.org. Changes to the
+https://mingw-w64.github.io and https://www.mingw-w64.net. Changes to the
 `source` branch usually take a minute or two until they are live.
 
 ## Development
