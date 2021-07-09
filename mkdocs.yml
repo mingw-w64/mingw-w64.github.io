@@ -2,7 +2,7 @@ site_name: Mingw-w64
 site_description: GCC for Windows 64 & 32 bits
 docs_dir: web/
 theme:
-    logo: logo.png
+    logo: logo.svg
     name: material
     font:
       text: Roboto
