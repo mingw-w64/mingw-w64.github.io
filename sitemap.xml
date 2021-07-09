@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/</loc>
+         <loc>https://www.mingw-w64.net/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/changelog/</loc>
+         <loc>https://www.mingw-w64.net/changelog/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/contribute/</loc>
+         <loc>https://www.mingw-w64.net/contribute/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/donate/</loc>
+         <loc>https://www.mingw-w64.net/donate/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/downloads/</loc>
+         <loc>https://www.mingw-w64.net/downloads/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/support/</loc>
+         <loc>https://www.mingw-w64.net/support/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/docs/configure/</loc>
+         <loc>https://www.mingw-w64.net/docs/configure/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lazka.github.io/mingw-w64-web/docs/overview/</loc>
+         <loc>https://www.mingw-w64.net/docs/overview/</loc>
          <lastmod>2021-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
