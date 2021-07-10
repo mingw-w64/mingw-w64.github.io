@@ -4,31 +4,31 @@
 
 Notable changes:
 
-- UCRT updates by Biswapriyo Nat
-- Wine updates by Jacek Caba
-- Various new and updated API headers by Biswapriyo Nath and Liu Ha
-- Various UCRT and MSVCRT fixes by Martin Storsj
-- `at_quick_exit` implementation by Martin Storsj
-- dism API by Biswapriyo Nat
-- idl fixes by Steve Lhomm
-- Winpthreads fixes by Liu Ha
+- UCRT updates by Biswapriyo Nath
+- Wine updates by Jacek Caban
+- Various new and updated API headers by Biswapriyo Nath and Liu Hao
+- Various UCRT and MSVCRT fixes by Martin Storsjö
+- `at_quick_exit` implementation by Martin Storsjö
+- dism API by Biswapriyo Nath
+- idl fixes by Steve Lhomme
+- Winpthreads fixes by Liu Hao
 - gettimeofday precision increase by Christian Franke
 
 ## v8.0.0: [2020-09-18](https://sourceforge.net/p/mingw-w64/mailman/message/37111166/)
 
 Notable changes:
 
-- New Hyper-V headers and libraries by Biswapriyo Nat
-- Many headers updated from Wine by Jacek Caban
-- ARM math improvements by Martin Storsj
-- floating point fixes by Liu Ha
-- many `*printf` compatibility fixes by Liu Hao and Martin Storsj
-- massive Windows App Store API updates by Steve Lhomm
-- winstorecompat library updates by Martin Storsj
-- `USE_MINGW_ANSI_STDIO` now automatically enabled in C99 and C11mode when not using UCRT by Pali Rohá
-- wdm and ddk updates by Zebediah Figur
-- UCRT for Windows Store Apps (-lucrtapp) by Martin Storsj
-- Audioclient and ActivateAudioInterfaceAsync API updates by Liu Ha
+- New Hyper-V headers and libraries by Biswapriyo Nath
+- Many headers updated from Wine by Jacek Caban.
+- ARM math improvements by Martin Storsjö
+- floating point fixes by Liu Hao
+- many `*printf` compatibility fixes by Liu Hao and Martin Storsjö
+- massive Windows App Store API updates by Steve Lhomme
+- winstorecompat library updates by Martin Storsjö
+- `USE_MINGW_ANSI_STDIO` now automatically enabled in C99 and C11mode when not using UCRT by Pali Rohár
+- wdm and ddk updates by Zebediah Figura
+- UCRT for Windows Store Apps (-lucrtapp) by Martin Storsjö
+- Audioclient and ActivateAudioInterfaceAsync API updates by Liu Hao
 - DirectX SDKs are now always installed
 
 ## v7.0.0: [2019-11-10](https://sourceforge.net/p/mingw-w64/mailman/message/36804945/)
@@ -54,12 +54,12 @@ Bacon, Zebediah Figura, Руслан Ижбулатов
 
 Notable changes:
 
-- C++ `__cxa_atexit` thanks to Martin Storsjö and Liu Ha
-- Massive additions to support UCRT thanks to Martin Storsj
-- Sync COM interface headers with Wine development thanks to JacekCaba
-- WinRT additions thanks to Hugo Beauzée-Luysse
-- ARM32 and ARM64 additions thanks to Martin Storsj
-- CRT library api-ms-win-core additions thanks to Martin Storsj
+- C++ `__cxa_atexit` thanks to Martin Storsjö and Liu Hao
+- Massive additions to support UCRT thanks to Martin Storsjö
+- Sync COM interface headers with Wine development thanks to Jacek Caban
+- WinRT additions thanks to Hugo Beauzée-Luyssen
+- ARM32 and ARM64 additions thanks to Martin Storsjö
+- CRT library api-ms-win-core additions thanks to Martin Storsjö
 - CRT library def file reorganization thanks to Martin Storsjö
 
 And many other additions thanks to, but not limited to (in Alphabetical
@@ -76,34 +76,34 @@ Ritter Yuta Nakai Алексей Павлов Руслан Ижбулатов �
 
 ## v5.0.4: [2018-06-04](https://sourceforge.net/p/mingw-w64/mailman/message/36333746/)
 
--   Fix gcc-8.1.0 compatibility regarding _xgetbv
--   `%e` printf specifier will now produce at least 2 digits for the
-    exponent.
+- Fix gcc-8.1.0 compatibility regarding _xgetbv
+- `%e` printf specifier will now produce at least 2 digits for the
+  exponent.
 
 ## v5.0.3: [2017-11-04](https://sourceforge.net/p/mingw-w64/mailman/message/36103143/)
 
--   pseudo-reloc will now try to restore page protection settings prior
-    to manipulating it, rather than simply assuming it was read-only
-    with execute.
--   winpthreads: Fix undefined `__divmoddi4` when compiling with newly
-    bootstrapped gcc-7
--   Fixed modf family segfault due to eax clobbering.
+- pseudo-reloc will now try to restore page protection settings prior
+  to manipulating it, rather than simply assuming it was read-only
+  with execute.
+- winpthreads: Fix undefined `__divmoddi4` when compiling with newly
+  bootstrapped gcc-7
+- Fixed modf family segfault due to eax clobbering.
 
 ## v5.0.2: [2017-03-28](https://sourceforge.net/p/mingw-w64/mailman/message/35754067/)
 
--   RegSetKeyValueW now has proper wide arguments.
--   Fix some crashes in winpthreads due to misaligned memory access when
-    used with some SSE instructions.
--   Fix pdh.h function calls to have proper stdcall decorators.
+- RegSetKeyValueW now has proper wide arguments.
+- Fix some crashes in winpthreads due to misaligned memory access when
+  used with some SSE instructions.
+- Fix pdh.h function calls to have proper stdcall decorators.
 
 ## v5.0.1: [2017-01-06](https://sourceforge.net/p/mingw-w64/mailman/message/35588585/)
 
-- Don't use feature `(__attribute__((gcc_struct)))` that isn'tsupported on
-  clang when compiling on clang thanks to David Wohlferd
-- Various ARM math fixes thanks to Martin Storsj
-- Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen
+- Don't use feature `(__attribute__((gcc_struct)))` that isn't supported on
+  clang when compiling on clang thanks to David Wohlferd.
+- Various ARM math fixes thanks to Martin Storsjö
+- Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen.
 - Define `IN6_IS_ADDR_` macros to conform to Posix Specm thanks toJean-Baptiste
-  Kemp
+  Kempf
 - dxva.h: Add support for VP8/9 in DxVA2 thanks to Yuta Nakai
 
 ## v5.0.0: [2016-10-19](https://sourceforge.net/p/mingw-w64/mailman/message/35437019/)
