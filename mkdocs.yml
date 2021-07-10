@@ -4,6 +4,7 @@ docs_dir: web/
 theme:
     logo: logo.svg
     name: material
+    favicon: logo.svg
     font:
       text: Roboto
       code: Roboto Mono
