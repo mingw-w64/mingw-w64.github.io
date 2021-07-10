@@ -588,30 +588,30 @@
 <h2 id="v900-2021-05-22">v9.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/37287751/">2021-05-22</a></h2>
 <p>Notable changes:</p>
 <ul>
-<li>UCRT updates by Biswapriyo Nat</li>
-<li>Wine updates by Jacek Caba</li>
-<li>Various new and updated API headers by Biswapriyo Nath and Liu Ha</li>
-<li>Various UCRT and MSVCRT fixes by Martin Storsj</li>
-<li><code>at_quick_exit</code> implementation by Martin Storsj</li>
-<li>dism API by Biswapriyo Nat</li>
-<li>idl fixes by Steve Lhomm</li>
-<li>Winpthreads fixes by Liu Ha</li>
+<li>UCRT updates by Biswapriyo Nath</li>
+<li>Wine updates by Jacek Caban</li>
+<li>Various new and updated API headers by Biswapriyo Nath and Liu Hao</li>
+<li>Various UCRT and MSVCRT fixes by Martin Storsjö</li>
+<li><code>at_quick_exit</code> implementation by Martin Storsjö</li>
+<li>dism API by Biswapriyo Nath</li>
+<li>idl fixes by Steve Lhomme</li>
+<li>Winpthreads fixes by Liu Hao</li>
 <li>gettimeofday precision increase by Christian Franke</li>
 </ul>
 <h2 id="v800-2020-09-18">v8.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/37111166/">2020-09-18</a></h2>
 <p>Notable changes:</p>
 <ul>
-<li>New Hyper-V headers and libraries by Biswapriyo Nat</li>
-<li>Many headers updated from Wine by Jacek Caban</li>
-<li>ARM math improvements by Martin Storsj</li>
-<li>floating point fixes by Liu Ha</li>
-<li>many <code>*printf</code> compatibility fixes by Liu Hao and Martin Storsj</li>
-<li>massive Windows App Store API updates by Steve Lhomm</li>
-<li>winstorecompat library updates by Martin Storsj</li>
-<li><code>USE_MINGW_ANSI_STDIO</code> now automatically enabled in C99 and C11mode when not using UCRT by Pali Rohá</li>
-<li>wdm and ddk updates by Zebediah Figur</li>
-<li>UCRT for Windows Store Apps (-lucrtapp) by Martin Storsj</li>
-<li>Audioclient and ActivateAudioInterfaceAsync API updates by Liu Ha</li>
+<li>New Hyper-V headers and libraries by Biswapriyo Nath</li>
+<li>Many headers updated from Wine by Jacek Caban.</li>
+<li>ARM math improvements by Martin Storsjö</li>
+<li>floating point fixes by Liu Hao</li>
+<li>many <code>*printf</code> compatibility fixes by Liu Hao and Martin Storsjö</li>
+<li>massive Windows App Store API updates by Steve Lhomme</li>
+<li>winstorecompat library updates by Martin Storsjö</li>
+<li><code>USE_MINGW_ANSI_STDIO</code> now automatically enabled in C99 and C11mode when not using UCRT by Pali Rohár</li>
+<li>wdm and ddk updates by Zebediah Figura</li>
+<li>UCRT for Windows Store Apps (-lucrtapp) by Martin Storsjö</li>
+<li>Audioclient and ActivateAudioInterfaceAsync API updates by Liu Hao</li>
 <li>DirectX SDKs are now always installed</li>
 </ul>
 <h2 id="v700-2019-11-10">v7.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36804945/">2019-11-10</a></h2>
@@ -633,12 +633,12 @@ Bacon, Zebediah Figura, Руслан Ижбулатов</p>
 <h2 id="v600-2018-09-17">v6.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36416777/">2018-09-17</a></h2>
 <p>Notable changes:</p>
 <ul>
-<li>C++ <code>__cxa_atexit</code> thanks to Martin Storsjö and Liu Ha</li>
-<li>Massive additions to support UCRT thanks to Martin Storsj</li>
-<li>Sync COM interface headers with Wine development thanks to JacekCaba</li>
-<li>WinRT additions thanks to Hugo Beauzée-Luysse</li>
-<li>ARM32 and ARM64 additions thanks to Martin Storsj</li>
-<li>CRT library api-ms-win-core additions thanks to Martin Storsj</li>
+<li>C++ <code>__cxa_atexit</code> thanks to Martin Storsjö and Liu Hao</li>
+<li>Massive additions to support UCRT thanks to Martin Storsjö</li>
+<li>Sync COM interface headers with Wine development thanks to Jacek Caban</li>
+<li>WinRT additions thanks to Hugo Beauzée-Luyssen</li>
+<li>ARM32 and ARM64 additions thanks to Martin Storsjö</li>
+<li>CRT library api-ms-win-core additions thanks to Martin Storsjö</li>
 <li>CRT library def file reorganization thanks to Martin Storsjö</li>
 </ul>
 <p>And many other additions thanks to, but not limited to (in Alphabetical
@@ -655,32 +655,32 @@ Ritter Yuta Nakai Алексей Павлов Руслан Ижбулатов �
 <ul>
 <li>Fix gcc-8.1.0 compatibility regarding _xgetbv</li>
 <li><code>%e</code> printf specifier will now produce at least 2 digits for the
-    exponent.</li>
+  exponent.</li>
 </ul>
 <h2 id="v503-2017-11-04">v5.0.3: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/36103143/">2017-11-04</a></h2>
 <ul>
 <li>pseudo-reloc will now try to restore page protection settings prior
-    to manipulating it, rather than simply assuming it was read-only
-    with execute.</li>
+  to manipulating it, rather than simply assuming it was read-only
+  with execute.</li>
 <li>winpthreads: Fix undefined <code>__divmoddi4</code> when compiling with newly
-    bootstrapped gcc-7</li>
+  bootstrapped gcc-7</li>
 <li>Fixed modf family segfault due to eax clobbering.</li>
 </ul>
 <h2 id="v502-2017-03-28">v5.0.2: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35754067/">2017-03-28</a></h2>
 <ul>
 <li>RegSetKeyValueW now has proper wide arguments.</li>
 <li>Fix some crashes in winpthreads due to misaligned memory access when
-    used with some SSE instructions.</li>
+  used with some SSE instructions.</li>
 <li>Fix pdh.h function calls to have proper stdcall decorators.</li>
 </ul>
 <h2 id="v501-2017-01-06">v5.0.1: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35588585/">2017-01-06</a></h2>
 <ul>
-<li>Don't use feature <code>(__attribute__((gcc_struct)))</code> that isn'tsupported on
-  clang when compiling on clang thanks to David Wohlferd</li>
-<li>Various ARM math fixes thanks to Martin Storsj</li>
-<li>Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen</li>
+<li>Don't use feature <code>(__attribute__((gcc_struct)))</code> that isn't supported on
+  clang when compiling on clang thanks to David Wohlferd.</li>
+<li>Various ARM math fixes thanks to Martin Storsjö</li>
+<li>Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen.</li>
 <li>Define <code>IN6_IS_ADDR_</code> macros to conform to Posix Specm thanks toJean-Baptiste
-  Kemp</li>
+  Kempf</li>
 <li>dxva.h: Add support for VP8/9 in DxVA2 thanks to Yuta Nakai</li>
 </ul>
 <h2 id="v500-2016-10-19">v5.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/35437019/">2016-10-19</a></h2>
