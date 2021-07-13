@@ -38,6 +38,13 @@ Notable changes:
 - Audioclient and ActivateAudioInterfaceAsync API updates by Liu Hao
 - DirectX SDKs are now always installed
 
+And many other additions thanks to, but not limited to (in Alphabetical order)
+
+Alex Henrie, Biswapriyo Nath, Eric Hassold, Jacek Caban, Jehan Pagès, Kleis Auke
+Wolthuizen, Liu Hao, Martin Mitáš, Martin Storsjö, Nikolay Sivov, Noah Treuhaft,
+Pali Rohár, Ruslan Garipov, Sanketh Menda, sezero, Stephan Ruloff, Stephen Kitt,
+Steve Lhomme, Tom Ritter, xtne6f, Zebediah Figura, 屈佳伟
+
 ## v7.0.0: [2019-11-10](https://sourceforge.net/p/mingw-w64/mailman/message/36804945/)
 
 Notable changes:
