@@ -14,6 +14,13 @@ Notable changes:
 - Winpthreads fixes by Liu Hao
 - gettimeofday precision increase by Christian Franke
 
+And many other additions thanks to, but not limited to (in Alphabetical order)
+
+Alex Henrie, Andrew Eikum, Biswapriyo Nath, Christian Franke, Christoph
+Reiter, DAVID MAY, Jacek Caban, Jeremy Drake, Jonathan Yong, Liu Hao, Mark
+Harmstone, Martin Storsjö, Mateusz Mikuła, Nikolay Sivov, Ozkan Sezer, Pierre
+Lamot, Rafał Harabień, Scr3amer, Steve Lhomme
+
 ## v8.0.0: [2020-09-18](https://sourceforge.net/p/mingw-w64/mailman/message/37111166/)
 
 Notable changes:
