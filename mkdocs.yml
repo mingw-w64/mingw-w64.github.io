@@ -17,7 +17,7 @@ theme:
 extra_css:
     - 'stylesheets/extra.css'
 
-site_url: https://www.mingw-w64.net
+site_url: https://www.mingw-w64.org
 repo_url: https://github.com/mingw-w64/mingw-w64.github.io
 edit_uri: edit/source/web/
 

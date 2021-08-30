@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "msys2.org"
+name = "mingw-w64.org"
 version = "1.0"
 description = ""
 authors = ["Christoph Reiter <reiter.christoph@gmail.com>"]
