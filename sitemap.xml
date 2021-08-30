@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://www.mingw-w64.net/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/changelog/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/changelog/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/contribute/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/contribute/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/donate/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/donate/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/downloads/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/downloads/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/support/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/support/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/docs/configure/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/docs/configure/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.mingw-w64.net/docs/overview/</loc>
-         <lastmod>2021-07-13</lastmod>
+         <loc>https://www.mingw-w64.org/docs/overview/</loc>
+         <lastmod>2021-08-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
