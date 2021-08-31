@@ -311,6 +311,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#llvm-mingw" class="md-nav__link">
+    LLVM-MinGW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#macports" class="md-nav__link">
     MacPorts
   </a>
@@ -574,6 +581,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#llvm-mingw" class="md-nav__link">
+    LLVM-MinGW
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#macports" class="md-nav__link">
     MacPorts
   </a>
@@ -766,6 +780,16 @@ binaries directly..</p>
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
+            </td>
+            <td>20210423</td>
+            <td>Windows, Linux</td>
+            <td>LLVM 12.0.0/trunk</td>
+            <td>C, C++</td>
+            <td>make</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -895,6 +919,13 @@ cross-compilation approach.</p>
 <p><a href="https://packages.debian.org/mingw-w64">Mingw-w64 packages on Debian</a></p>
 <h4 id="fedora">Fedora</h4>
 <p>Installation: through integrated package manager.</p>
+<h4 id="llvm-mingw">LLVM-MinGW</h4>
+<p>LLVM-MinGW is a toolchain built with Clang, LLD, libc++, targeting
+i686, x86_64, arm and aarch64 (ARM64), with releases both for running
+as a cross compiler from Linux and for running on Windows. It supports
+Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
+info in PDB format.</p>
+<p>Installation: <a href="https://github.com/mstorsjo/llvm-mingw/releases">GitHub</a></p>
 <h4 id="macports">MacPorts</h4>
 <p>To install just the 32-bit or just 64-bit compiler with dependencies, use:</p>
 <div class="highlight"><pre><span></span><code>sudo port install i686-w64-mingw32-gcc
