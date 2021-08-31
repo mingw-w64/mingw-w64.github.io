@@ -90,6 +90,16 @@ binaries directly..
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
+            </td>
+            <td>20210423</td>
+            <td>Windows, Linux</td>
+            <td>LLVM 12.0.0/trunk</td>
+            <td>C, C++</td>
+            <td>make</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -232,6 +242,16 @@ Installation: through integrated package manager.
 #### Fedora
 
 Installation: through integrated package manager.
+
+#### LLVM-MinGW
+
+LLVM-MinGW is a toolchain built with Clang, LLD, libc++, targeting
+i686, x86\_64, arm and aarch64 (ARM64), with releases both for running
+as a cross compiler from Linux and for running on Windows. It supports
+Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
+info in PDB format.
+
+Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
 
 #### MacPorts
 
