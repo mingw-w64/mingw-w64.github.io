@@ -1,7 +1,7 @@
 # Overview
 
 Most of the documentation is still on [sf.net's own
-wiki](http://sourceforge.net/p/mingw-w64/wiki2/Home/").
+wiki](http://sourceforge.net/p/mingw-w64/wiki2/Home/).
 
 The main pages of interest are probably:
 
