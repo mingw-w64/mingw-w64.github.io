@@ -1,4 +1,4 @@
-# Mingw-w64 Website
+# MinGW-w64 Website
 
 This website is written in Markdown and gets built to a static website using
 [mkdocs](https://www.mkdocs.org/) and a modified version of the [mkdocs-material

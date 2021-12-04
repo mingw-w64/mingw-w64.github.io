@@ -1,4 +1,4 @@
-site_name: Mingw-w64
+site_name: MinGW-w64
 site_description: GCC for Windows 64 & 32 bits
 docs_dir: web/
 theme:
@@ -45,7 +45,7 @@ markdown_extensions:
     - pymdownx.tilde
 
 nav:
-  - index.md
+  - 'Overview': index.md
   - changelog.md
   - downloads.md
   - contribute.md
