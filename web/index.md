@@ -50,6 +50,12 @@ forward. Contributions have been going to and coming from these projects:
     Wine
     </a>
 </td>
+<td style="text-align: center">
+    <a href="https://www.msys2.org" class="media" title="https://www.msys2.org"><img src="./logos/msys2-logo.png" title="MSYS2" width="64" height="64" alt="MSYS2" />
+    <br>
+    MSYS2
+    </a>
+</td>
 </tr>
 </table>
 
