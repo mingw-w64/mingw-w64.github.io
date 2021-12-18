@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.mingw-w64.org/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/changelog/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/contribute/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/donate/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/downloads/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/support/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/docs/configure/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/docs/overview/</loc>
-         <lastmod>2021-12-08</lastmod>
+         <lastmod>2021-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
