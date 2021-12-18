@@ -48,45 +48,45 @@ binaries directly..
             </td>
             <td>Rolling</td>
             <td>Windows</td>
-            <td>5.4.0/5.0.2 </td>
-            <td>Ada, C, C++, Fortran, Obj-C </td>
-            <td>5 (bzip2, libgcrypt, libgpg-error, minizip, xz, zlib) </td>
+            <td>11.2.0/9.0.0 </td>
+            <td>C, C++, Fortran, Obj-C </td>
+            <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="4">
+            <td style="text-align:center;" rowspan="3">
                 <strong><a href="#debian"><img src="../logos/debian-logo.png" title="Debian logo" alt="Debian logo" width="32"></a>
                 <br>
                 <a href="#debian">Debian</a></strong>
             </td>
-            <td colspan="2">Debian 7 (Wheezy) </td>
-            <td>4.6.3/2.0.3 </td>
-            <td rowspan="4">Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
-            <td rowspan="2">2 (gdb, nsis) </td>
-        </tr>
-        <tr>
-            <td colspan="2">Debian 8 (Jessie) </td>
-            <td>4.9.1/3.2.0 </td>
-        </tr>
-        <tr>
             <td colspan="2">Debian 9 (Stretch) </td>
-            <td>6.3.0/5.0.0 </td>
-            <td rowspan="2">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
+            <td>6.3.0/5.0.1 </td>
+            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
+            <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2">Debian 10 (Buster) </td>
             <td>8.3.0/6.0.0 </td>
+            <td rowspan="2">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
         </tr>
         <tr>
-            <td style="text-align:center;">
+            <td colspan="2">Debian 11 (Bullseye) </td>
+            <td>10.2.1/8.0.0 </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;" rowspan="2">
                 <strong><a href="#fedora"><img
                             src="../logos/fedora-logo.png"
                             title="Fedora Linux logo" alt="Fedora Linux logo" width="32"></a><br><a
                         href="#fedora" > Fedora</a></strong>
             </td>
-            <td colspan="2">Fedora 19 </td>
-            <td>4.8.1/? </td>
-            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
-            <td>149+</td>
+            <td colspan="2">Fedora 34 </td>
+            <td>10.2.1/8.0.0 </td>
+            <td rowspan="2">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="2">149+</td>
+        </tr>
+        <tr>
+            <td colspan="2">Fedora 35 </td>
+            <td>11.2.1/9.0.0 </td>
         </tr>
         <tr>
             <td style="text-align:center;">
@@ -112,11 +112,11 @@ binaries directly..
                 <a href="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
-                    rel="nofollow">8.2.0</a>/<a
+                    rel="nofollow">11.2.0</a>/<a
                     href="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
-                    rel="nofollow">5.0.4</a>
+                    rel="nofollow">9.0.0</a>
             </td>
             <td>C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td>1 (nsis)</td>
@@ -127,7 +127,7 @@ binaries directly..
             </td>
             <td>Rolling </td>
             <td>Windows</td>
-            <td>7.2.0/5.0.3 </td>
+            <td>8.1.0/? </td>
             <td>C, C++, Fortran </td>
             <td>4 (gdb, libiconf, python, zlib) </td>
         </tr>
@@ -153,49 +153,23 @@ binaries directly..
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="6">
+            <td style="text-align:center;" rowspan="3">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png" 
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
-            <td colspan="2">12.04 Precise Pangolin </td>
-            <td>4.6.3/2.0.1 </td>
-            <td rowspan="6">Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
-            <td rowspan="5">2 (nsis, gdb) </td>
+            <td colspan="2"> 18.04 Bionic Beaver </td>
+            <td>7.3.0/5.0.3 </td>
+            <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
-            <td colspan="2">14.04 Trusty Tahr </td>
-            <td>4.8.2/3.1.0 </td>
+            <td colspan="2"> 20.04 Focal Fossa </td>
+            <td>9.3.0/7.0.0 </td>
         </tr>
         <tr>
-            <td colspan="2">14.10 Utopic Unicorn </td>
-            <td>4.9.1/3.1.0 </td>
-        </tr>
-        <tr>
-            <td colspan="2">15.04 Vivid Vervet </td>
-            <td>4.9.2/3.2.0 </td>
-        </tr>
-        <tr>
-            <td colspan="2">15.10 Wily Werewolf </td>
-            <td>4.9.2/4.0.2 </td>
-        </tr>
-        <tr>
-            <td colspan="2"> 16.04 Xenial Xerus </td>
-            <td>5.3.1/4.0.4 </td>
-            <td>3 (nsis, gdb, zlib) </td>
-        </tr>
-        <tr>
-            <td style="text-align:center;">
-                <strong><a href="#win-builds"><img
-                            src="../logos/win-builds-logo.png" title="Win-builds logo" alt="Win-builds logo" width="32"></a><br><a
-                        href="#win-builds">
-                        Win-Builds</a></strong>
-            </td>
-            <td>1.5 </td>
-            <td>Windows, Linux</td>
-            <td>4.8.3/3.3.0 </td>
-            <td>C, C++ </td>
-            <td>91+</td>
+            <td colspan="2"> 21.10 Impish Indri </td>
+            <td>10.3.0/8.0.0 </td>
         </tr>
         <tr>
         </tr>
@@ -277,18 +251,6 @@ Installation: [Sourceforge](http://sourceforge.net/projects/mingw-w64/files/Tool
 #### MSYS2
 
 Installation: [GitHub](http://msys2.github.io/)
-
-
-#### Win-Builds
-
-Win-builds is a cross-platform project that makes building for Windows easy. It
-supports building from both Windows and Linux systems and provides many
-pre-built libraries which can be installed through a graphical package manager.
-
-It aims for stability while still providing recent versions of software
-packages.
-
-Installation: http://win-builds.org. 
 
 
 ## Sources
