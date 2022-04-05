@@ -1,5 +1,24 @@
 # Changelog
 
+## v10.0.0: [2022-04-04](https://sourceforge.net/p/mingw-w64/mailman/message/37635065/)
+
+Notable changes:
+
+- New msvcrt10, 20, 40, 70 and 71 import libraries.
+- Drop x86_64 64bit crtdll.dll
+- Updated wine imports
+- Fix intrin.h compatibility with GCC-11
+- `_(v)scprintf` optimization
+- optimize `__ms_vsnprintf` for LTO
+
+And many other additions thanks to, but not limited to (in Alphabetical
+order)
+
+Biswapriyo Nath, Corinna Vinschen, davjam, Jacek Caban, Jeremy Drake, Jonathan
+Marler, Liu Hao, Mark Harmstone, Martin Storsjö, Matheus Izvekov, Michel Zou,
+Ozkan Sezer, Pali Rohár, Patrick Northon, Ruslan Garipov, Steve Lhomme, Tom
+Ritter
+
 ## v9.0.0: [2021-05-22](https://sourceforge.net/p/mingw-w64/mailman/message/37287751/)
 
 Notable changes:
