@@ -48,7 +48,7 @@ binaries directly..
             </td>
             <td>Rolling</td>
             <td>Windows</td>
-            <td>11.2.0/9.0.0 </td>
+            <td>11.2.0/10.0.0 </td>
             <td>C, C++, Fortran, Obj-C </td>
             <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
         </tr>
@@ -73,7 +73,7 @@ binaries directly..
             <td>10.2.1/8.0.0 </td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="2">
+            <td style="text-align:center;" rowspan="3">
                 <strong><a href="#fedora"><img
                             src="../logos/fedora-logo.png"
                             title="Fedora Linux logo" alt="Fedora Linux logo" width="32"></a><br><a
@@ -81,20 +81,23 @@ binaries directly..
             </td>
             <td colspan="2">Fedora 34 </td>
             <td>10.2.1/8.0.0 </td>
-            <td rowspan="2">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
-            <td rowspan="2">149+</td>
+            <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="3"><a href="https://packages.fedoraproject.org/search?query=mingw64"> many</td>
         </tr>
         <tr>
             <td colspan="2">Fedora 35 </td>
-            <td>11.2.1/9.0.0 </td>
+            <td rowspan="2">11.2.1/9.0.0 </td>
+        </tr>
+        <tr>
+            <td colspan="2">Fedora 36 </td>
         </tr>
         <tr>
             <td style="text-align:center;">
                 <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
             </td>
-            <td>20211002</td>
+            <td>20220323</td>
             <td>Windows, Linux</td>
-            <td>LLVM 13.0.0/trunk</td>
+            <td>LLVM 14.0.0/trunk</td>
             <td>C, C++</td>
             <td>make, Python</td>
         </tr>
@@ -116,7 +119,7 @@ binaries directly..
                     href="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
-                    rel="nofollow">9.0.0</a>
+                    rel="nofollow">10.0.0</a>
             </td>
             <td>C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td>1 (nsis)</td>
@@ -127,7 +130,7 @@ binaries directly..
             </td>
             <td>Rolling </td>
             <td>Windows</td>
-            <td>8.1.0/? </td>
+            <td>8.1.0/6.0.0 </td>
             <td>C, C++, Fortran </td>
             <td>4 (gdb, libiconf, python, zlib) </td>
         </tr>
@@ -153,15 +156,15 @@ binaries directly..
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="3">
+            <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png" 
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
             <td colspan="2"> 18.04 Bionic Beaver </td>
             <td>7.3.0/5.0.3 </td>
-            <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
-            <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
+            <td rowspan="4">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2"> 20.04 Focal Fossa </td>
@@ -169,7 +172,10 @@ binaries directly..
         </tr>
         <tr>
             <td colspan="2"> 21.10 Impish Indri </td>
-            <td>10.3.0/8.0.0 </td>
+            <td rowspan="2">10.3.0/8.0.0 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 22.04 Jammy Jellyfish </td>
         </tr>
         <tr>
         </tr>
@@ -257,11 +263,18 @@ Installation: [GitHub](http://msys2.github.io/)
 
 Tarballs for the mingw-w64 sources are hosted on
 [SourceForge](http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/).
+
+The latest version from the 10.x series is **[10.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download)**.
+
+  The latest version from the 9.x series is **[9.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download)**.
+  
+The latest version from the 8.x series is **[8.0.2](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v8.0.2.tar.bz2/download)**.
+
+The latest version from the 7.x series is **[7.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v7.0.0.tar.bz2/download)**.
+
 The latest version from the 6.x series is **[6.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v6.0.0.tar.bz2/download)**.
+
 The latest version from the 5.x series is **[5.0.4](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.4.tar.bz2/download)**.
-The latest version from the 4.x series is **[4.0.6](http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v4.0.6.tar.bz2/download)**.
-The latest version from the 3.x series is **[3.3.0](http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v3.3.0.tar.bz2/download)**.
-Winpthreads has been merged into the main tarball as of 3.1.0.
 
 The old wiki has instructions for building
 [native](http://sourceforge.net/p/mingw-w64/wiki2/Native%20Win64%20compiler/)
