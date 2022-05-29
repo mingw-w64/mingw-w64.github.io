@@ -1,3 +1,8 @@
+:root {
+    --md-text-font:"Roboto";
+    --md-code-font:"Roboto Mono";
+}
+
 .md-typeset ol li,
 .md-typeset ul li {
     margin-bottom: 0;
