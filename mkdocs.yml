@@ -2,20 +2,20 @@ site_name: MinGW-w64
 site_description: GCC for Windows 64 & 32 bits
 docs_dir: web/
 theme:
+    font: false
     logo: logo.svg
     name: material
     favicon: logo.svg
-    font:
-      text: Roboto
-      code: Roboto Mono
     palette:
         primary: 'white'
         accent: 'indigo'
     features:
         - navigation.instant
+    custom_dir: overrides
 
 extra_css:
     - 'stylesheets/extra.css'
+    - 'stylesheets/fonts.css'
 
 site_url: https://www.mingw-w64.org
 repo_url: https://github.com/mingw-w64/mingw-w64.github.io
