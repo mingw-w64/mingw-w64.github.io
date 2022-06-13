@@ -103,6 +103,28 @@ binaries directly..
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#w64devkit">w64devkit</a></strong>
+            </td>
+            <td>1.14.0</td>
+            <td>Windows</td>
+            <td>12.1.0/10.0.0</td>
+            <td>C, C++, Fortran</td>
+            <td>
+                10
+                (busybox,
+                ctags,
+                expat,
+                gdb,
+                gmp,
+                make,
+                mpc,
+                mpfr,
+                nasm,
+                vim)
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -232,6 +254,34 @@ Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
 info in PDB format.
 
 Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
+
+#### w64devkit
+
+[w64devkit][w64devkit] is a portable C and C++ development kit for x64 (and x86) Windows.
+
+Included tools:
+
+* [Mingw-w64 GCC][w64] : compilers, linker, assembler
+* [GDB][gdb] : debugger
+* [GNU Make][make] : standard build tool
+* [busybox-w32][bb] : standard unix utilities, including sh
+* [Vim][vim] : powerful text editor
+* [Universal Ctags][ctags] : source navigation
+* [NASM][nasm] : x86 assembler
+
+The toolchain includes pthreads, C++11 threads, and OpenMP. All included
+runtime components are static.
+
+Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
+
+[bb]: https://frippery.org/busybox/
+[ctags]: https://github.com/universal-ctags/ctags
+[gdb]: https://www.gnu.org/software/gdb/
+[make]: https://www.gnu.org/software/make/
+[nasm]: https://www.nasm.us/
+[vim]: https://www.vim.org/
+[w64]: http://mingw-w64.org/
+[w64devkit]: https://github.com/skeeto/w64devkit
 
 #### MacPorts
 
