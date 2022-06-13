@@ -261,7 +261,7 @@ Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
 
 Included tools:
 
-* [Mingw-w64 GCC][w64] : compilers, linker, assembler
+* Mingw-w64 GCC : compilers, linker, assembler
 * [GDB][gdb] : debugger
 * [GNU Make][make] : standard build tool
 * [busybox-w32][bb] : standard unix utilities, including sh
@@ -280,7 +280,6 @@ Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 [make]: https://www.gnu.org/software/make/
 [nasm]: https://www.nasm.us/
 [vim]: https://www.vim.org/
-[w64]: http://mingw-w64.org/
 [w64devkit]: https://github.com/skeeto/w64devkit
 
 #### MacPorts
