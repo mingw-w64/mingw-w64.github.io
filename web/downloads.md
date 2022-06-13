@@ -24,7 +24,7 @@ binaries directly..
         <tr>
             <td style="text-align:center;">
                 <strong><a href="#arch-linux"><img
-                            src="../logos/archlinux-logo.png" 
+                            src="../logos/archlinux-logo.png"
                             title="Arch Linux logo" alt="Arch Linux logo" width="32"></a><br><a
                         href="#arch-linux"> Arch
                         Linux</a></strong>
@@ -158,7 +158,7 @@ binaries directly..
         <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
-                            src="../logos/ubuntu-logo.png" 
+                            src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
             <td colspan="2"> 18.04 Bionic Beaver </td>
@@ -267,7 +267,7 @@ Tarballs for the mingw-w64 sources are hosted on
 The latest version from the 10.x series is **[10.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download)**.
 
   The latest version from the 9.x series is **[9.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download)**.
-  
+
 The latest version from the 8.x series is **[8.0.2](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v8.0.2.tar.bz2/download)**.
 
 The latest version from the 7.x series is **[7.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v7.0.0.tar.bz2/download)**.
