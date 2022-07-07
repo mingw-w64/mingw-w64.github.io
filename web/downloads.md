@@ -130,7 +130,7 @@ binaries directly..
             </td>
             <td>Rolling </td>
             <td>Windows</td>
-            <td>8.1.0/6.0.0 </td>
+            <td>12.1.0/10.0.0 </td>
             <td>C, C++, Fortran </td>
             <td>4 (gdb, libiconf, python, zlib) </td>
         </tr>
@@ -252,7 +252,7 @@ Here is the list of [Mingw-w64 packages on MacPorts](https://www.macports.org/po
 
 #### Mingw-builds
 
-Installation: [Sourceforge](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
+Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
