@@ -24,7 +24,7 @@ binaries directly..
         <tr>
             <td style="text-align:center;">
                 <strong><a href="#arch-linux"><img
-                            src="../logos/archlinux-logo.png" 
+                            src="../logos/archlinux-logo.png"
                             title="Arch Linux logo" alt="Arch Linux logo" width="32"></a><br><a
                         href="#arch-linux"> Arch
                         Linux</a></strong>
@@ -103,6 +103,28 @@ binaries directly..
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#w64devkit">w64devkit</a></strong>
+            </td>
+            <td>1.14.0</td>
+            <td>Windows</td>
+            <td>12.1.0/10.0.0</td>
+            <td>C, C++, Fortran</td>
+            <td>
+                10
+                (busybox,
+                ctags,
+                expat,
+                gdb,
+                gmp,
+                make,
+                mpc,
+                mpfr,
+                nasm,
+                vim)
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -158,7 +180,7 @@ binaries directly..
         <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
-                            src="../logos/ubuntu-logo.png" 
+                            src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
             <td colspan="2"> 18.04 Bionic Beaver </td>
@@ -233,6 +255,33 @@ info in PDB format.
 
 Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
 
+#### w64devkit
+
+[w64devkit][w64devkit] is a portable C and C++ development kit for x64 (and x86) Windows.
+
+Included tools:
+
+* Mingw-w64 GCC : compilers, linker, assembler
+* [GDB][gdb] : debugger
+* [GNU Make][make] : standard build tool
+* [busybox-w32][bb] : standard unix utilities, including sh
+* [Vim][vim] : powerful text editor
+* [Universal Ctags][ctags] : source navigation
+* [NASM][nasm] : x86 assembler
+
+The toolchain includes pthreads, C++11 threads, and OpenMP. All included
+runtime components are static.
+
+Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
+
+[bb]: https://frippery.org/busybox/
+[ctags]: https://github.com/universal-ctags/ctags
+[gdb]: https://www.gnu.org/software/gdb/
+[make]: https://www.gnu.org/software/make/
+[nasm]: https://www.nasm.us/
+[vim]: https://www.vim.org/
+[w64devkit]: https://github.com/skeeto/w64devkit
+
 #### MacPorts
 
 To install just the 32-bit or just 64-bit compiler with dependencies, use:
@@ -267,7 +316,7 @@ Tarballs for the mingw-w64 sources are hosted on
 The latest version from the 10.x series is **[10.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download)**.
 
   The latest version from the 9.x series is **[9.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download)**.
-  
+
 The latest version from the 8.x series is **[8.0.2](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v8.0.2.tar.bz2/download)**.
 
 The latest version from the 7.x series is **[7.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v7.0.0.tar.bz2/download)**.
