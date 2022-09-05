@@ -320,6 +320,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#w64devkit" class="md-nav__link">
+    w64devkit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#macports" class="md-nav__link">
     MacPorts
   </a>
@@ -592,6 +599,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#w64devkit" class="md-nav__link">
+    w64devkit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#macports" class="md-nav__link">
     MacPorts
   </a>
@@ -712,7 +726,7 @@ binaries directly..</p>
         <tr>
             <td style="text-align:center;">
                 <strong><a href="#arch-linux"><img
-                            src="../logos/archlinux-logo.png" 
+                            src="../logos/archlinux-logo.png"
                             title="Arch Linux logo" alt="Arch Linux logo" width="32"></a><br><a
                         href="#arch-linux"> Arch
                         Linux</a></strong>
@@ -791,6 +805,28 @@ binaries directly..</p>
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#w64devkit">w64devkit</a></strong>
+            </td>
+            <td>1.14.0</td>
+            <td>Windows</td>
+            <td>12.1.0/10.0.0</td>
+            <td>C, C++, Fortran</td>
+            <td>
+                10
+                (busybox,
+                ctags,
+                expat,
+                gdb,
+                gmp,
+                make,
+                mpc,
+                mpfr,
+                nasm,
+                vim)
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -846,7 +882,7 @@ binaries directly..</p>
         <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
-                            src="../logos/ubuntu-logo.png" 
+                            src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
             <td colspan="2"> 18.04 Bionic Beaver </td>
@@ -904,6 +940,21 @@ as a cross compiler from Linux and for running on Windows. It supports
 Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
 info in PDB format.</p>
 <p>Installation: <a href="https://github.com/mstorsjo/llvm-mingw/releases">GitHub</a></p>
+<h4 id="w64devkit">w64devkit</h4>
+<p><a href="https://github.com/skeeto/w64devkit">w64devkit</a> is a portable C and C++ development kit for x64 (and x86) Windows.</p>
+<p>Included tools:</p>
+<ul>
+<li>Mingw-w64 GCC : compilers, linker, assembler</li>
+<li><a href="https://www.gnu.org/software/gdb/">GDB</a> : debugger</li>
+<li><a href="https://www.gnu.org/software/make/">GNU Make</a> : standard build tool</li>
+<li><a href="https://frippery.org/busybox/">busybox-w32</a> : standard unix utilities, including sh</li>
+<li><a href="https://www.vim.org/">Vim</a> : powerful text editor</li>
+<li><a href="https://github.com/universal-ctags/ctags">Universal Ctags</a> : source navigation</li>
+<li><a href="https://www.nasm.us/">NASM</a> : x86 assembler</li>
+</ul>
+<p>The toolchain includes pthreads, C++11 threads, and OpenMP. All included
+runtime components are static.</p>
+<p>Installation: <a href="https://github.com/skeeto/w64devkit/releases">GitHub</a></p>
 <h4 id="macports">MacPorts</h4>
 <p>To install just the 32-bit or just 64-bit compiler with dependencies, use:</p>
 <div class="highlight"><pre><span></span><code>sudo port install i686-w64-mingw32-gcc
