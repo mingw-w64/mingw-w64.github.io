@@ -105,13 +105,14 @@ binaries directly..
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>1.14.0</td>
+            <td>1.16.1</td>
             <td>Windows</td>
-            <td>12.1.0/10.0.0</td>
+            <td>12.2.0/10.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                10
+                11
                 (busybox,
+                cppcheck,
                 ctags,
                 expat,
                 gdb,
@@ -268,6 +269,7 @@ Included tools:
 * [Vim][vim] : powerful text editor
 * [Universal Ctags][ctags] : source navigation
 * [NASM][nasm] : x86 assembler
+* [Cppcheck][cppcheck] : static code analysis
 
 The toolchain includes pthreads, C++11 threads, and OpenMP. All included
 runtime components are static.
@@ -275,6 +277,7 @@ runtime components are static.
 Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 
 [bb]: https://frippery.org/busybox/
+[cppcheck]: https://cppcheck.sourceforge.io/
 [ctags]: https://github.com/universal-ctags/ctags
 [gdb]: https://www.gnu.org/software/gdb/
 [make]: https://www.gnu.org/software/make/
