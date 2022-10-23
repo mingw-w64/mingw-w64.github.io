@@ -179,6 +179,20 @@ binaries directly..
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
+            <td style="text-align:center;">
+                <strong><a href="#WinLibs.com">WinLibs.com</a></strong>
+            </td>
+            <td>Rolling </td>
+            <td>Windows</td>
+            <td>
+                <a href="https://winlibs.com/#download-release" class="urlextern"
+                    title="https://winlibs.com/"
+                    rel="nofollow">12.2.0</a>
+            </td>
+            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
+            <td>Package manager: work in progress (will offer > 2500 packages)</td>
+        </tr>
+        <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
@@ -305,6 +319,30 @@ Here is the list of [Mingw-w64 packages on MacPorts](https://www.macports.org/po
 #### Mingw-builds
 
 Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
+
+#### WinLibs.com
+
+Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all depencencies) natively on Windows for Windows.
+
+Downloads are archive files (`.zip` or `.7z`). No installation is required,
+just extract the archive and start using the programs in `mingw32\bin` or  `mingw64\bin`.
+This allows for a relocatable compiler suite and allows having multiple versions on the same system.
+
+Also contains other tools including:
+ * GDB - the GNU Project debugger
+ * GNU Binutils - a collection of binary tools
+ * GNU Make - a tool which controls the generation of executables and other non-source files
+ * Yasm - The Yasm Modular Assembler Project
+ * NASM - The Netwide Assembler
+ * JWasm - A free MASM-compatible assembler
+
+Flavors:
+ * separate packages for 32-bit (i686) and 64-bit (x86_64) Windows
+ * separate packages for MSVCRT and UCRT builds
+ * only POSIX threads builds (which also include Win32 API thread functions)
+ * exception model: Dwarf for 32-bit (i686) and SEH for 64-bit (x86_64)
+
+Installation: Download from [winlibs.com](https://winlibs.com/) and extract archive (no installation needed).
 
 #### MSYS2
 
