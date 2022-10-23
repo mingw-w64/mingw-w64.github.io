@@ -341,6 +341,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#winlibscom" class="md-nav__link">
+    WinLibs.com
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#msys2" class="md-nav__link">
     MSYS2
   </a>
@@ -620,6 +627,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#winlibscom" class="md-nav__link">
+    WinLibs.com
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#msys2" class="md-nav__link">
     MSYS2
   </a>
@@ -881,6 +895,20 @@ binaries directly..</p>
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
+            <td style="text-align:center;">
+                <strong><a href="#WinLibs.com">WinLibs.com</a></strong>
+            </td>
+            <td>Rolling </td>
+            <td>Windows</td>
+            <td>
+                <a href="https://winlibs.com/#download-release" class="urlextern"
+                    title="https://winlibs.com/"
+                    rel="nofollow">12.2.0</a>
+            </td>
+            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
+            <td>Package manager: work in progress (will offer > 2500 packages)</td>
+        </tr>
+        <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
@@ -968,6 +996,24 @@ sudo port install x86_64-w64-mingw32-gcc
 <p>Here is the list of <a href="https://www.macports.org/ports.php?by=name&amp;substr=mingw">Mingw-w64 packages on MacPorts</a>.</p>
 <h4 id="mingw-builds">Mingw-builds</h4>
 <p>Installation: <a href="https://github.com/niXman/mingw-builds-binaries/releases">GitHub</a></p>
+<h4 id="winlibscom">WinLibs.com</h4>
+<p>Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all depencencies) natively on Windows for Windows.</p>
+<p>Downloads are archive files (<code>.zip</code> or <code>.7z</code>). No installation is required,
+just extract the archive and start using the programs in <code>mingw32\bin</code> or  <code>mingw64\bin</code>.
+This allows for a relocatable compiler suite and allows having multiple versions on the same system.</p>
+<p>Also contains other tools including:
+ * GDB - the GNU Project debugger
+ * GNU Binutils - a collection of binary tools
+ * GNU Make - a tool which controls the generation of executables and other non-source files
+ * Yasm - The Yasm Modular Assembler Project
+ * NASM - The Netwide Assembler
+ * JWasm - A free MASM-compatible assembler</p>
+<p>Flavors:
+ * separate packages for 32-bit (i686) and 64-bit (x86_64) Windows
+ * separate packages for MSVCRT and UCRT builds
+ * only POSIX threads builds (which also include Win32 API thread functions)
+ * exception model: Dwarf for 32-bit (i686) and SEH for 64-bit (x86_64)</p>
+<p>Installation: Download from <a href="https://winlibs.com/">winlibs.com</a> and extract archive (no installation needed).</p>
 <h4 id="msys2">MSYS2</h4>
 <p>Installation: <a href="http://msys2.github.io/">GitHub</a></p>
 <h2 id="sources">Sources</h2>
