@@ -180,7 +180,7 @@ binaries directly..
         </tr>
         <tr>
             <td style="text-align:center;">
-                <strong><a href="#WinLibs.com">WinLibs.com</a></strong>
+                <strong><a href="#winlibscom">WinLibs.com</a></strong>
             </td>
             <td>Rolling </td>
             <td>Windows</td>
