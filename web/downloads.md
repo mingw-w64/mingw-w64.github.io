@@ -105,7 +105,7 @@ binaries directly..
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>1.16.1</td>
+            <td>1.17.0</td>
             <td>Windows</td>
             <td>12.2.0/10.0.0</td>
             <td>C, C++, Fortran</td>
