@@ -110,16 +110,12 @@ binaries directly..
             <td>12.2.0/10.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                11
+                7
                 (busybox,
                 cppcheck,
                 ctags,
-                expat,
                 gdb,
-                gmp,
                 make,
-                mpc,
-                mpfr,
                 nasm,
                 vim)
             </td>
