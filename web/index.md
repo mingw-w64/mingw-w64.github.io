@@ -2,6 +2,8 @@
 <h1 style="text-align: left"><img src="header.svg" style="max-width: min(90%, 400px);"></h1>
 </header>
 
+# 
+
 Mingw-w64 is an advancement of the original mingw.org project, created to
 support the GCC compiler on Windows systems. It has forked it in 2007 in order
 to provide support for 64 bits and new APIs. It has since then gained widespread
