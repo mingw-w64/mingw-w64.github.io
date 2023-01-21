@@ -1,5 +1,8 @@
 <header>
-<h1 style="text-align: left"><img src="header.svg" style="max-width: min(90%, 400px);"></h1>
+<h1 style="text-align: left">
+    <img src="header-dark.svg#gh-dark-mode-only" style="max-width: min(90%, 400px);">
+    <img src="header.svg#gh-light-mode-only" style="max-width: min(90%, 400px);">
+</h1>
 </header>
 
 # 
