@@ -5,18 +5,17 @@
    <cc:Work rdf:about="">
     <dc:format>image/svg+xml</dc:format>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title/>
    </cc:Work>
   </rdf:RDF>
  </metadata>
  <g transform="translate(-23.356 -17.029)">
-  <rect transform="rotate(-45)" x="-32.024" y="65.054" width="32.529" height="32.529" fill="#71b21f"/>
-  <rect transform="rotate(-45)" x="-72.49" y="105.52" width="32.529" height="32.529" fill="#71b21f"/>
-  <rect transform="rotate(-45)" x="-32.024" y="105.52" width="32.529" height="32.529"/>
-  <rect transform="rotate(-45)" x="8.4423" y="65.054" width="32.529" height="32.529"/>
-  <rect transform="rotate(-45)" x="8.4423" y="105.52" width="32.529" height="32.529" fill="#71b21f"/>
-  <rect transform="rotate(-45)" x="48.908" y="105.52" width="32.529" height="32.529"/>
-  <rect transform="rotate(-45)" x="-32.024" y="145.99" width="32.529" height="32.529" fill="#71b21f"/>
-  <rect transform="rotate(-45)" x="8.4423" y="145.99" width="32.529" height="32.529"/>
+  <rect transform="rotate(-45)" x="-32.024" y="65.054" width="32.529" height="32.529" fill="#999"/>
+  <rect transform="rotate(-45)" x="-72.49" y="105.52" width="32.529" height="32.529" fill="#999"/>
+  <rect transform="rotate(-45)" x="-32.024" y="105.52" width="32.529" height="32.529" fill="#4d4d4d"/>
+  <rect transform="rotate(-45)" x="8.4423" y="65.054" width="32.529" height="32.529" fill="#4d4d4d"/>
+  <rect transform="rotate(-45)" x="8.4423" y="105.52" width="32.529" height="32.529" fill="#999"/>
+  <rect transform="rotate(-45)" x="48.908" y="105.52" width="32.529" height="32.529" fill="#4d4d4d"/>
+  <rect transform="rotate(-45)" x="-32.024" y="145.99" width="32.529" height="32.529" fill="#999"/>
+  <rect transform="rotate(-45)" x="8.4423" y="145.99" width="32.529" height="32.529" fill="#4d4d4d"/>
  </g>
 </svg>
