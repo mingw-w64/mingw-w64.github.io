@@ -361,9 +361,10 @@ The latest version from the 6.x series is **[6.0.0](https://sourceforge.net/proj
 The latest version from the 5.x series is **[5.0.4](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.4.tar.bz2/download)**.
 
 The old wiki has instructions for building
-[native](http://sourceforge.net/p/mingw-w64/wiki2/Native%20Win64%20compiler/)
+
+[native](./wiki/native-win64-compiler.md)
 and
-[cross](http://sourceforge.net/p/mingw-w64/wiki2/Cross%20Win32%20and%20Win64%20compiler/)
+[cross](./wiki/cross-win32-and-win64-compiler.md)
 toolchains.
 
 Details on how to get the mingw-w64 code from Git and an Git-web viewer are
@@ -381,7 +382,7 @@ page](http://mingw-w64.org/doku.php/download/darwin).
 ### OpenSUSE
 
 The [OpenSUSE Linux
-distribution](http://mingw-w64.sourceforge.net/www.opensuse.org) also has a
+distribution](https://www.opensuse.org) also has a
 large and well-maintained set of packages for cross-compilation.
 
 ### Rubenvb

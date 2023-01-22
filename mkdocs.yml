@@ -68,3 +68,111 @@ nav:
   - Documentation:
     - docs/overview.md
     - docs/configure.md
+  - Wiki:
+    - wiki/home.md
+    - wiki/make.md
+    - wiki/mailing-list.md
+    - wiki/information-about-releases.md
+    - wiki/history.md
+    - wiki/other-useful-links.md
+    - wiki/general-usage-instructions.md
+    - wiki/using-linux-binaries.md
+    - wiki/feature-list.md
+    - wiki/msys.md
+    - wiki/todo-list.md
+    - wiki/gendef.md
+    - wiki/cross-quickstart.md
+    - wiki/native-win64-compiler.md
+    - wiki/running-the-testsuite-on-linux.md
+    - wiki/type-triplets.md
+    - wiki/version-spec.md
+    - wiki/wine-integration.md
+    - wiki/pe-coff-debugging-infomation.md
+    - wiki/versions-of-software-required-for-building.md
+    - wiki/cross-win32-and-win64-compiler.md
+    - wiki/faq/index.md
+    - FAQ Answers:
+      - wiki/faq/compiling-the-runtime.md
+      - wiki/faq/download-filename-structure.md
+      - wiki/faq/installation-of-binary-toolchain-packages.md
+      - wiki/faq/unicode-apps.md
+      - wiki/faq/check-for-mingw-w64.md
+      - wiki/faq/generation-of-dll-import-library.md
+      - wiki/faq/libstdcpp-build-failures.md
+      - wiki/faq/lto-and-gcc.md
+      - wiki/faq/multilib-toolchain.md
+      - wiki/faq/ppl-cloog-and-gcc.md
+      - wiki/faq/compile-pthreads.md
+      - wiki/faq/default_manifest.md
+      - wiki/faq/exception-handling.md
+      - wiki/faq/gnu-printf.md
+      - wiki/faq/missing-_aligned_malloc.md
+      - wiki/faq/printf-and-scanf-family.md
+      - wiki/faq/to_string.md
+      - wiki/faq/winsock2-include-order.md
+      - wiki/faq/64-bit-msvc-generated-x64-lib.md
+      - wiki/faq/_vswprintf-missing.md
+      - wiki/faq/error-0xc000007b.md
+      - wiki/faq/gdb-dll-symbols.md
+      - wiki/faq/procedure-entry-point.md
+      - wiki/faq/threadc79-internal-error.md
+      - wiki/faq/usable-compiler-executable.md
+    - Project-specific instructions:
+      - 'Overview': wiki/project-specific-instructions/index.md
+      - wiki/project-specific-instructions/building-boost.md
+      - wiki/project-specific-instructions/building-ncurses.md
+      - wiki/project-specific-instructions/building-openssl.md
+      - wiki/project-specific-instructions/building-qt.md
+    - Building projects with MinGW-W64:
+      - 'Overview': wiki/building-projects/index.md
+      - wiki/building-projects/building-boost.md
+    - Create a buildbot:
+      - 'Overview': wiki/create-buildbot/index.md
+      - wiki/create-buildbot/buildbot-master-details.md
+      - wiki/create-buildbot/setup-a-cygwin-buildbot.md
+      - wiki/create-buildbot/setup-a-msys-buildbot.md
+      - wiki/create-buildbot/setup-an-osx-buildbot.md
+    - Git:
+      - 'Overview': wiki/git/index.md
+      - wiki/git/git-backport.md
+      - wiki/git/git-revert.md
+      - wiki/git/git-sign.md
+      - wiki/git/git-tag.md
+    - Mingw-w64 API:
+      - 'Overview': wiki/mingw-w64-api/index.md
+      - wiki/mingw-w64-api/libw64crt-documentation.md
+      - wiki/mingw-w64-api/mingw-x64-software-convention.md
+      - wiki/mingw-w64-api/special-defines-to-headerset.md
+      - wiki/mingw-w64-api/crt-build-defined-macros.md
+      - wiki/mingw-w64-api/crt-variable-reference.md
+      - wiki/mingw-w64-api/devel-crt-licensing-coding-style-and-more.md
+      - wiki/mingw-w64-api/internal-crt-component-reference.md
+      - wiki/mingw-w64-api/internal-crt-macro-reference.md
+      - wiki/mingw-w64-api/internal-heap-management-functions.md
+      - wiki/mingw-w64-api/internal-tls-and-fls.md
+    - Testsuite Tracking:
+      - 'Overview': wiki/testsuite-tracking/index.md
+      - wiki/testsuite-tracking/status-binutils.md
+      - wiki/testsuite-tracking/status-gas.md
+      - wiki/testsuite-tracking/status-gcc.md
+      - wiki/testsuite-tracking/status-gfortran.md
+      - wiki/testsuite-tracking/status-gobjc.md
+      - wiki/testsuite-tracking/status-gobjcpp.md
+      - wiki/testsuite-tracking/status-gplusplus.md
+      - wiki/testsuite-tracking/status-ld.md
+    - CV Information:
+      - 'Overview': wiki/cv-information/index.md
+      - wiki/cv-information/attribute-structures.md
+      - wiki/cv-information/ecv_access.md
+      - wiki/cv-information/ecv_call.md
+      - wiki/cv-information/ecv_methodprop.md
+      - wiki/cv-information/ecv_sourcechksum.md
+      - wiki/cv-information/line-information-structures.md
+    - Misc:
+      # These weren't linked from anywhere in the wiki
+      - wiki/misc/known-differences-to-other-c-runtime-and-platform-header-sets.md
+      - wiki/misc/mingw-w64-howto-build.md
+      - wiki/misc/native-compiler-in-cygwin-shell.md
+      - wiki/misc/search-paths-prefixes-and-relocation.md
+      - wiki/misc/structure-on-sf-download-page.md
+      - wiki/misc/the-case-against-msvcrt-dll.md
