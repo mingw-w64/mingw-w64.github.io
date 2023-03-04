@@ -21,10 +21,12 @@ jobs:
           cache: 'pip'
           cache-dependency-path: .github/workflows/main.yml
 
-      - name: Install poetry
-        run: |
-          python3 -m pip install --upgrade poetry==1.4.0
+      - name: Install codespell and poetry
+        run: python3 -m pip install --upgrade codespell poetry==1.4.0
 
+      - name: Find typos with codespell
+        run: codespell --ignore-words-list=seh
+      
       - name: Setup Python (poetry)
         uses: actions/setup-python@v4
         with:
