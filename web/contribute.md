@@ -143,7 +143,7 @@ when code built with MSVC is involved.
 
 ### Translation from/to PDB
 
-Most often debug informations will only be available in a single format. Being
+Most often debug information will only be available in a single format. Being
 able to convert between them when needed will be useful.
 
 ## C11 and C++11 Threading Support
