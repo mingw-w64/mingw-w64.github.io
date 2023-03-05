@@ -134,7 +134,7 @@ Ritter Yuta Nakai Алексей Павлов Руслан Ижбулатов �
 - Don't use feature `(__attribute__((gcc_struct)))` that isn't supported on
   clang when compiling on clang thanks to David Wohlferd.
 - Various ARM math fixes thanks to Martin Storsjö
-- Removed some duplicate uuids defintions, thanks to HugoBeauzée-Luyssen.
+- Removed some duplicate uuids definitions, thanks to HugoBeauzée-Luyssen.
 - Define `IN6_IS_ADDR_` macros to conform to Posix Specm thanks toJean-Baptiste
   Kempf
 - dxva.h: Add support for VP8/9 in DxVA2 thanks to Yuta Nakai

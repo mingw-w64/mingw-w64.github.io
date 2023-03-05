@@ -317,7 +317,7 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### WinLibs.com
 
-Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all depencencies) natively on Windows for Windows.
+Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.
 
 Downloads are archive files (`.zip` or `.7z`). No installation is required,
 just extract the archive and start using the programs in `mingw32\bin` or  `mingw64\bin`.
