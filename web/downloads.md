@@ -6,7 +6,7 @@ GCC nor of binutils, several sets of installation packages which combine
 them are available.
 
 In addition, the sources are available but most people will want to grab
-binaries directly..
+binaries directly.
 
 ## Pre-built toolchains and packages
 
