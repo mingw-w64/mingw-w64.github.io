@@ -349,9 +349,11 @@ Installation: [GitHub](http://msys2.github.io/)
 Tarballs for the mingw-w64 sources are hosted on
 [SourceForge](http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/).
 
+The latest version from the 11.x series is **[11.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v11.0.0.tar.bz2/download)**.
+
 The latest version from the 10.x series is **[10.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download)**.
 
-  The latest version from the 9.x series is **[9.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download)**.
+The latest version from the 9.x series is **[9.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download)**.
 
 The latest version from the 8.x series is **[8.0.2](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v8.0.2.tar.bz2/download)**.
 
