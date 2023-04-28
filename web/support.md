@@ -7,6 +7,8 @@ Mingw-w64 has several active support channels.
 - [Discussion Forum](http://sourceforge.net/p/mingw-w64/discussion/)
 - [Issue Tracker](http://sourceforge.net/p/mingw-w64/_list/tickets)
 
+Documentation exists in the Sourceforge wiki: https://sourceforge.net/p/mingw-w64/wiki2/Home/
+
 ## Licensing
 
 Mingw-w64 is free software and permissively-licensed. The details are located in
