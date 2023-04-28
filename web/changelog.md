@@ -1,5 +1,37 @@
 # Changelog
 
+## v11.0.0: [2023-04-28](https://sourceforge.net/p/mingw-w64/mailman/message/37837156/)
+
+Notable changes:
+
+- New libdloadhelper.a, like libdelayimp.a but using Windows 8 and later APIs.
+- Fix race condition when building lib32 and lib64 in parallel on Windows.
+- *recalloc now only available from msvcr90 and later, UCRT.
+- Redirect access() to __mingw_access() on UCRT wrt to X_OK problems.
+- New Hyper-V APIs.
+- SEH based setjmp on ARM if supported by compiler.
+- --enable-cfguard to enable Control Flow Guard in CRT, requires compiler
+  support, clang only at this time.
+- Implement some of the stack protector functions/variables so -lssp is
+  now optional when _FORTIFY_SOURCE or -fstack-protector-strong is used.
+- _FORTIFY_SOURCE=3 support added if __builtin_dynamic_object_size is supported
+  by the compiler (gcc 12 or later).
+- genstubdll removed.
+- uchar_c16rtomb, uchar_c32rtomb, uchar_mbrtoc16 and uchar_mbrtoc32 removed for
+  MSVCR*, UCRT only for now.
+- Updates to DX12 headers and much more from Wine.
+- Many other new win32 APIs.
+
+And many other additions thanks to, but not limited to (in Alphabetical
+order)
+
+Alvin Wong, Biswapriyo Nath, Christian Franke, Christoph Reiter, Costas Argyris,
+delthas, Dmitry Karasik, Jacek Caban, Jeremy Drake, L. E. Segovia, LIU Hao, Luca
+Bacci, Mark Harmstone, Markus Mützel, Martin Storsjö, Mateusz Wajchęprzełóż,
+Matthew Lugg, Mike Gelfand, Oleg Oshmyan, Oleg Tolmatcev, Ozkan Sezer, Pali
+Rohár, Raf Lopez, Sergei Trofimovich, Steve Lhomme, TheShermanTanker, Yannis
+Juglaret, Yonggang Luo, 李通洲,
+
 ## v10.0.0: [2022-04-04](https://sourceforge.net/p/mingw-w64/mailman/message/37635065/)
 
 Notable changes:
