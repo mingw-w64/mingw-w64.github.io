@@ -1,5 +1,9 @@
 # Changelog
 
+## v11.0.1: [2023-04-29](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v11.0.1)
+
+- Fixes for w32api/Cygwin
+
 ## v11.0.0: [2023-04-28](https://sourceforge.net/p/mingw-w64/mailman/message/37837156/)
 
 Notable changes:
