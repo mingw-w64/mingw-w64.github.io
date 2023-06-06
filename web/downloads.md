@@ -147,7 +147,7 @@ binaries directly.
             </td>
             <td>Rolling </td>
             <td>Windows</td>
-            <td>12.2.0/10.0.0 </td>
+            <td>13.1.0/11.0.0 </td>
             <td>C, C++, Fortran </td>
             <td>4 (gdb, libiconf, python, zlib) </td>
         </tr>
