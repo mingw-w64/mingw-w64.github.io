@@ -187,15 +187,15 @@ binaries directly.
             <td>Package manager: work in progress (will offer > 2500 packages)</td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="4">
+            <td style="text-align:center;" rowspan="5">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
             <td colspan="2"> 18.04 Bionic Beaver </td>
             <td>7.3.0/5.0.3 </td>
-            <td rowspan="4">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
-            <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
+            <td rowspan="5">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="5">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2"> 20.04 Focal Fossa </td>
