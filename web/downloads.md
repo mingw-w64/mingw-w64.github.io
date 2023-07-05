@@ -210,6 +210,10 @@ binaries directly.
             <td>10.3.0/10.0.0 </td>
         </tr>
         <tr>
+            <td colspan="2"> 23.04 Lunar Lobster </td>
+            <td>12.2.0/10.0.0 </td>
+        </tr>
+        <tr>
         </tr>
     </tbody>
 </table>
