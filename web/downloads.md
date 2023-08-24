@@ -73,6 +73,10 @@ binaries directly.
             <td>10.2.1/8.0.0 </td>
         </tr>
         <tr>
+            <td colspan="2">Debian 12 (Bookworm) </td>
+            <td>12.0.0/10.0.0 </td>
+        </tr>
+        <tr>
             <td style="text-align:center;" rowspan="2">
                 <strong><a href="#fedora"><img
                             src="../logos/fedora-logo.png"
