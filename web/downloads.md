@@ -61,7 +61,7 @@ binaries directly.
             <td colspan="2">Debian 9 (Stretch) </td>
             <td>6.3.0/5.0.1 </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
-            <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
+            <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2">Debian 10 (Buster) </td>
