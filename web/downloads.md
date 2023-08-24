@@ -66,7 +66,7 @@ binaries directly.
         <tr>
             <td colspan="2">Debian 10 (Buster) </td>
             <td>8.3.0/6.0.0 </td>
-            <td rowspan="2">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
         </tr>
         <tr>
             <td colspan="2">Debian 11 (Bullseye) </td>
