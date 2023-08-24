@@ -53,7 +53,7 @@ binaries directly.
             <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="3">
+            <td style="text-align:center;" rowspan="4">
                 <strong><a href="#debian"><img src="../logos/debian-logo.png" title="Debian logo" alt="Debian logo" width="32"></a>
                 <br>
                 <a href="#debian">Debian</a></strong>
