@@ -418,5 +418,5 @@ Windows Vista.
 ### Store of binaries on SourceForge
 
 A very large number of other binaries and sources are hosted in the [File
-Release System on Sourceforge](http://sf.net/projects/mingw-w64/files/) which
+Release System on SourceForge](http://sf.net/projects/mingw-w64/files/) which
 might have what you are after.
