@@ -1032,16 +1032,18 @@ They are split into two categories: toolchains targeting
 or
 <a href="http://sf.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/">Win64</a>.</p>
 <h3 id="gcc-with-the-mcf-thread-model">GCC with the MCF thread model</h3>
-<p><a href="https://gcc-mcf.lhmouse.com/">GCC with the MCF thread model</a> is a series of x86
-and x64 native toolchains built by LH_Mouse. The MCF thread model involves the
-<a href="https://github.com/lhmouse/mcfgthread/">mcfgthread</a> library to provide minimum
-yet complete C++11 thread support. Disregarding POSIX or Windows XP
-compatibility, it implements (hopefully the most) efficient mutexes and
-condition variables that are competitive with even native slim reader/write
-(SRW) locks and condition variables since Windows Vista.</p>
+<p><a href="https://gcc-mcf.lhmouse.com/">GCC with the MCF thread model</a> is a series of
+x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
+merged into GCC 13, and can be enabled by passing <code>--enable-threads=mcf</code> to
+GCC's <em>configure</em> script. C++11 threading facilities, such as <code>std::thread</code>,
+<code>std::mutex</code>, <code>std::condition_variable</code>, <code>std::call_once</code>, <code>thread_local</code> etc.
+invoke the <a href="https://github.com/lhmouse/mcfgthread/">mcfgthread</a> library, which
+implements them on Windows syscalls in a more standard-compliant and more
+efficient way, outperforming even native slim reader/write locks (SRW) since
+Windows Vista.</p>
 <h3 id="store-of-binaries-on-sourceforge">Store of binaries on SourceForge</h3>
 <p>A very large number of other binaries and sources are hosted in the <a href="http://sf.net/projects/mingw-w64/files/">File
-Release System on Sourceforge</a> which
+Release System on SourceForge</a> which
 might have what you are after.</p>
 
 
