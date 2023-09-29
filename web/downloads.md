@@ -405,13 +405,15 @@ or
 
 ### GCC with the MCF thread model
 
-[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of x86
-and x64 native toolchains built by LH_Mouse. The MCF thread model involves the
-[mcfgthread](https://github.com/lhmouse/mcfgthread/) library to provide minimum
-yet complete C++11 thread support. Disregarding POSIX or Windows XP
-compatibility, it implements (hopefully the most) efficient mutexes and
-condition variables that are competitive with even native slim reader/write
-(SRW) locks and condition variables since Windows Vista.
+[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
+x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
+merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
+GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
+`std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
+invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
+implements them on Windows syscalls in a more standard-compliant and more
+efficient way, outperforming even native slim reader/write locks (SRW) since
+Windows Vista.
 
 ### Store of binaries on SourceForge
 
