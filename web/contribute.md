@@ -152,7 +152,7 @@ able to convert between them when needed will be useful.
 
 The C11 standard has a section on threading which is still left unimplemented on
 several platforms. The API follows pthreads' quite closely and it is left to the
-implementor to decide whether to base it on winpthreads or directly on the (>=
+implementer to decide whether to base it on winpthreads or directly on the (>=
 Vista) Win32 API.
 
 [The final C11 draft](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
