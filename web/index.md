@@ -95,7 +95,7 @@ forward. Contributions have been going to and coming from these projects:
 - [GNU SASL](http://www.gnu.org/software/gsasl/)
 - [GnuTLS](http://www.gnu.org/software/gnutls/)
 - [GraphicsMagick](http://www.graphicsmagick.org/)
-- [GTK+](http://www.gtk.org/download-windows-64bit.html)
+- [GTK+](https://www.gtk.org/docs/installations/windows)
 - [Hexen II: Hammer of Thyrion](http://uhexen2.sf.net/)
 - [iAuxSoft](http://www.iauxsoft.com/)
 - [ImageMagick](http://www.imagemagick.org/)
