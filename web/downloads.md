@@ -53,20 +53,15 @@ binaries directly.
             <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="4">
+            <td style="text-align:center;" rowspan="3">
                 <strong><a href="#debian"><img src="../logos/debian-logo.png" title="Debian logo" alt="Debian logo" width="32"></a>
                 <br>
                 <a href="#debian">Debian</a></strong>
             </td>
-            <td colspan="2">Debian 9 (Stretch) </td>
-            <td>6.3.0/5.0.1 </td>
-            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
-            <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
-        </tr>
-        <tr>
             <td colspan="2">Debian 10 (Buster) </td>
             <td>8.3.0/6.0.0 </td>
             <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2">Debian 11 (Bullseye) </td>
@@ -191,19 +186,15 @@ binaries directly.
             <td>Package manager: work in progress (will offer > 2500 packages)</td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="5">
+            <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
-            <td colspan="2"> 18.04 Bionic Beaver </td>
-            <td>7.3.0/5.0.3 </td>
-            <td rowspan="5">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
-            <td rowspan="5">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
-        </tr>
-        <tr>
             <td colspan="2"> 20.04 Focal Fossa </td>
             <td>9.3.0/7.0.0 </td>
+            <td rowspan="4">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
             <td colspan="2"> 22.04 Jammy Jellyfish </td>
