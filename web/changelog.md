@@ -1,5 +1,13 @@
 # Changelog
 
+## v6.0.1: [2023-10-30](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v6.0.1)
+
+- [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v6.0.0...v6.0.1)
+
+## v5.0.5: [2023-10-30](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v5.0.5)
+
+- [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v5.0.4...v5.0.5)
+
 ## v11.0.1: [2023-04-29](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v11.0.1)
 
 - Fixes for w32api/Cygwin
