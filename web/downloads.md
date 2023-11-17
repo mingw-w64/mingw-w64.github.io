@@ -414,9 +414,3 @@ invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
 implements them on Windows syscalls in a more standard-compliant and more
 efficient way, outperforming even native slim reader/write locks (SRW) since
 Windows Vista.
-
-### Store of binaries on SourceForge
-
-A very large number of other binaries and sources are hosted in the [File
-Release System on SourceForge](http://sf.net/projects/mingw-w64/files/) which
-might have what you are after.
