@@ -31,10 +31,10 @@ binaries directly.
             </td>
             <td colspan="2">Arch Linux </td>
             <td>
-                <a href="https://archlinux.org/packages/community/x86_64/mingw-w64-gcc/" class="urlextern"
-                    title="https://archlinux.org/packages/community/x86_64/mingw-w64-gcc/" rel="nofollow">12.2.0</a>/<a
-                    href="https://archlinux.org/packages/community/any/mingw-w64-crt/" class="urlextern"
-                    title="https://archlinux.org/packages/community/any/mingw-w64-crt/" rel="nofollow">10.0.0</a>
+                <a href="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" class="urlextern"
+                    title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">12.2.0</a>/<a
+                    href="https://archlinux.org/packages/extra/any/mingw-w64-crt/" class="urlextern"
+                    title="https://archlinux.org/packages/extra/any/mingw-w64-crt/" rel="nofollow">10.0.0</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td><a href="https://aur.archlinux.org/packages/?K=mingw-w64">many</a></td>
@@ -217,7 +217,7 @@ binaries directly.
 
 Installation:
 
-* [Community repository (toolchain)](https://www.archlinux.org/packages/?q=mingw-w64)
+* [Extra repository (toolchain)](https://www.archlinux.org/packages/?q=mingw-w64)
 * [AUR repository (additional packages)](https://aur.archlinux.org/packages/?SeB=n&K=mingw-w64&SB=c&PP=250)
 
 #### Ubuntu
