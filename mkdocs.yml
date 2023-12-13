@@ -7,6 +7,10 @@ theme:
     name: material
     favicon: logo.svg
     palette:
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
       - scheme: default
         media: "(prefers-color-scheme: light)"
         toggle:
