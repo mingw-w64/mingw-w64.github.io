@@ -1,5 +1,30 @@
 # Changelog
 
+## v12.0.0: [2024-05-29](https://sourceforge.net/p/mingw-w64/mailman/message/58776404/)
+
+**Important:** UCRT is now the default CRT runtime instead of MSVCRT, check the
+[mingw-w64-doc/howto-build/ucrt-vs-msvcrt.txt](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/mingw-w64-doc/howto-build/ucrt-vs-msvcrt.txt)
+document for details. Both header set and CRT must be configured and built with
+the same settings consistently for proper functionality. Switching runtimes
+requires all libraries to be rebuilt, including GCC.
+
+Notable changes:
+
+- C++ overloads for `_strdate_s` and `_strtime_s`, `_makepath_s`, `wcsncat_s`.
+- gdtoa updated against [netlib.org](https://netlib.org/), up to January 2023.
+- genlib tool removed in favor of llvm-dlltool, created by the same author.
+- Make it possible to use winpthreads with MSVC.
+- Updated wine header imports.
+- Many other new win32 APIs.
+
+And many other additions thanks to, but not limited to (in Alphabetical order):
+
+Antonin Décimo, Bernhard Übelacker, Biswapriyo Nath, Christian Franke, Dustin
+Gadal, Jacek Caban, Jameson Nash, Jøger Hansegård, Jonathan Schleifer, Kacper
+Michajłow, LIU Hao, Mark Harmstone, Martin Storsjö, Mateusz Mikuła, Nikolay
+Sivov, Oleg Tolmatcev, Ozkan Sezer, Pali Rohár, Pavel Shishpor, Richard Copley,
+Steve Lhomme
+
 ## v6.0.1: [2023-10-30](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v6.0.1)
 
 - [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v6.0.0...v6.0.1)
