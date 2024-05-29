@@ -16,6 +16,7 @@ Notable changes:
 - Make it possible to use winpthreads with MSVC.
 - Updated wine header imports.
 - Many other new win32 APIs.
+- UCRT configurations now primarily use (faster) math functions from UCRT, rather than libmingwex
 
 And many other additions thanks to, but not limited to (in Alphabetical order):
 
