@@ -327,6 +327,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v1200-2024-05-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      v12.0.0: 2024-05-29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v601-2023-10-30" class="md-nav__link">
     <span class="md-ellipsis">
       v6.0.1: 2023-10-30
@@ -594,6 +603,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v1200-2024-05-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      v12.0.0: 2024-05-29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v601-2023-10-30" class="md-nav__link">
     <span class="md-ellipsis">
       v6.0.1: 2023-10-30
@@ -770,6 +788,27 @@
 
 
 <h1 id="changelog">Changelog</h1>
+<h2 id="v1200-2024-05-29">v12.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/58776404/">2024-05-29</a></h2>
+<p><strong>Important:</strong> UCRT is now the default CRT runtime instead of MSVCRT, check the
+<a href="https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/mingw-w64-doc/howto-build/ucrt-vs-msvcrt.txt">mingw-w64-doc/howto-build/ucrt-vs-msvcrt.txt</a>
+document for details. Both header set and CRT must be configured and built with
+the same settings consistently for proper functionality. Switching runtimes
+requires all libraries to be rebuilt, including GCC.</p>
+<p>Notable changes:</p>
+<ul>
+<li>C++ overloads for <code>_strdate_s</code> and <code>_strtime_s</code>, <code>_makepath_s</code>, <code>wcsncat_s</code>.</li>
+<li>gdtoa updated against <a href="https://netlib.org/">netlib.org</a>, up to January 2023.</li>
+<li>genlib tool removed in favor of llvm-dlltool, created by the same author.</li>
+<li>Make it possible to use winpthreads with MSVC.</li>
+<li>Updated wine header imports.</li>
+<li>Many other new win32 APIs.</li>
+</ul>
+<p>And many other additions thanks to, but not limited to (in Alphabetical order):</p>
+<p>Antonin Décimo, Bernhard Übelacker, Biswapriyo Nath, Christian Franke, Dustin
+Gadal, Jacek Caban, Jameson Nash, Jøger Hansegård, Jonathan Schleifer, Kacper
+Michajłow, LIU Hao, Mark Harmstone, Martin Storsjö, Mateusz Mikuła, Nikolay
+Sivov, Oleg Tolmatcev, Ozkan Sezer, Pali Rohár, Pavel Shishpor, Richard Copley,
+Steve Lhomme</p>
 <h2 id="v601-2023-10-30">v6.0.1: <a href="https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v6.0.1">2023-10-30</a></h2>
 <ul>
 <li><a href="https://github.com/mingw-w64/mingw-w64/compare/v6.0.0...v6.0.1">Various backports</a></li>
