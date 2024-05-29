@@ -91,9 +91,9 @@ binaries directly.
             <td style="text-align:center;">
                 <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
             </td>
-            <td>20220906</td>
-            <td>Windows, Linux</td>
-            <td>LLVM 15.0.0/trunk</td>
+            <td>20240518</td>
+            <td>Windows, Linux, macOS</td>
+            <td>LLVM 18.1.6/trunk</td>
             <td>C, C++</td>
             <td>make, Python</td>
         </tr>
