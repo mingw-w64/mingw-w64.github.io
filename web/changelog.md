@@ -1,5 +1,11 @@
 # Changelog
 
+The releases are sorted by date, with the most recent release at the top.
+
+## v8.0.3: [2024-06-05](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v8.0.3)
+
+- [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v8.0.2...v8.0.3)
+
 ## v12.0.0: [2024-05-29](https://sourceforge.net/p/mingw-w64/mailman/message/58776404/)
 
 **Important:** UCRT is now the default CRT runtime instead of MSVCRT, check the
@@ -109,6 +115,14 @@ Alex Henrie, Andrew Eikum, Biswapriyo Nath, Christian Franke, Christoph
 Reiter, DAVID MAY, Jacek Caban, Jeremy Drake, Jonathan Yong, Liu Hao, Mark
 Harmstone, Martin Storsjö, Mateusz Mikuła, Nikolay Sivov, Ozkan Sezer, Pierre
 Lamot, Rafał Harabień, Scr3amer, Steve Lhomme
+
+## v8.0.2: [2021-05-09](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v8.0.2)
+
+- [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v8.0.1...v8.0.2)
+
+## v8.0.1: [2021-05-09](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v8.0.1)
+
+- [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v8.0.0...v8.0.1)
 
 ## v8.0.0: [2020-09-18](https://sourceforge.net/p/mingw-w64/mailman/message/37111166/)
 
