@@ -323,18 +323,20 @@ just extract the archive and start using the programs in `mingw32\bin` or  `ming
 This allows for a relocatable compiler suite and allows having multiple versions on the same system.
 
 Also contains other tools including:
- * GDB - the GNU Project debugger
- * GNU Binutils - a collection of binary tools
- * GNU Make - a tool which controls the generation of executables and other non-source files
- * Yasm - The Yasm Modular Assembler Project
- * NASM - The Netwide Assembler
- * JWasm - A free MASM-compatible assembler
+
+* GDB - the GNU Project debugger
+* GNU Binutils - a collection of binary tools
+* GNU Make - a tool which controls the generation of executables and other non-source files
+* Yasm - The Yasm Modular Assembler Project
+* NASM - The Netwide Assembler
+* JWasm - A free MASM-compatible assembler
 
 Flavors:
- * separate packages for 32-bit (i686) and 64-bit (x86_64) Windows
- * separate packages for MSVCRT and UCRT builds
- * only POSIX threads builds (which also include Win32 API thread functions)
- * exception model: Dwarf for 32-bit (i686) and SEH for 64-bit (x86_64)
+
+* separate packages for 32-bit (i686) and 64-bit (x86_64) Windows
+* separate packages for MSVCRT and UCRT builds
+* only POSIX threads builds (which also include Win32 API thread functions)
+* exception model: Dwarf for 32-bit (i686) and SEH for 64-bit (x86_64)
 
 Installation: Download from [winlibs.com](https://winlibs.com/) and extract archive (no installation needed).
 
