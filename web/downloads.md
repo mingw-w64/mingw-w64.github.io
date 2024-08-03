@@ -101,9 +101,9 @@ binaries directly.
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>1.23.0</td>
+            <td>2.0.0</td>
             <td>Windows</td>
-            <td>14.1.0/11.0.1</td>
+            <td>14.2.0/12.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
                 8
