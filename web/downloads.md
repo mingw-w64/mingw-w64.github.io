@@ -99,26 +99,6 @@ binaries directly.
         </tr>
         <tr>
             <td style="text-align:center;">
-                <strong><a href="#w64devkit">w64devkit</a></strong>
-            </td>
-            <td>2.0.0</td>
-            <td>Windows</td>
-            <td>14.2.0/12.0.0</td>
-            <td>C, C++, Fortran</td>
-            <td>
-                8
-                (busybox,
-                cppcheck,
-                ctags,
-                gdb,
-                make,
-                nasm,
-                pkg-config,
-                vim)
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align:center;">
                 <strong><a href="#macports"><img
                             src="../logos/macports-logo.png"
                             title="MacPorts logo" alt="MacPorts logo" width="32"></a><br><a
@@ -142,7 +122,7 @@ binaries directly.
         </tr>
         <tr>
             <td style="text-align:center;">
-                <strong><a href="#mingw-builds">MingW-W64-builds</a></strong>
+                <strong><a href="#mingw-builds">MinGW-W64-builds</a></strong>
             </td>
             <td>Rolling </td>
             <td>Windows</td>
@@ -172,20 +152,6 @@ binaries directly.
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
-            <td style="text-align:center;">
-                <strong><a href="#winlibscom">WinLibs.com</a></strong>
-            </td>
-            <td>Rolling </td>
-            <td>Windows</td>
-            <td>
-                <a href="https://winlibs.com/#download-release" class="urlextern"
-                    title="https://winlibs.com/"
-                    rel="nofollow">13.2.0</a>
-            </td>
-            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
-            <td>Package manager: work in progress (will offer > 2500 packages)</td>
-        </tr>
-        <tr>
             <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
@@ -208,6 +174,40 @@ binaries directly.
             <td colspan="2"> 23.04 Lunar Lobster </td>
             <td>12.2.0/10.0.0 </td>
         </tr>
+        <tr>
+            <td style="text-align:center;">
+                <strong><a href="#w64devkit">w64devkit</a></strong>
+            </td>
+            <td>2.0.0</td>
+            <td>Windows</td>
+            <td>14.2.0/12.0.0</td>
+            <td>C, C++, Fortran</td>
+            <td>
+                8
+                (busybox,
+                cppcheck,
+                ctags,
+                gdb,
+                make,
+                nasm,
+                pkg-config,
+                vim)
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
+                <strong><a href="#winlibscom">WinLibs.com</a></strong>
+            </td>
+            <td>Rolling </td>
+            <td>Windows</td>
+            <td>
+                <a href="https://winlibs.com/#download-release" class="urlextern"
+                    title="https://winlibs.com/"
+                    rel="nofollow">13.2.0</a>
+            </td>
+            <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
+            <td>Package manager: work in progress (will offer > 2500 packages)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -217,12 +217,6 @@ Installation:
 
 * [Extra repository (toolchain)](https://www.archlinux.org/packages/?q=mingw-w64)
 * [AUR repository (additional packages)](https://aur.archlinux.org/packages/?SeB=n&K=mingw-w64&SB=c&PP=250)
-
-#### Ubuntu
-
-Installation: through integrated package manager.
-
-[Mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64)
 
 #### Cygwin
 
@@ -262,6 +256,37 @@ info in PDB format.
 
 Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
 
+#### MacPorts
+
+To install just the 32-bit or just 64-bit compiler with dependencies, use:
+
+```
+sudo port install i686-w64-mingw32-gcc
+sudo port install x86_64-w64-mingw32-gcc
+```
+
+A shortcut to install both:
+
+```
+sudo port install mingw-w64
+```
+
+Here is the list of [Mingw-w64 packages on MacPorts](https://www.macports.org/ports.php?by=name&substr=mingw).
+
+#### MinGW-W64-builds
+
+Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
+
+#### MSYS2
+
+Installation: [GitHub](http://msys2.github.io/)
+
+#### Ubuntu
+
+Installation: through integrated package manager.
+
+[Mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64)
+
 #### w64devkit
 
 [w64devkit][w64devkit] is a portable C and C++ development kit for x64 (and x86) Windows.
@@ -291,27 +316,6 @@ Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 [vim]: https://www.vim.org/
 [w64devkit]: https://github.com/skeeto/w64devkit
 
-#### MacPorts
-
-To install just the 32-bit or just 64-bit compiler with dependencies, use:
-
-```
-sudo port install i686-w64-mingw32-gcc
-sudo port install x86_64-w64-mingw32-gcc
-```
-
-A shortcut to install both:
-
-```
-sudo port install mingw-w64
-```
-
-Here is the list of [Mingw-w64 packages on MacPorts](https://www.macports.org/ports.php?by=name&substr=mingw).
-
-#### Mingw-builds
-
-Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
-
 #### WinLibs.com
 
 Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.
@@ -337,11 +341,6 @@ Flavors:
 * exception model: Dwarf for 32-bit (i686) and SEH for 64-bit (x86_64)
 
 Installation: Download from [winlibs.com](https://winlibs.com/) and extract archive (no installation needed).
-
-#### MSYS2
-
-Installation: [GitHub](http://msys2.github.io/)
-
 
 ## Sources
 
@@ -380,6 +379,18 @@ The existing Darwin binaries have been built through buildbot in 2013 and links
 to them can be found on the [dedicated
 page](http://mingw-w64.org/doku.php/download/darwin).
 
+### GCC with the MCF thread model
+
+[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
+x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
+merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
+GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
+`std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
+invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
+implements them on Windows syscalls in a more standard-compliant and more
+efficient way, outperforming even native slim reader/write locks (SRW) since
+Windows Vista.
+
 ### OpenSUSE
 
 The [OpenSUSE Linux
@@ -393,15 +404,3 @@ They are split into two categories: toolchains targeting
 [Win32](http://sf.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/rubenvb/)
 or
 [Win64](http://sf.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/).
-
-### GCC with the MCF thread model
-
-[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
-x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
-merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
-GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
-`std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
-invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
-implements them on Windows syscalls in a more standard-compliant and more
-efficient way, outperforming even native slim reader/write locks (SRW) since
-Windows Vista.
