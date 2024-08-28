@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@fontsource/roboto": "^4.5.2",
-    "@fontsource/roboto-mono": "^4.5.1"
+    "@fontsource/roboto": "^5.0.14",
+    "@fontsource/roboto-mono": "^5.0.19"
   }
 }

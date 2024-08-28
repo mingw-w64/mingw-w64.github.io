@@ -3,9 +3,10 @@ name = "mingw-w64.org"
 version = "1.0"
 description = ""
 authors = ["Christoph Reiter <reiter.christoph@gmail.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 mkdocs = "^1.5"
 mkdocs-material = "^9.5"
 

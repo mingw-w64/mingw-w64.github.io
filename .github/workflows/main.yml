@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: .github/workflows/main.yml
 
       - name: Install codespell and poetry
-        run: python3 -m pip install --upgrade codespell poetry==1.6.1
+        run: python3 -m pip install --upgrade codespell poetry==1.8.3
 
       - name: Find typos with codespell
         run: codespell --ignore-words-list=seh
