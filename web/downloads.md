@@ -142,7 +142,7 @@ binaries directly.
             <td>
                 <a href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD" class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD"
-                    rel="nofollow">14.1.0</a>/<a
+                    rel="nofollow">14.2.0</a>/<a
                     href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
                     class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
