@@ -122,7 +122,7 @@ binaries directly.
         </tr>
         <tr>
             <td style="text-align:center;">
-                <strong><a href="#mingw-builds">MinGW-W64-builds</a></strong>
+                <strong><a href="#mingw-w64-builds">MinGW-W64-builds</a></strong>
             </td>
             <td>Rolling </td>
             <td>Windows</td>
