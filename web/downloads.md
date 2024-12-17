@@ -32,9 +32,9 @@ binaries directly.
             <td colspan="2">Arch Linux </td>
             <td>
                 <a href="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" class="urlextern"
-                    title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">13.1.0</a>/<a
+                    title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">14.2.0</a>/<a
                     href="https://archlinux.org/packages/extra/any/mingw-w64-crt/" class="urlextern"
-                    title="https://archlinux.org/packages/extra/any/mingw-w64-crt/" rel="nofollow">11.0.0</a>
+                    title="https://archlinux.org/packages/extra/any/mingw-w64-crt/" rel="nofollow">12.0.0</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td><a href="https://aur.archlinux.org/packages/?K=mingw-w64">many</a></td>
@@ -111,11 +111,11 @@ binaries directly.
                 <a href="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
-                    rel="nofollow">13.2.0</a>/<a
+                    rel="nofollow">14.2.0</a>/<a
                     href="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
-                    rel="nofollow">11.0.1</a>
+                    rel="nofollow">12.0.0</a>
             </td>
             <td>C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td>1 (nsis)</td>
