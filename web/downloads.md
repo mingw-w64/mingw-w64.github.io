@@ -390,11 +390,3 @@ Windows Vista.
 The [OpenSUSE Linux
 distribution](http://mingw-w64.sourceforge.net/www.opensuse.org) also has a
 large and well-maintained set of packages for cross-compilation.
-
-### Rubenvb
-
-Rubenvb has built a number of toolchains including some for less common setups.
-They are split into two categories: toolchains targeting
-[Win32](http://sf.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/rubenvb/)
-or
-[Win64](http://sf.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/).
