@@ -39,18 +39,18 @@ forward. Contributions have been going to and coming from these projects:
 <table>
 <tr>
 <td style="text-align: center">
-    <a href="http://cygwin.com" class="media" title="http://cygwin.com"><img src="./logos/cygwin-logo.png" title="Cygwin" width="64" height="64" alt="Cygwin" />
+    <a href="https://cygwin.com" class="media" title="https://cygwin.com"><img src="./logos/cygwin-logo.png" title="Cygwin" width="64" height="64" alt="Cygwin" />
     <br>Cygwin
     </a>
 </td>
 <td style="text-align: center">
-    <a href="http://reactos.com" class="media" title="http://reactos.com"><img src="./logos/reactos-logo.png" title="ReactOS" width="116" height="64" alt="ReactOS" />
+    <a href="https://reactos.org/" class="media" title="https://reactos.org/"><img src="./logos/reactos-logo.png" title="ReactOS" width="116" height="64" alt="ReactOS" />
     <br>
     ReactOS
     </a>
 </td>
 <td style="text-align: center">
-    <a href="http://winehq.org" class="media" title="http://winehq.org"><img src="./logos/wine-logo.png" title="Wine" width="40" height="64" alt="Wine" />
+    <a href="https://winehq.org" class="media" title="https://winehq.org"><img src="./logos/wine-logo.png" title="Wine" width="40" height="64" alt="Wine" />
     <br>
     Wine
     </a>
