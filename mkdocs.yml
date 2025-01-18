@@ -65,7 +65,9 @@ markdown_extensions:
 nav:
   - 'Introduction': index.md
   - changelog.md
-  - downloads.md
+  - Downloads:
+    - downloads.md
+    - source.md
   - Getting Started:
     - getting-started/debian.md
     - getting-started/archlinux.md
