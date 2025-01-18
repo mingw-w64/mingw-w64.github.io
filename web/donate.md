@@ -17,8 +17,7 @@ benefit from the improvements.
 
 More than through money, the best way to help the project is to invest man-time
 in it. The list of tasks on the [page about
-contributing](http://mingw-w64.sourceforge.net/contribute.php
-"http://mingw-w64.sourceforge.net/contribute.php") is the best place to start
+contributing](./contribute.md) is the best place to start
 and if you are an employer with trainees, several of these tasks will make good
 internship.
 

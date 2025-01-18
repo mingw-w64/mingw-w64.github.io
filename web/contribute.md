@@ -11,7 +11,7 @@ wish-lists of users.
 
 In order to avoid duplicate efforts, if you take on one of these tasks, please
 mention it on the
-[mailing-list](http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
+[mailing-list](https://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
 
 The tasks below have been split enough to be simple and fairly well-contained
 while still being useful on their own. Most could be internship topics.
@@ -25,11 +25,11 @@ Mingw-w64 is constantly looking for updates to its win32 API headers from [MSDN
 Library](https://msdn.microsoft.com/en-us/library/). If you believe you have
 found an API that is not available in Mingw-w64 but is documented as part of
 MSDN or a mistake in Mingw-w64, please do not hesitate to contact us through the
-[mailing-list](http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
+[mailing-list](https://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
 
 For patch submissions, please remember to use sign-off your git commits before
 submitting the patches to the
-[mailing-list](http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
+[mailing-list](https://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
 Both git send-email and git format-patch forms are allowed. From past
 experiences however, if you do use an email client to attach individual patches,
 please use the .txt extension, especially for Google Mail users so the patch
@@ -47,14 +47,14 @@ Microsoft's support for 32bits.
 Note that you will need FSF paperwork since the work has to be done
 inside GCC. Check CC's page on contributing.
 
-- [The now-expired patent on SEH](http://www.google.com/patents/US5628016)
-- [A Crash Course on the Depths of Win32™ Structured Exception Handling](http://www.microsoft.com/msj/0197/exception/exception.aspx)
-- [Win32 Exceptions – OS Level Point of View](http://www.codeproject.com/Articles/82701/Win-Exceptions-OS-Level-Point-of-View)
-- [How a C++ compiler implements exception handling](http://www.codeproject.com/Articles/2126/How-a-C-compiler-implements-exception-handling)
-- [Structured Exception Handling Basics](http://www.gamedev.net/page/resources/_/technical/general-programming/structured-exception-handling-basics-r1272)
-- [Windows' SEH and C++ Exception Handling](http://www.gamedev.net/page/resources/_/technical/general-programming/windows-seh-and-c-exception-handling-r1291)
+- [The now-expired patent on SEH](https://www.google.com/patents/US5628016)
+- [A Crash Course on the Depths of Win32™ Structured Exception Handling](https://www.microsoft.com/msj/0197/exception/exception.aspx)
+- [Win32 Exceptions – OS Level Point of View](https://www.codeproject.com/Articles/82701/Win-Exceptions-OS-Level-Point-of-View)
+- [How a C++ compiler implements exception handling](https://www.codeproject.com/Articles/2126/How-a-C-compiler-implements-exception-handling)
+- [Structured Exception Handling Basics](https://www.gamedev.net/page/resources/_/technical/general-programming/structured-exception-handling-basics-r1272)
+- [Windows' SEH and C++ Exception Handling](https://www.gamedev.net/page/resources/_/technical/general-programming/windows-seh-and-c-exception-handling-r1291)
 - [Structured Exception Handling Considered Harmful](http://blogs.msdn.com/b/larryosterman/archive/2004/09/10/228068.aspx)
-- [SEH and C++ Exceptions - catch all in one](http://www.codeproject.com/Articles/422/SEH-and-C-Exceptions-catch-all-in-one)
+- [SEH and C++ Exceptions - catch all in one](https://www.codeproject.com/Articles/422/SEH-and-C-Exceptions-catch-all-in-one)
 - [GCC sources](https://gcc.gnu.org/git/?p=gcc.git) and
   [unwind-seh.c](https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=libgcc/unwind-seh.c;hb=HEAD)
   in particular. Note that 32-bit SEH is stack-based and requires
@@ -129,7 +129,7 @@ has appeared, mostly out of Microsoft.
   It is difficult to say without further analysis.
 
 - Microsoft has also released [CCI Metadata](http://ccimetadata.codeplex.com/)
-  under the [MS-PL](http://opensource.org/licenses/ms-pl.html). It contains [PDB
+  under the [MS-PL](https://opensource.org/licenses/ms-pl.html). It contains [PDB
   reader
   implementation](http://ccimetadata.codeplex.com/SourceControl/latest#Sources/PdbReader/)
   that should constitute an appropriate source.
@@ -158,7 +158,7 @@ several platforms. The API follows pthreads' quite closely and it is left to the
 implementer to decide whether to base it on winpthreads or directly on the (>=
 Vista) Win32 API.
 
-[The final C11 draft](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+[The final C11 draft](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
 is identical to the standard but is available freely.
 
 Note that you will need FSF paperwork since the work has to be done inside GCC.

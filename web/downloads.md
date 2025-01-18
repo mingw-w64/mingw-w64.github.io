@@ -226,7 +226,7 @@ environment which targets Windows directly and for which output doesn't depend
 on cygwin1.dll.
 
 Installation is done through cygwin's package manager:
-[setup.exe](http://cygwin.com/install.html).
+[setup.exe](https://cygwin.com/install.html).
 
 As part of the numerous packages in cygwin, there are cross-compilation
 toolchains which target both 32 bits and 64 bits; their names start with
@@ -278,7 +278,7 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
-Installation: [GitHub](http://msys2.github.io/)
+Installation: [GitHub](https://www.msys2.org/)
 
 #### Ubuntu
 
@@ -357,6 +357,5 @@ Windows Vista.
 
 ### OpenSUSE
 
-The [OpenSUSE Linux
-distribution](http://mingw-w64.sourceforge.net/www.opensuse.org) also has a
-large and well-maintained set of packages for cross-compilation.
+The [OpenSUSE Linux distribution](https://www.opensuse.org) also has a large and
+well-maintained set of packages for cross-compilation.

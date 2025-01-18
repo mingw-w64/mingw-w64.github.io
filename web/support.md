@@ -2,10 +2,10 @@
 
 Mingw-w64 has several active support channels.
 
-- [Mailing-List](http://lists.sourceforge.net/mailman/listinfo/mingw-w64-public)
+- [Mailing-List](https://lists.sourceforge.net/mailman/listinfo/mingw-w64-public)
 - [#mingw-w64 IRC channel on irc.oftc.net](irc://irc.oftc.net/#mingw-w64)
-- [Discussion Forum](http://sourceforge.net/p/mingw-w64/discussion/)
-- [Issue Tracker](http://sourceforge.net/p/mingw-w64/_list/tickets)
+- [Discussion Forum](https://sourceforge.net/p/mingw-w64/discussion/)
+- [Issue Tracker](https://sourceforge.net/p/mingw-w64/_list/tickets)
 
 ## Licensing
 

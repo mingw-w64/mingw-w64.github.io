@@ -3,7 +3,7 @@
 ## Release Tarballs
 
 Tarballs for the mingw-w64 sources are hosted on
-[SourceForge](http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/).
+[SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/).
 
 Latest version by series:
 
@@ -17,9 +17,9 @@ Latest version by series:
 * **[5.0.5](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.5.tar.bz2/download)** (5.x)
 
 The old wiki has instructions for building
-[native](http://sourceforge.net/p/mingw-w64/wiki2/Native%20Win64%20compiler/)
+[native](https://sourceforge.net/p/mingw-w64/wiki2/Native%20Win64%20compiler/)
 and
-[cross](http://sourceforge.net/p/mingw-w64/wiki2/Cross%20Win32%20and%20Win64%20compiler/)
+[cross](https://sourceforge.net/p/mingw-w64/wiki2/Cross%20Win32%20and%20Win64%20compiler/)
 toolchains.
 
 ## Git Repository
