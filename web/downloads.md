@@ -373,12 +373,6 @@ available on
 
 ## Unsorted complementary list
 
-### Darwin/Mac OS X
-
-The existing Darwin binaries have been built through buildbot in 2013 and links
-to them can be found on the [dedicated
-page](http://mingw-w64.org/doku.php/download/darwin).
-
 ### GCC with the MCF thread model
 
 [GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
