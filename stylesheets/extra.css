@@ -39,3 +39,9 @@
 .md-header__title {
     margin-left: 0;
 }
+
+/* make the console prompt not selectable */
+.highlight .gp {
+    opacity: 0.75;
+    user-select: none;
+}
