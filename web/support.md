@@ -1,4 +1,4 @@
-# Support
+# Support & Contact
 
 Mingw-w64 has several active support channels.
 
