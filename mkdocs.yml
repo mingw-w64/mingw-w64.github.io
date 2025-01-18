@@ -72,7 +72,7 @@ nav:
     - getting-started/msys2.md
   - Build Systems:
     - build-systems/meson.md
-  - contribute.md
   - support.md
-  - donate.md
-
+  - Old Pages:
+    - contribute.md
+    - donate.md

@@ -1,5 +1,8 @@
 # Contribute
 
+!!! warning
+    The information on this page is outdated and needs to be updated.
+
 Mingw-w64 and the ecosystem surrounding it are stable and with many features.
 There are however some topics for which developer-time has been scarce. This
 page lists tasks that are relatively simple and can be worked on without the

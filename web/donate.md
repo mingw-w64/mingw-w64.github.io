@@ -1,5 +1,8 @@
 # Donate
 
+!!! warning
+    The information on this page is outdated and needs to be updated.
+
 Mingw-w64 is almost entirely made by volunteer. Only two employees are paid to
 contribute to mingw-w64 and even then it's not full-time: we estimate the paid
 time spent on the project matches 0.5-employee. All other contributions are done
