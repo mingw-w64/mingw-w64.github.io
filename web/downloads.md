@@ -1,12 +1,11 @@
-# Pre-built toolchains
+# Pre-built Toolchains
 
-The heart of the Mingw-w64 project is headers and support libraries to
-run the output of GCC on Windows. Since Mingw-w64 is neither the home of
-GCC nor of binutils, several sets of installation packages which combine
-them are available.
-
-In addition, the sources are available but most people will want to grab
-binaries directly.
+While Mingw-w64 provides the core Windows headers and libraries needed for
+Windows development, it's not very useful on its own. Most users should install
+a pre-built toolchain that combines Mingw-w64 with a compiler (like GCC with
+binutils, or LLVM/Clang) and other essential build components. These
+distributions package everything needed to compile programs for Windows and are
+much easier to set up than building from source.
 
 ## Pre-built toolchains and packages
 
