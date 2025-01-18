@@ -7,31 +7,37 @@
 
 # 
 
-Mingw-w64 is an advancement of the original mingw.org project, created to
-support the GCC compiler on Windows systems. It has forked it in 2007 in order
-to provide support for 64 bits and new APIs. It has since then gained widespread
-use and distribution.
+Mingw-w64 is a collection of header files, import libraries, libraries and tools
+that, when combined with a compiler toolchain, such as GCC or LLVM, provides a
+complete development environment for building native Windows applications and
+libraries.
 
-The development and community are very active and welcoming with new
-contributors every month and simple installers.
+Mingw-w64 is an advancement of the original mingw.org project, which was created
+to support the GCC compiler on Windows systems. It was forked in 2007 in order
+to provide 64-bit support and newer APIs. It has since then gained wide use and
+distribution.
 
-## Headers, Libraries and Runtime
+**Headers and Libraries:**
 
 - More than a million lines of headers are provided, not counting generated ones,
   and regularly expanded to track new Windows APIs.
 - Everything needed for linking and running your code on Windows.
-- Winpthreads, a pthreads library for C++11 threading support and simple
-  integration with existing project.
-- Winstorecompat, a work-in-progress convenience library that eases conformance with the Windows Store.
 - Better-conforming and faster math support compared to VisualStudio's.
 
-## Tools
+**Runtime Libraries:**
+
+- Winpthreads, a pthreads library for C++11 threading support and simple
+  integration with existing project.
+- Winstorecompat, a work-in-progress convenience library that eases conformance
+  with the Windows Store.
+
+**Tools:**
 
 - gendef: generate Visual Studio .def files from .dll files.
 - genidl: generate .idl files from .dll files.
 - widl: compile .idl files.
 
-## Friend projects
+## Project Collaborations
 
 Mingw-w64 interacts a lot with other projects in order to help everyone move
 forward. Contributions have been going to and coming from these projects:
