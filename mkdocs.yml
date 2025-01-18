@@ -70,6 +70,8 @@ nav:
     - getting-started/debian.md
     - getting-started/archlinux.md
     - getting-started/msys2.md
+  - Build Systems:
+    - build-systems/meson.md
   - contribute.md
   - support.md
   - donate.md
