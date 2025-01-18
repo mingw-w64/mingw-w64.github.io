@@ -63,9 +63,13 @@ markdown_extensions:
     - pymdownx.tilde
 
 nav:
-  - 'Overview': index.md
+  - 'Introduction': index.md
   - changelog.md
   - downloads.md
+  - Getting Started:
+    - getting-started/debian.md
+    - getting-started/archlinux.md
+    - getting-started/msys2.md
   - contribute.md
   - support.md
   - donate.md
