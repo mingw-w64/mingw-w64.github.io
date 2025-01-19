@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="GCC for Windows 64 & 32 bits">
+        <meta name="description" content="A complete runtime environment for GCC & LLVM for 32-bit (x86), 64-bit (x64), and ARM64 Windows">
       
       
       
@@ -24,7 +24,7 @@
     
     
       
-        <title>Pre-built Toolchains - MinGW-w64</title>
+        <title>Pre-built Toolchains - mingw-w64</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MinGW-w64" class="md-header__button md-logo" aria-label="MinGW-w64" data-md-component="logo">
+    <a href=".." title="mingw-w64" class="md-header__button md-logo" aria-label="mingw-w64" data-md-component="logo">
       
   <img src="../logo.svg" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            MinGW-w64
+            mingw-w64
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -232,12 +232,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MinGW-w64" class="md-nav__button md-logo" aria-label="MinGW-w64" data-md-component="logo">
+    <a href=".." title="mingw-w64" class="md-nav__button md-logo" aria-label="mingw-w64" data-md-component="logo">
       
   <img src="../logo.svg" alt="logo">
 
     </a>
-    MinGW-w64
+    mingw-w64
   </label>
   
     <div class="md-nav__source">
@@ -1036,9 +1036,9 @@
 
 
 <h1 id="pre-built-toolchains">Pre-built Toolchains</h1>
-<p>While Mingw-w64 provides the core Windows headers and libraries needed for
+<p>While mingw-w64 provides the core Windows headers and libraries needed for
 Windows development, it's not very useful on its own. Most users should install
-a pre-built toolchain that combines Mingw-w64 with a compiler (like GCC with
+a pre-built toolchain that combines mingw-w64 with a compiler (like GCC with
 binutils, or LLVM/Clang) and other essential build components. These
 distributions package everything needed to compile programs for Windows and are
 much easier to set up than building from source.</p>
@@ -1050,7 +1050,7 @@ much easier to set up than building from source.</p>
             </th>
             <th>Version </th>
             <th>Host </th>
-            <th>GCC / Mingw-w64 Version </th>
+            <th>GCC / mingw-w64 Version </th>
             <th>Languages </th>
             <th>Additional Software in Package Manager </th>
         </tr>
@@ -1265,7 +1265,7 @@ toolchains which target both 32 bits and 64 bits; their names start with
 cross-compilation approach.</p>
 <h4 id="debian">Debian</h4>
 <p>Installation: through integrated package manager.</p>
-<p><a href="https://packages.debian.org/mingw-w64">Mingw-w64 packages on Debian</a></p>
+<p><a href="https://packages.debian.org/mingw-w64">mingw-w64 packages on Debian</a></p>
 <h4 id="fedora">Fedora</h4>
 <p>Installation: through integrated package manager.</p>
 <h4 id="llvm-mingw">LLVM-MinGW</h4>
@@ -1283,19 +1283,19 @@ sudo port install x86_64-w64-mingw32-gcc
 <p>A shortcut to install both:</p>
 <div class="highlight"><pre><span></span><code>sudo port install mingw-w64
 </code></pre></div>
-<p>Here is the list of <a href="https://www.macports.org/ports.php?by=name&amp;substr=mingw">Mingw-w64 packages on MacPorts</a>.</p>
+<p>Here is the list of <a href="https://www.macports.org/ports.php?by=name&amp;substr=mingw">mingw-w64 packages on MacPorts</a>.</p>
 <h4 id="mingw-w64-builds">MinGW-W64-builds</h4>
 <p>Installation: <a href="https://github.com/niXman/mingw-builds-binaries/releases">GitHub</a></p>
 <h4 id="msys2">MSYS2</h4>
 <p>Installation: <a href="https://www.msys2.org/">GitHub</a></p>
 <h4 id="ubuntu">Ubuntu</h4>
 <p>Installation: through integrated package manager.</p>
-<p><a href="https://launchpad.net/ubuntu/+source/mingw-w64">Mingw-w64 packages on Ubuntu</a></p>
+<p><a href="https://launchpad.net/ubuntu/+source/mingw-w64">mingw-w64 packages on Ubuntu</a></p>
 <h4 id="w64devkit">w64devkit</h4>
 <p><a href="https://github.com/skeeto/w64devkit">w64devkit</a> is a portable C and C++ development kit for x64 (and x86) Windows.</p>
 <p>Included tools:</p>
 <ul>
-<li>Mingw-w64 GCC : compilers, linker, assembler</li>
+<li>mingw-w64 GCC : compilers, linker, assembler</li>
 <li><a href="https://www.gnu.org/software/gdb/">GDB</a> : debugger</li>
 <li><a href="https://www.gnu.org/software/make/">GNU Make</a> : standard build tool</li>
 <li><a href="https://frippery.org/busybox/">busybox-w32</a> : standard unix utilities, including sh</li>
@@ -1308,7 +1308,7 @@ sudo port install x86_64-w64-mingw32-gcc
 runtime components are static.</p>
 <p>Installation: <a href="https://github.com/skeeto/w64devkit/releases">GitHub</a></p>
 <h4 id="winlibscom">WinLibs.com</h4>
-<p>Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.</p>
+<p>Standalone mingw-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.</p>
 <p>Downloads are archive files (<code>.zip</code> or <code>.7z</code>). No installation is required,
 just extract the archive and start using the programs in <code>mingw32\bin</code> or  <code>mingw64\bin</code>.
 This allows for a relocatable compiler suite and allows having multiple versions on the same system.</p>
