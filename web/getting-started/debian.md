@@ -14,7 +14,7 @@ To check the version of the provided GCC and mingw-w64 via:
 $ apt-cache show gcc-mingw-w64-x86-64 | grep Version:
 Version: 13.2.0-6ubuntu1+26.1  # GCC Version
 $ apt-cache show mingw-w64-x86-64-dev | grep Version:
-Version: 12.0.0-3  # Mingw-w64 Version
+Version: 12.0.0-3  # mingw-w64 Version
 ```
 
 ## Building

@@ -19,7 +19,7 @@ To check the version of the provided GCC and mingw-w64:
 $ pacman -Qi mingw-w64-ucrt-x86_64-gcc | grep Version
 Version         : 14.2.0-2  # GCC Version
 $ pacman -Qi mingw-w64-ucrt-x86_64-headers | grep Version
-Version         : 12.0.0.r473.gce0d0bfb7-1  # Mingw-w64 Version
+Version         : 12.0.0.r473.gce0d0bfb7-1  # mingw-w64 Version
 ```
 
 ## Building

@@ -23,8 +23,8 @@ constitute an endorsement in any way.
 
 Mingw-w64 is constantly looking for updates to its win32 API headers from [MSDN
 Library](https://msdn.microsoft.com/en-us/library/). If you believe you have
-found an API that is not available in Mingw-w64 but is documented as part of
-MSDN or a mistake in Mingw-w64, please do not hesitate to contact us through the
+found an API that is not available in mingw-w64 but is documented as part of
+MSDN or a mistake in mingw-w64, please do not hesitate to contact us through the
 [mailing-list](https://lists.sourceforge.net/mailman/listinfo/mingw-w64-public).
 
 For patch submissions, please remember to use sign-off your git commits before

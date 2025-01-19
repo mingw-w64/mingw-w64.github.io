@@ -1,7 +1,7 @@
 <header>
-<h1 style="text-align: center; margin: 4% 0 4% 0">
-    <img src="header-dark.svg#gh-dark-mode-only" style="max-width: min(90%, 400px, calc(100vw - 80px));">
-    <img src="header.svg#gh-light-mode-only" style="max-width: min(90%, 400px, calc(100vw - 80px));">
+<h1 style="text-align: center; margin: 3% 0 3% 0">
+    <img src="header-dark.svg#gh-dark-mode-only" width="400px" height="88.15px" style="max-width: min(90%, 400px, calc(100vw - 80px));">
+    <img src="header.svg#gh-light-mode-only" width="400px" height="88.15px" style="max-width: min(90%, 400px, calc(100vw - 80px));">
 </h1>
 </header>
 
@@ -70,7 +70,7 @@ forward. Contributions have been going to and coming from these projects:
 </tr>
 </table>
 
-## Projects using MinGW-w64
+## Projects using mingw-w64
 
 - [Fedora cross-compiler](https://fedoraproject.org/wiki/MinGW)
 - [Npackd](https://npackd.appspot.com)

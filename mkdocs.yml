@@ -1,5 +1,5 @@
-site_name: MinGW-w64
-site_description: GCC for Windows 64 & 32 bits
+site_name: mingw-w64
+site_description: A complete runtime environment for GCC & LLVM for 32-bit (x86), 64-bit (x64), and ARM64 Windows
 docs_dir: web/
 theme:
     font: false

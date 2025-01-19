@@ -1,8 +1,8 @@
 # Pre-built Toolchains
 
-While Mingw-w64 provides the core Windows headers and libraries needed for
+While mingw-w64 provides the core Windows headers and libraries needed for
 Windows development, it's not very useful on its own. Most users should install
-a pre-built toolchain that combines Mingw-w64 with a compiler (like GCC with
+a pre-built toolchain that combines mingw-w64 with a compiler (like GCC with
 binutils, or LLVM/Clang) and other essential build components. These
 distributions package everything needed to compile programs for Windows and are
 much easier to set up than building from source.
@@ -16,7 +16,7 @@ much easier to set up than building from source.
             </th>
             <th>Version </th>
             <th>Host </th>
-            <th>GCC / Mingw-w64 Version </th>
+            <th>GCC / mingw-w64 Version </th>
             <th>Languages </th>
             <th>Additional Software in Package Manager </th>
         </tr>
@@ -239,7 +239,7 @@ cross-compilation approach.
 
 Installation: through integrated package manager.
 
-[Mingw-w64 packages on Debian](https://packages.debian.org/mingw-w64)
+[mingw-w64 packages on Debian](https://packages.debian.org/mingw-w64)
 
 #### Fedora
 
@@ -270,7 +270,7 @@ A shortcut to install both:
 sudo port install mingw-w64
 ```
 
-Here is the list of [Mingw-w64 packages on MacPorts](https://www.macports.org/ports.php?by=name&substr=mingw).
+Here is the list of [mingw-w64 packages on MacPorts](https://www.macports.org/ports.php?by=name&substr=mingw).
 
 #### MinGW-W64-builds
 
@@ -284,7 +284,7 @@ Installation: [GitHub](https://www.msys2.org/)
 
 Installation: through integrated package manager.
 
-[Mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64)
+[mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64)
 
 #### w64devkit
 
@@ -292,7 +292,7 @@ Installation: through integrated package manager.
 
 Included tools:
 
-* Mingw-w64 GCC : compilers, linker, assembler
+* mingw-w64 GCC : compilers, linker, assembler
 * [GDB][gdb] : debugger
 * [GNU Make][make] : standard build tool
 * [busybox-w32][bb] : standard unix utilities, including sh
@@ -317,7 +317,7 @@ Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 
 #### WinLibs.com
 
-Standalone MinGW-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.
+Standalone mingw-w64+GCC builds for Windows, built from scratch (including all dependencies) natively on Windows for Windows.
 
 Downloads are archive files (`.zip` or `.7z`). No installation is required,
 just extract the archive and start using the programs in `mingw32\bin` or  `mingw64\bin`.
