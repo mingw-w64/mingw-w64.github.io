@@ -104,6 +104,7 @@ forward. Contributions have been going to and coming from these projects:
 - [Hexen II: Hammer of Thyrion](https://uhexen2.sf.net/)
 - [ImageMagick](https://www.imagemagick.org/)
 - [JPen](https://jpen.sf.net/)
+- [Kotlin](https://kotlinlang.org)
 - [KDE Software Collection](https://kde.org/)
 - [LibreOffice](https://www.libreoffice.org/)
 - [libsndfile](http://www.mega-nerd.com/libsndfile/)
