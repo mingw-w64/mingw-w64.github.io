@@ -1,6 +1,13 @@
 # Meson
 
+Meson is a multiplatform build system with good support for mingw-w64. See the
+[official documentation](https://mesonbuild.com/) for more details.
+
 ## Detect mingw-w64 at Configuration Time
+
+While it should be sufficient in most cases to use the preprocessor to detect
+mingw-w64 at compile time, it can also be detected at configuration time if
+necessary:
 
 ```meson
 # meson.build
@@ -16,15 +23,15 @@ endif
 
 ## Cross compiling on Linux
 
-```c
-// hello.c
-#include <stdio.h>
+To cross compile a meson project for Windows while working on Linux:
 
-int main(void) {
-    printf("Hello, Windows!\n");
-    return 0;
-}
-```
+* Install a Windows cross compiler on your Linux system
+* Create or use a cross file that defines how meson should use the cross
+  compiler
+* Configure your project with the cross file
+
+For detailed instructions, consult the [official meson
+documentation](https://mesonbuild.com/Cross-compilation.html).
 
 ```ini
 # cross-mingw64.txt
@@ -43,12 +50,6 @@ objcopy = 'x86_64-w64-mingw32-objcopy'
 strip = 'x86_64-w64-mingw32-strip'
 pkg-config = 'x86_64-w64-mingw32-pkg-config'
 windres = 'x86_64-w64-mingw32-windres'
-```
-
-```meson
-# meson.build
-project('hello', 'c')
-executable('hello', 'hello.c')
 ```
 
 ```console
