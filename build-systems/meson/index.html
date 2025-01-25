@@ -16,7 +16,7 @@
         <link rel="prev" href="../../getting-started/msys2/">
       
       
-        <link rel="next" href="../../support/">
+        <link rel="next" href="../cmake/">
       
       
       <link rel="icon" href="../../logo.svg">
@@ -599,6 +599,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cmake/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CMake
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -778,7 +799,12 @@
 
 
 <h1 id="meson">Meson</h1>
+<p>Meson is a multiplatform build system with good support for mingw-w64. See the
+<a href="https://mesonbuild.com/">official documentation</a> for more details.</p>
 <h2 id="detect-mingw-w64-at-configuration-time">Detect mingw-w64 at Configuration Time</h2>
+<p>While it should be sufficient in most cases to use the preprocessor to detect
+mingw-w64 at compile time, it can also be detected at configuration time if
+necessary:</p>
 <div class="highlight"><pre><span></span><code><span class="c"># meson.build</span>
 <span class="n">cc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vm">meson</span><span class="p">.</span><span class="n">get_compiler</span><span class="p">(</span><span class="s">&#39;c&#39;</span><span class="p">)</span>
 <span class="n">is_windows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vm">host_machine</span><span class="p">.</span><span class="n">system</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;windows&#39;</span>
@@ -790,14 +816,15 @@
 <span class="k">endif</span>
 </code></pre></div>
 <h2 id="cross-compiling-on-linux">Cross compiling on Linux</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// hello.c</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, Windows!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<p>To cross compile a meson project for Windows while working on Linux:</p>
+<ul>
+<li>Install a Windows cross compiler on your Linux system</li>
+<li>Create or use a cross file that defines how meson should use the cross
+  compiler</li>
+<li>Configure your project with the cross file</li>
+</ul>
+<p>For detailed instructions, consult the <a href="https://mesonbuild.com/Cross-compilation.html">official meson
+documentation</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># cross-mingw64.txt</span>
 <span class="k">[host_machine]</span>
 <span class="na">system</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;windows&#39;</span>
@@ -814,10 +841,6 @@
 <span class="na">strip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;x86_64-w64-mingw32-strip&#39;</span>
 <span class="na">pkg-config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;x86_64-w64-mingw32-pkg-config&#39;</span>
 <span class="na">windres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;x86_64-w64-mingw32-windres&#39;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c"># meson.build</span>
-<span class="nb">project</span><span class="p">(</span><span class="s">&#39;hello&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;c&#39;</span><span class="p">)</span>
-<span class="nb">executable</span><span class="p">(</span><span class="s">&#39;hello&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;hello.c&#39;</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>meson<span class="w"> </span>setup<span class="w"> </span>builddir<span class="w"> </span>--cross-file<span class="w"> </span>cross-mingw64.txt
 <span class="gp">$ </span>meson<span class="w"> </span>compile<span class="w"> </span>-C<span class="w"> </span>builddir

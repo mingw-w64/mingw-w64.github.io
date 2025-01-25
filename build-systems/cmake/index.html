@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://www.mingw-w64.org/source/">
+        <link rel="canonical" href="https://www.mingw-w64.org/build-systems/cmake/">
       
       
-        <link rel="prev" href="../downloads/">
+        <link rel="prev" href="../meson/">
       
       
-        <link rel="next" href="../getting-started/debian/">
+        <link rel="next" href="../../support/">
       
       
-      <link rel="icon" href="../logo.svg">
+      <link rel="icon" href="../../logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>Source Code - mingw-w64</title>
+        <title>CMake - mingw-w64</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,11 +44,11 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../stylesheets/fonts.css">
+      <link rel="stylesheet" href="../../stylesheets/fonts.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#source-code" class="md-skip">
+        <a href="#cmake" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="mingw-w64" class="md-header__button md-logo" aria-label="mingw-w64" data-md-component="logo">
+    <a href="../.." title="mingw-w64" class="md-header__button md-logo" aria-label="mingw-w64" data-md-component="logo">
       
-  <img src="../logo.svg" alt="logo">
+  <img src="../../logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Source Code
+              CMake
             
           </span>
         </div>
@@ -232,9 +232,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="mingw-w64" class="md-nav__button md-logo" aria-label="mingw-w64" data-md-component="logo">
+    <a href="../.." title="mingw-w64" class="md-nav__button md-logo" aria-label="mingw-w64" data-md-component="logo">
       
-  <img src="../logo.svg" alt="logo">
+  <img src="../../logo.svg" alt="logo">
 
     </a>
     mingw-w64
@@ -261,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -281,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -298,19 +298,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -324,7 +322,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Downloads
@@ -338,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../downloads/" class="md-nav__link">
+      <a href="../../downloads/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -356,30 +354,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Source Code
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -388,44 +366,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#release-tarballs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release Tarballs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git Repository
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -480,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/debian/" class="md-nav__link">
+      <a href="../../getting-started/debian/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -501,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/archlinux/" class="md-nav__link">
+      <a href="../../getting-started/archlinux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/msys2/" class="md-nav__link">
+      <a href="../../getting-started/msys2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -547,17 +487,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -571,7 +513,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Build Systems
@@ -585,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../build-systems/meson/" class="md-nav__link">
+      <a href="../meson/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -603,10 +545,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../build-systems/cmake/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CMake
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -615,6 +577,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#detect-mingw-w64-at-configuration-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detect mingw-w64 at Configuration Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-compiling-on-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross compiling on Linux
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -634,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../support/" class="md-nav__link">
+      <a href="../../support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contribute/" class="md-nav__link">
+      <a href="../../contribute/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../donate/" class="md-nav__link">
+      <a href="../../donate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -758,18 +758,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#release-tarballs" class="md-nav__link">
+  <a href="#detect-mingw-w64-at-configuration-time" class="md-nav__link">
     <span class="md-ellipsis">
-      Release Tarballs
+      Detect mingw-w64 at Configuration Time
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#git-repository" class="md-nav__link">
+  <a href="#cross-compiling-on-linux" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Repository
+      Cross compiling on Linux
     </span>
   </a>
   
@@ -790,7 +790,7 @@
                   
 
   
-    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/source.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/build-systems/cmake.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -798,33 +798,48 @@
   
 
 
-<h1 id="source-code">Source Code</h1>
-<h2 id="release-tarballs">Release Tarballs</h2>
-<p>Tarballs for the mingw-w64 sources are hosted on
-<a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">SourceForge</a>.</p>
-<p>Latest version by series:</p>
-<ul>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v12.0.0.tar.bz2/download">12.0.0</a></strong> (12x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2/download">11.0.1</a></strong> (11.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download">10.0.0</a></strong> (10.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2/download">9.0.0</a></strong> (9.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v8.0.3.tar.bz2/download">8.0.3</a></strong> (8.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v7.0.0.tar.bz2/download">7.0.0</a></strong> (7.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v6.0.1.tar.bz2/download">6.0.1</a></strong> (6.x)</li>
-<li><strong><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.5.tar.bz2/download">5.0.5</a></strong> (5.x)</li>
-</ul>
-<p>The old wiki has instructions for building
-<a href="https://sourceforge.net/p/mingw-w64/wiki2/Native%20Win64%20compiler/">native</a>
-and
-<a href="https://sourceforge.net/p/mingw-w64/wiki2/Cross%20Win32%20and%20Win64%20compiler/">cross</a>
-toolchains.</p>
-<h2 id="git-repository">Git Repository</h2>
-<p>The main repository can be cloned from SourceForge:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://git.code.sf.net/p/mingw-w64/mingw-w64<span class="w"> </span>mingw-w64
+<h1 id="cmake">CMake</h1>
+<p>CMake is a widely-used, cross-platform build system generator with excellent support for mingw-w64. See the <a href="https://cmake.org/documentation/">official documentation</a> for more information.</p>
+<h2 id="detect-mingw-w64-at-configuration-time">Detect mingw-w64 at Configuration Time</h2>
+<p>While preprocessor definitions can be used to detect mingw-w64 at compile time, CMake provides variables to detect it during configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="c"># CMakeLists.txt</span>
+<span class="nb">if</span><span class="p">(</span><span class="s">MINGW</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">message</span><span class="p">(</span><span class="s">STATUS</span><span class="w"> </span><span class="s2">&quot;Building with mingw-w64&quot;</span><span class="p">)</span>
+<span class="nb">else</span><span class="p">()</span>
+<span class="w">    </span><span class="nb">message</span><span class="p">(</span><span class="s">STATUS</span><span class="w"> </span><span class="s2">&quot;Not building with mingw-w64&quot;</span><span class="p">)</span>
+<span class="nb">endif</span><span class="p">()</span>
 </code></pre></div>
-<p>You can also browse the code on <a href="https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/">SourceForge</a>.</p>
-<p>There also exists a <a href="https://github.com/mingw-w64/mingw-w64">GitHub mirror</a>
-which is updated semi-regularly.</p>
+<h2 id="cross-compiling-on-linux">Cross compiling on Linux</h2>
+<p>To cross compile a CMake project for Windows while working on Linux:</p>
+<ul>
+<li>Install a Windows cross compiler on your Linux system</li>
+<li>Create or use a toolchain file that defines how CMake should use the cross compiler</li>
+<li>Configure your project with the toolchain file</li>
+</ul>
+<p>For detailed instructions, consult the <a href="https://cmake.org/cmake/help/book/mastering-cmake/chapter/Cross%20Compiling%20With%20CMake.html">official CMake documentation</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="c"># toolchain-mingw64.cmake</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_SYSTEM_NAME</span><span class="w"> </span><span class="s">Windows</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_SYSTEM_PROCESSOR</span><span class="w"> </span><span class="s">x86_64</span><span class="p">)</span>
+
+<span class="c"># specify the cross compiler</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_C_COMPILER</span><span class="w"> </span><span class="s">x86_64-w64-mingw32-gcc</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_COMPILER</span><span class="w"> </span><span class="s">x86_64-w64-mingw32-g++</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_RC_COMPILER</span><span class="w"> </span><span class="s">x86_64-w64-mingw32-windres</span><span class="p">)</span>
+
+<span class="c"># where is the target environment</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH</span><span class="w"> </span><span class="s">/usr/x86_64-w64-mingw32</span><span class="p">)</span>
+
+<span class="c"># search for programs in the build host directories</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH_MODE_PROGRAM</span><span class="w"> </span><span class="s">NEVER</span><span class="p">)</span>
+<span class="c"># for libraries and headers in the target directories</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH_MODE_LIBRARY</span><span class="w"> </span><span class="s">ONLY</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH_MODE_INCLUDE</span><span class="w"> </span><span class="s">ONLY</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>cmake<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>toolchain-mingw64.cmake
+<span class="gp">$ </span>cmake<span class="w"> </span>--build<span class="w"> </span>build
+<span class="gp">$ </span>wine<span class="w"> </span>build/hello.exe
+<span class="go">Hello, Windows!</span>
+</code></pre></div>
 
 
 
@@ -871,10 +886,10 @@ which is updated semi-regularly.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "content.action.edit", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.action.edit", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   </body>
