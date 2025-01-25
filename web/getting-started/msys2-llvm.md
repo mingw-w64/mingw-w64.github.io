@@ -1,22 +1,22 @@
-# MSYS2 (GCC)
+# MSYS2 (Clang/LLVM)
 
 ## Installation
 
 Install MSYS2 from the official website: https://www.msys2.org
 
-After installation, open "MSYS2 UCRT64" from the Start menu and install the C
+After installation, open "MSYS2 CLANG64" from the Start menu and install the C
 and C++ compiler:
 
 ```console
-$ pacman -S mingw-w64-ucrt-x86_64-gcc
+$ pacman -S mingw-w64-ucrt-x86_64-clang
 ```
 
-To check the version of the provided GCC and mingw-w64:
+To check the version of the provided Clang and mingw-w64:
 
 ```console
-$ pacman -Qi mingw-w64-ucrt-x86_64-gcc | grep Version
-Version         : 14.2.0-2  # GCC Version
-$ pacman -Qi mingw-w64-ucrt-x86_64-headers | grep Version
+$ pacman -Qi mingw-w64-clang-x86_64-clang | grep Version
+Version         : 19.1.7-1  # Clang Version
+$ pacman -Qi mingw-w64-clang-x86_64-headers | grep Version
 Version         : 12.0.0.r473.gce0d0bfb7-1  # mingw-w64 Version
 ```
 
@@ -35,7 +35,7 @@ int main(void) {
 ```
 
 ```console
-$ gcc hello.c -o hello.exe
+$ clang hello.c -o hello.exe
 ```
 
 ## Testing
