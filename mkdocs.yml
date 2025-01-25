@@ -74,6 +74,7 @@ nav:
     - getting-started/msys2.md
   - Build Systems:
     - build-systems/meson.md
+    - build-systems/cmake.md
   - support.md
   - Old Pages:
     - contribute.md
