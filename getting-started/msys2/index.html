@@ -16,7 +16,7 @@
         <link rel="prev" href="../archlinux/">
       
       
-        <link rel="next" href="../../build-systems/meson/">
+        <link rel="next" href="../msys2-llvm/">
       
       
       <link rel="icon" href="../../logo.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>MSYS2 - mingw-w64</title>
+        <title>MSYS2 (GCC) - mingw-w64</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#msys2" class="md-skip">
+        <a href="#msys2-gcc" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MSYS2
+              MSYS2 (GCC)
             
           </span>
         </div>
@@ -477,7 +477,7 @@
           
   
   <span class="md-ellipsis">
-    MSYS2
+    MSYS2 (GCC)
   </span>
   
 
@@ -488,7 +488,7 @@
         
   
   <span class="md-ellipsis">
-    MSYS2
+    MSYS2 (GCC)
   </span>
   
 
@@ -540,6 +540,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msys2-llvm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSYS2 (Clang/LLVM)
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -816,14 +837,13 @@
   
 
 
-<h1 id="msys2">MSYS2</h1>
+<h1 id="msys2-gcc">MSYS2 (GCC)</h1>
 <h2 id="installation">Installation</h2>
 <p>Install MSYS2 from the official website: <a href="https://www.msys2.org">https://www.msys2.org</a></p>
 <p>After installation, open "MSYS2 UCRT64" from the Start menu and install the C
 and C++ compiler:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-ucrt-x86_64-gcc
 </code></pre></div>
-<p>To check the installed GCC version:</p>
 <p>To check the version of the provided GCC and mingw-w64:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-ucrt-x86_64-gcc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
 <span class="go">Version         : 14.2.0-2  # GCC Version</span>

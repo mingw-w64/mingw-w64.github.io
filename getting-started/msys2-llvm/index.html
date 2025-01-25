@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://www.mingw-w64.org/getting-started/archlinux/">
+        <link rel="canonical" href="https://www.mingw-w64.org/getting-started/msys2-llvm/">
       
       
-        <link rel="prev" href="../debian/">
+        <link rel="prev" href="../msys2/">
       
       
-        <link rel="next" href="../msys2/">
+        <link rel="next" href="../../build-systems/meson/">
       
       
       <link rel="icon" href="../../logo.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Arch Linux - mingw-w64</title>
+        <title>MSYS2 (Clang/LLVM) - mingw-w64</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arch-linux" class="md-skip">
+        <a href="#msys2-clangllvm" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arch Linux
+              MSYS2 (Clang/LLVM)
             
           </span>
         </div>
@@ -440,6 +440,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../archlinux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arch Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msys2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSYS2 (GCC)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -456,7 +498,7 @@
           
   
   <span class="md-ellipsis">
-    Arch Linux
+    MSYS2 (Clang/LLVM)
   </span>
   
 
@@ -467,7 +509,7 @@
         
   
   <span class="md-ellipsis">
-    Arch Linux
+    MSYS2 (Clang/LLVM)
   </span>
   
 
@@ -519,48 +561,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../msys2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MSYS2 (GCC)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../msys2-llvm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MSYS2 (Clang/LLVM)
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -829,7 +829,7 @@
                   
 
   
-    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/getting-started/archlinux.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/getting-started/msys2-llvm.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -837,19 +837,21 @@
   
 
 
-<h1 id="arch-linux">Arch Linux</h1>
+<h1 id="msys2-clangllvm">MSYS2 (Clang/LLVM)</h1>
 <h2 id="installation">Installation</h2>
-<p>Install the 64bit C and C++ cross-compilers:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-gcc
+<p>Install MSYS2 from the official website: <a href="https://www.msys2.org">https://www.msys2.org</a></p>
+<p>After installation, open "MSYS2 CLANG64" from the Start menu and install the C
+and C++ compiler:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-ucrt-x86_64-clang
 </code></pre></div>
-<p>To check the version of the provided GCC and mingw-w64:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-gcc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
-<span class="go">Version         : 14.2.0-3  # GCC Version</span>
-<span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-headers<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
-<span class="go">Version         : 12.0.0-1  # mingw-w64 Version</span>
+<p>To check the version of the provided Clang and mingw-w64:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-clang-x86_64-clang<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version         : 19.1.7-1  # Clang Version</span>
+<span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-clang-x86_64-headers<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version         : 12.0.0.r473.gce0d0bfb7-1  # mingw-w64 Version</span>
 </code></pre></div>
 <h2 id="building">Building</h2>
-<p>Cross compiling a Windows executable:</p>
+<p>Creating and compiling a Windows executable:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// hello.c</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 
@@ -858,13 +860,10 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>x86_64-w64-mingw32-gcc<span class="w"> </span>hello.c<span class="w"> </span>-o<span class="w"> </span>hello.exe
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>clang<span class="w"> </span>hello.c<span class="w"> </span>-o<span class="w"> </span>hello.exe
 </code></pre></div>
 <h2 id="testing">Testing</h2>
-<p>For installing wine, the multilib repo has to be enabled first. See the <a href="https://wiki.archlinux.org/title/Official_repositories#multilib">Arch Wiki</a> for more information. After that is done:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>wine
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>wine<span class="w"> </span>hello.exe
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>./hello.exe
 <span class="go">Hello, Windows!</span>
 </code></pre></div>
 
