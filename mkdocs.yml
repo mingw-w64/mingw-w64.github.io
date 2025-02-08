@@ -76,6 +76,11 @@ nav:
   - Build Systems:
     - build-systems/meson.md
     - build-systems/cmake.md
+  - Tools:
+    - gendef: tools/gendef.md
+    - genidl: tools/genidl.md
+    - genpeimg: tools/genpeimg.md
+    - widl: tools/widl.md
   - support.md
   - Old Pages:
     - contribute.md
