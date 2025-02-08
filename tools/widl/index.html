@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://www.mingw-w64.org/getting-started/archlinux/">
+        <link rel="canonical" href="https://www.mingw-w64.org/tools/widl/">
       
       
-        <link rel="prev" href="../debian/">
+        <link rel="prev" href="../genpeimg/">
       
       
-        <link rel="next" href="../msys2/">
+        <link rel="next" href="../../support/">
       
       
       <link rel="icon" href="../../logo.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Arch Linux - mingw-w64</title>
+        <title>widl - mingw-w64</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arch-linux" class="md-skip">
+        <a href="#widl1" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arch Linux
+              widl
             
           </span>
         </div>
@@ -387,19 +387,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -414,7 +412,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -428,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../debian/" class="md-nav__link">
+      <a href="../../getting-started/debian/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,31 +445,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Arch Linux
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../getting-started/archlinux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,53 +458,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building" class="md-nav__link">
-    <span class="md-ellipsis">
-      Building
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -540,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../msys2/" class="md-nav__link">
+      <a href="../../getting-started/msys2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../msys2-llvm/" class="md-nav__link">
+      <a href="../../getting-started/msys2-llvm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,17 +605,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -700,7 +632,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -714,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/gendef/" class="md-nav__link">
+      <a href="../gendef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/genidl/" class="md-nav__link">
+      <a href="../genidl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -758,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/genpeimg/" class="md-nav__link">
+      <a href="../genpeimg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,10 +709,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/widl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    widl
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -790,6 +743,203 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsis" class="md-nav__link">
+    <span class="md-ellipsis">
+      SYNOPSIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      DESCRIPTION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPTIONS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OPTIONS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      General options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Header options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-library-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type library options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuid-file-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      UUID file options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxystub-generation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proxy/stub generation options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registration-script-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registration script options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlldata-file-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dlldata file options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocessor-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preprocessor options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous options:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEBUG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BUGS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      AUTHORS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      AVAILABILITY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEE ALSO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -937,27 +1087,177 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#name" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      NAME
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building" class="md-nav__link">
+  <a href="#synopsis" class="md-nav__link">
     <span class="md-ellipsis">
-      Building
+      SYNOPSIS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing
+      DESCRIPTION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPTIONS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OPTIONS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      General options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Header options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-library-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type library options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuid-file-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      UUID file options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxystub-generation-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proxy/stub generation options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registration-script-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registration script options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlldata-file-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dlldata file options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocessor-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preprocessor options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug options:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous options:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEBUG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BUGS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      AUTHORS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      AVAILABILITY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEE ALSO
     </span>
   </a>
   
@@ -979,7 +1279,7 @@
 
 
   
-    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/getting-started/archlinux.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/tools/widl.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -987,36 +1287,91 @@
   
 
 
-<h1 id="arch-linux">Arch Linux</h1>
-<h2 id="installation">Installation</h2>
-<p>Install the 64bit C and C++ cross-compilers:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-gcc
-</code></pre></div>
-<p>To check the version of the provided GCC and mingw-w64:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-gcc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
-<span class="go">Version         : 14.2.0-3  # GCC Version</span>
-<span class="gp">$ </span>pacman<span class="w"> </span>-Qi<span class="w"> </span>mingw-w64-headers<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
-<span class="go">Version         : 12.0.0-1  # mingw-w64 Version</span>
-</code></pre></div>
-<h2 id="building">Building</h2>
-<p>Cross compiling a Windows executable:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// hello.c</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, Windows!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>x86_64-w64-mingw32-gcc<span class="w"> </span>hello.c<span class="w"> </span>-o<span class="w"> </span>hello.exe
-</code></pre></div>
-<h2 id="testing">Testing</h2>
-<p>For installing wine, the multilib repo has to be enabled first. See the <a href="https://wiki.archlinux.org/title/Official_repositories#multilib">Arch Wiki</a> for more information. After that is done:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>wine
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>wine<span class="w"> </span>hello.exe
-<span class="go">Hello, Windows!</span>
-</code></pre></div>
+<h1 id="widl1">widl(1)</h1>
+<h2 id="name">NAME</h2>
+<p>widl - Wine Interface Definition Language (IDL) compiler</p>
+<h2 id="synopsis">SYNOPSIS</h2>
+<p><strong>widl</strong> [<em>options</em>] <em>IDL_file</em></p>
+<p><strong>widl</strong> [<em>options</em>] --dlldata-only <em>name1</em> [<em>name2...</em>]</p>
+<h2 id="description">DESCRIPTION</h2>
+<p>When no options are used the program will generate a header file, and possibly client and server stubs, proxy and dlldata files, a typelib, and a UUID file, depending on the contents of the IDL file. If any of the options <code>-c</code>, <code>-h</code>, <code>-p</code>, <code>-s</code>, <code>-t</code>, <code>-u</code> or <code>--local-stubs</code> is given, <code>widl</code> will only generate the requested files, and no others. When run with <code>--dlldata-only</code>, widl will only generate a dlldata file, and it will contain a list of the names passed as arguments. Usually the way this file is updated is that each time <code>widl</code> is run, it reads any existing dlldata file, and if necessary regenerates it with the same list of names, but with the present proxy file included.</p>
+<p>When run without any arguments, <code>widl</code> will print a help message.</p>
+<h2 id="options">OPTIONS</h2>
+<h3 id="general-options">General options:</h3>
+<ul>
+<li><code>-V</code> - Print version number and exit.</li>
+<li><code>-o, --output=name</code> - Set the name of the output file. When generating multiple output files, this sets only the base name of the file; the respective output files are then named <em>name</em>.h, <em>name</em>_p.c, etc.</li>
+<li><code>-b cpu-manufacturer[-kernel]-os</code> - Set the target architecture when cross-compiling. The target specification is in the standard autoconf format as returned by <code>config.sub</code>.</li>
+</ul>
+<h3 id="header-options">Header options:</h3>
+<ul>
+<li><code>-h</code> - Generate header files. The default output filename is <em>infile</em>.h.</li>
+<li><code>--oldnames</code> - Use old naming conventions.</li>
+</ul>
+<h3 id="type-library-options">Type library options:</h3>
+<ul>
+<li><code>-t</code> - Generate a type library. The default output filename is <em>infile</em>.tlb. If the output file name ends in <code>.res</code>, a binary resource file containing the type library is generated instead.</li>
+<li><code>-m32, -m64</code> - Generate a Win32 or Win64 type library respectively.</li>
+</ul>
+<h3 id="uuid-file-options">UUID file options:</h3>
+<ul>
+<li><code>-u</code> - Generate a UUID file. The default output filename is <em>infile</em>_i.c.</li>
+</ul>
+<h3 id="proxystub-generation-options">Proxy/stub generation options:</h3>
+<ul>
+<li><code>-c</code> - Generate a client stub file. The default output filename is <em>infile</em>_c.c.</li>
+<li><code>-Os</code> - Generate inline stubs.</li>
+<li><code>-Oi</code> - Generate old-style interpreted stubs.</li>
+<li><code>-Oif, -Oic, -Oicf</code> - Generate new-style fully interpreted stubs.</li>
+<li><code>-p</code> - Generate a proxy. The default output filename is <em>infile</em>_p.c.</li>
+<li><code>--prefix-all=prefix</code> - Prefix to put on the name of both client and server stubs.</li>
+<li><code>--prefix-client=prefix</code> - Prefix to put on the name of client stubs.</li>
+<li><code>--prefix-server=prefix</code> - Prefix to put on the name of server stubs.</li>
+<li><code>-s</code> - Generate a server stub file. The default output filename is <em>infile</em>_s.c.</li>
+<li><code>--win32</code>, <code>--win64</code> - Only generate 32-bit or 64-bit code respectively (the default is to generate both 32-bit and 64-bit versions into the same destination file).</li>
+<li><code>--rt</code> - Enable additional language extensions for IDL to support WinRT.</li>
+</ul>
+<h3 id="registration-script-options">Registration script options:</h3>
+<ul>
+<li><code>-r</code> - Generate a registration script. The default output filename is <em>infile</em>_r.rgs. If the output file name ends in <code>.res</code>, a binary resource file containing the script is generated instead.</li>
+</ul>
+<h3 id="dlldata-file-options">Dlldata file options:</h3>
+<ul>
+<li><code>--dlldata-only name1 [name2...]</code> - Regenerate the dlldata file from scratch using the specified proxy names. The default output filename is <code>dlldata.c</code>.</li>
+</ul>
+<h3 id="preprocessor-options">Preprocessor options:</h3>
+<ul>
+<li><code>-I path</code> - Add a header search directory to path. Multiple search directories are allowed.</li>
+<li><code>-D id[=val]</code> - Define preprocessor macro <em>id</em> with value <em>val</em>.</li>
+<li><code>-E</code> - Preprocess only.</li>
+<li><code>-N</code> - Do not preprocess input.</li>
+</ul>
+<h3 id="debug-options">Debug options:</h3>
+<ul>
+<li><code>-W</code> - Enable pedantic warnings.</li>
+<li><code>-d n</code> - Set debug level to the non negative integer <em>n</em>. If prefixed with <code>0x</code>, it will be interpreted as a hexadecimal number. For the meaning of values, see the DEBUG section.</li>
+</ul>
+<h3 id="miscellaneous-options">Miscellaneous options:</h3>
+<ul>
+<li><code>-app_config</code> - Ignored, present for midl compatibility.</li>
+<li><code>--local-stubs=file</code> - Generate empty stubs for call_as/local methods in an object interface and write them to <em>file</em>.</li>
+</ul>
+<h2 id="debug">DEBUG</h2>
+<p>Debug level <em>n</em> is a bitmask with the following meaning:
+- 0x01 Tell which resource is parsed (verbose mode)
+- 0x02 Dump internal structures
+- 0x04 Create a parser trace (yydebug=1)
+- 0x08 Preprocessor messages
+- 0x10 Preprocessor lex messages
+- 0x20 Preprocessor yacc trace</p>
+<h2 id="bugs">BUGS</h2>
+<p>Bugs can be reported on the <a href="http://bugs.winehq.org">Wine bug tracker</a>.</p>
+<h2 id="authors">AUTHORS</h2>
+<p><code>widl</code> was originally written by Ove Kåven. It has been improved by Rob Shearman, Dan Hipschman, and others. For a complete list, see the git commit logs. This man page was originally written by Hannu Valtonen and then updated by Dan Hipschman.</p>
+<h2 id="availability">AVAILABILITY</h2>
+<p><code>widl</code> is part of the Wine distribution, which is available through WineHQ, the <a href="http://www.winehq.org/">Wine development headquarters</a>.</p>
+<h2 id="see-also">SEE ALSO</h2>
+<p><a href="http://www.winehq.org/help">Wine documentation and support</a></p>
 
 
 
