@@ -4,18 +4,39 @@
 
 Install the 64bit C and C++ cross-compilers.
 
-```console
-$ sudo apt install g++-mingw-w64-x86-64 gcc-mingw-w64-x86-64
-```
+=== "msvcrt"
+
+    ```console
+    $ sudo apt install g++-mingw-w64-x86-64 gcc-mingw-w64-x86-64
+    ```
+
+=== "ucrt"
+
+    ```console
+    $ sudo apt install g++-mingw-w64-ucrt64 gcc-mingw-w64-ucrt64
+    ```
+
+    **Note:** UCRT targeting cross compilers are currently only available in Debian 13 (trixie).
 
 To check the version of the provided GCC and mingw-w64 via:
 
-```console
-$ apt-cache show gcc-mingw-w64-x86-64 | grep Version:
-Version: 13.2.0-6ubuntu1+26.1  # GCC Version
-$ apt-cache show mingw-w64-x86-64-dev | grep Version:
-Version: 12.0.0-3  # mingw-w64 Version
-```
+=== "msvcrt"
+
+    ```console
+    $ apt-cache show gcc-mingw-w64-x86-64 | grep Version:
+    Version: 13.3.0-12+26.7  # GCC Version
+    $ apt-cache show mingw-w64-x86-64-dev | grep Version:
+    Version: 12.0.0-5  # mingw-w64 Version
+    ```
+
+=== "ucrt"
+
+    ```console
+    $ apt-cache show gcc-mingw-w64-ucrt64 | grep Version:
+    Version: 13.3.0-12+26.7  # GCC Version
+    $ apt-cache show mingw-w64-ucrt64-dev | grep Version:
+    Version: 12.0.0-5  # mingw-w64 Version
+    ```
 
 ## Building
 
@@ -31,9 +52,17 @@ int main(void) {
 }
 ```
 
-```console
-$ x86_64-w64-mingw32-gcc hello.c -o hello.exe
-```
+=== "msvcrt"
+
+    ```console
+    $ x86_64-w64-mingw32-gcc hello.c -o hello.exe
+    ```
+
+=== "ucrt"
+
+    ```console
+    $ x86_64-w64-mingw32ucrt-gcc hello.c -o hello.exe
+    ```
 
 ## Testing
 

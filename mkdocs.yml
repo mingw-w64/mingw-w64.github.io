@@ -29,6 +29,7 @@ theme:
         - navigation.instant
         - content.action.edit
         - content.code.copy
+        - content.tabs.link
     custom_dir: overrides
 
 extra_css:
@@ -61,6 +62,8 @@ markdown_extensions:
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
+    - pymdownx.tabbed:
+        alternate_style: true
 
 nav:
   - 'Introduction': index.md
