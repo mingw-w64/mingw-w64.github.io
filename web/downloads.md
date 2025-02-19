@@ -28,7 +28,8 @@ much easier to set up than building from source.
                         href="#arch-linux"> Arch
                         Linux</a></strong>
             </td>
-            <td colspan="2">Arch Linux </td>
+            <td>Rolling</td>
+            <td>Linux</td>
             <td>
                 <a href="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" class="urlextern"
                     title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">14.2.0</a>/<a
@@ -47,7 +48,12 @@ much easier to set up than building from source.
             </td>
             <td>Rolling</td>
             <td>Windows</td>
-            <td>11.3.0/10.0.0 </td>
+            <td>
+                <a href="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" class="urlextern"
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" rel="nofollow">12.4.0</a>/<a
+                    href="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" class="urlextern"
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" rel="nofollow">12.0.0</a>
+            </td>
             <td>C, C++, Fortran, Obj-C </td>
             <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
         </tr>
