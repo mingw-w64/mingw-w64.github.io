@@ -72,8 +72,9 @@ nav:
     - downloads.md
     - source.md
   - Getting Started:
-    - getting-started/debian.md
     - getting-started/archlinux.md
+    - getting-started/debian.md
+    - getting-started/fedora.md
     - getting-started/msys2.md
     - getting-started/msys2-llvm.md
   - Build Systems:

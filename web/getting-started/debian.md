@@ -1,4 +1,4 @@
-# Ubuntu / Debian
+# Debian / Ubuntu
 
 ## Installation
 

@@ -8,7 +8,7 @@ After installation, open "MSYS2 CLANG64" from the Start menu and install the C
 and C++ compiler:
 
 ```console
-$ pacman -S mingw-w64-ucrt-x86_64-clang
+$ pacman -S mingw-w64-clang-x86_64-clang
 ```
 
 To check the version of the provided Clang and mingw-w64:
