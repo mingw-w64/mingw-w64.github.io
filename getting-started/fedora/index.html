@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://www.mingw-w64.org/getting-started/debian/">
+        <link rel="canonical" href="https://www.mingw-w64.org/getting-started/fedora/">
       
       
-        <link rel="prev" href="../archlinux/">
+        <link rel="prev" href="../debian/">
       
       
-        <link rel="next" href="../fedora/">
+        <link rel="next" href="../msys2/">
       
       
       <link rel="icon" href="../../logo.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Debian / Ubuntu - mingw-w64</title>
+        <title>Fedora - mingw-w64</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#debian-ubuntu" class="md-skip">
+        <a href="#fedora" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Debian / Ubuntu
+              Fedora
             
           </span>
         </div>
@@ -447,6 +447,28 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../debian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debian / Ubuntu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -463,7 +485,7 @@
           
   
   <span class="md-ellipsis">
-    Debian / Ubuntu
+    Fedora
     
   </span>
   
@@ -475,7 +497,7 @@
         
   
   <span class="md-ellipsis">
-    Debian / Ubuntu
+    Fedora
     
   </span>
   
@@ -528,28 +550,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fedora/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fedora
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1001,7 +1001,7 @@
 
 
   
-    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/getting-started/debian.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/mingw-w64/mingw-w64.github.io/edit/source/web/getting-started/fedora.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1009,37 +1009,36 @@
   
 
 
-<h1 id="debian-ubuntu">Debian / Ubuntu</h1>
+<h1 id="fedora">Fedora</h1>
 <h2 id="installation">Installation</h2>
-<p>Install the 64bit C and C++ cross-compilers.</p>
+<p>Install the 64bit C and C++ cross-compilers:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">msvcrt</label><label for="__tabbed_1_2">ucrt</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>g++-mingw-w64-x86-64<span class="w"> </span>gcc-mingw-w64-x86-64
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>mingw64-gcc-c++
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>g++-mingw-w64-ucrt64<span class="w"> </span>gcc-mingw-w64-ucrt64
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>ucrt64-gcc-c++
 </code></pre></div>
-<p><strong>Note:</strong> UCRT targeting cross compilers are currently only available in Debian 13 (trixie).</p>
 </div>
 </div>
 </div>
-<p>To check the version of the provided GCC and mingw-w64 via:</p>
+<p>To check the version of the provided GCC and mingw-w64:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">msvcrt</label><label for="__tabbed_2_2">ucrt</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>apt-cache<span class="w"> </span>show<span class="w"> </span>gcc-mingw-w64-x86-64<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version:
-<span class="go">Version: 13.3.0-12+26.7  # GCC Version</span>
-<span class="gp">$ </span>apt-cache<span class="w"> </span>show<span class="w"> </span>mingw-w64-x86-64-dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version:
-<span class="go">Version: 12.0.0-5  # mingw-w64 Version</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>dnf<span class="w"> </span>info<span class="w"> </span>--installed<span class="w"> </span>mingw64-gcc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version      : 14.2.1  # GCC Version</span>
+<span class="gp">$ </span>dnf<span class="w"> </span>info<span class="w"> </span>--installed<span class="w"> </span>mingw64-crt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version      : 12.0.0  # mingw-w64 Version</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>apt-cache<span class="w"> </span>show<span class="w"> </span>gcc-mingw-w64-ucrt64<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version:
-<span class="go">Version: 13.3.0-12+26.7  # GCC Version</span>
-<span class="gp">$ </span>apt-cache<span class="w"> </span>show<span class="w"> </span>mingw-w64-ucrt64-dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version:
-<span class="go">Version: 12.0.0-5  # mingw-w64 Version</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>dnf<span class="w"> </span>info<span class="w"> </span>--installed<span class="w"> </span>ucrt64-gcc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version      : 14.2.1  # GCC Version</span>
+<span class="gp">$ </span>dnf<span class="w"> </span>info<span class="w"> </span>--installed<span class="w"> </span>ucrt64-crt<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Version
+<span class="go">Version      : 12.0.0  # mingw-w64 Version</span>
 </code></pre></div>
 </div>
 </div>
@@ -1068,7 +1067,7 @@
 </div>
 <h2 id="testing">Testing</h2>
 <p>Testing on Linux using Wine:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>wine
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>wine
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>wine<span class="w"> </span>hello.exe
 <span class="go">Hello, Windows!</span>
