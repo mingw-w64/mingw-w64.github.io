@@ -208,7 +208,7 @@ much easier to set up than building from source.
             <td>
                 <a href="https://winlibs.com/#download-release" class="urlextern"
                     title="https://winlibs.com/"
-                    rel="nofollow">13.2.0</a>
+                    rel="nofollow">14.2.0</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
             <td>Package manager: work in progress (will offer > 2500 packages)</td>
