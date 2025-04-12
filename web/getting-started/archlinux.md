@@ -1,49 +1,19 @@
-# Arch Linux
+#include <iostream>
+using namespace std;
 
-## Installation
+int main() {
+    int *pBil;
+    int bilX = 77;
 
-Install the 64bit C and C++ cross-compilers:
+    pBil = &bilX;
 
-```console
-$ sudo pacman -S mingw-w64-gcc
-```
+    cout << "isi bilX = " << bilX << endl;
+    cout << "nilai yang ditunjuk pBil = " << *pBil << endl;
 
-To check the version of the provided GCC and mingw-w64:
+    *pBil = *pBil + 3;
 
-```console
-$ pacman -Qi mingw-w64-gcc | grep Version
-Version         : 14.2.0-3  # GCC Version
-$ pacman -Qi mingw-w64-headers | grep Version
-Version         : 12.0.0-1  # mingw-w64 Version
-```
+    cout << "isi bilX sekarang = " << bilX << endl;
+    cout << "nilai yang ditunjuk pBil = " << *pBil << endl;
 
-## Building
-
-Cross compiling a Windows executable:
-
-```c
-// hello.c
-#include <stdio.h>
-
-int main(void) {
-    printf("Hello, Windows!\n");
     return 0;
 }
-```
-
-```console
-$ x86_64-w64-mingw32-gcc hello.c -o hello.exe
-```
-
-## Testing
-
-For installing wine, the multilib repo has to be enabled first. See the [Arch Wiki](https://wiki.archlinux.org/title/Official_repositories#multilib) for more information. After that is done:
-
-```console
-$ sudo pacman -S wine
-```
-
-```console
-$ wine hello.exe
-Hello, Windows!
-```
