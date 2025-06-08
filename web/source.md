@@ -7,6 +7,7 @@ Tarballs for the mingw-w64 sources are hosted on
 
 Latest version by series:
 
+* **[13.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v13.0.0.tar.bz2/download)** (12x)
 * **[12.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v12.0.0.tar.bz2/download)** (12x)
 * **[11.0.1](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2/download)** (11.x)
 * **[10.0.0](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v10.0.0.tar.bz2/download)** (10.x)

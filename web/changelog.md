@@ -2,6 +2,28 @@
 
 The releases are sorted by date, with the most recent release at the top.
 
+## v13.0.0: [2025-06-08](https://sourceforge.net/p/mingw-w64/mailman/message/59192665/)
+
+Notable changes:
+* Added import libraries for msvcr40d.dll, msvcrtd.dll, msvcr70d.dll, msvcr71d.dll, msvcr80d.dll, msvcr100d.dll, msvcr110d.dll.
+* Better CRT API consistency between UCRT and MSVCRT, making many APIs available to earlier versions of the MSVCR* runtime as well.
+* CRTDLL stat API fixes.
+* Updated Hyper-V headers.
+* Synchronized with Wine headers (from Wine 10.9).
+* Many other new win32 APIs.
+* Fix `_atexit` call differing between DLLs and EXEs.
+* Basic support for ARM64EC targets (arm64ec-w64-mingw32).
+* Make it possible to build winpthreads with MSVC and clang-cl.
+* Many small fixes for gendef, genidl and genpeimg.
+
+And many other additions thanks to, but not limited to (in Alphabetical order):
+
+Alexander Argentakis, Antonin Décimo, Billy Laws, Biswapriyo Nath, Daniel
+Starke, Daniel Verkamp, David Grayson, Duncan Ogilvie, Isuru Fernando, Jacek
+Caban, Jeremy Drake, Jøger Hansegård, Kirill Makurin, Lasse Collin, Le
+Philousophe, LIU Hao, Marc-André Lureau, Martin Storsjö, Nikolay Sivov, Pali
+Rohár, Rafael Kitover, Steve Lhomme, TheShermanTanker, Yang Kun
+
 ## v8.0.3: [2024-06-05](https://sourceforge.net/p/mingw-w64/mingw-w64/ci/v8.0.3)
 
 - [Various backports](https://github.com/mingw-w64/mingw-w64/compare/v8.0.2...v8.0.3)
