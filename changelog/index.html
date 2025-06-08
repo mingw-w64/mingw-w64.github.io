@@ -1384,17 +1384,19 @@
 <h1 id="changelog">Changelog</h1>
 <p>The releases are sorted by date, with the most recent release at the top.</p>
 <h2 id="v1300-2025-06-08">v13.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/59192665/">2025-06-08</a></h2>
-<p>Notable changes:
-* Added import libraries for msvcr40d.dll, msvcrtd.dll, msvcr70d.dll, msvcr71d.dll, msvcr80d.dll, msvcr100d.dll, msvcr110d.dll.
-* Better CRT API consistency between UCRT and MSVCRT, making many APIs available to earlier versions of the MSVCR* runtime as well.
-* CRTDLL stat API fixes.
-* Updated Hyper-V headers.
-* Synchronized with Wine headers (from Wine 10.9).
-* Many other new win32 APIs.
-* Fix <code>_atexit</code> call differing between DLLs and EXEs.
-* Basic support for ARM64EC targets (arm64ec-w64-mingw32).
-* Make it possible to build winpthreads with MSVC and clang-cl.
-* Many small fixes for gendef, genidl and genpeimg.</p>
+<p>Notable changes:</p>
+<ul>
+<li>Added import libraries for msvcr40d.dll, msvcrtd.dll, msvcr70d.dll, msvcr71d.dll, msvcr80d.dll, msvcr100d.dll, msvcr110d.dll.</li>
+<li>Better CRT API consistency between UCRT and MSVCRT, making many APIs available to earlier versions of the MSVCR* runtime as well.</li>
+<li>CRTDLL stat API fixes.</li>
+<li>Updated Hyper-V headers.</li>
+<li>Synchronized with Wine headers (from Wine 10.9).</li>
+<li>Many other new win32 APIs.</li>
+<li>Fix <code>_atexit</code> call differing between DLLs and EXEs.</li>
+<li>Basic support for ARM64EC targets (arm64ec-w64-mingw32).</li>
+<li>Make it possible to build winpthreads with MSVC and clang-cl.</li>
+<li>Many small fixes for gendef, genidl and genpeimg.</li>
+</ul>
 <p>And many other additions thanks to, but not limited to (in Alphabetical order):</p>
 <p>Alexander Argentakis, Antonin Décimo, Billy Laws, Biswapriyo Nath, Daniel
 Starke, Daniel Verkamp, David Grayson, Duncan Ogilvie, Isuru Fernando, Jacek
