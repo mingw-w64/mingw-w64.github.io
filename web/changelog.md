@@ -5,6 +5,7 @@ The releases are sorted by date, with the most recent release at the top.
 ## v13.0.0: [2025-06-08](https://sourceforge.net/p/mingw-w64/mailman/message/59192665/)
 
 Notable changes:
+
 * Added import libraries for msvcr40d.dll, msvcrtd.dll, msvcr70d.dll, msvcr71d.dll, msvcr80d.dll, msvcr100d.dll, msvcr110d.dll.
 * Better CRT API consistency between UCRT and MSVCRT, making many APIs available to earlier versions of the MSVCR* runtime as well.
 * CRTDLL stat API fixes.
