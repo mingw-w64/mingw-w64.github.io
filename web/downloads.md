@@ -32,9 +32,9 @@ much easier to set up than building from source.
             <td>Linux</td>
             <td>
                 <a href="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" class="urlextern"
-                    title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">14.2.0</a>/<a
+                    title="https://archlinux.org/packages/extra/x86_64/mingw-w64-gcc/" rel="nofollow">15.1.0</a>/<a
                     href="https://archlinux.org/packages/extra/any/mingw-w64-crt/" class="urlextern"
-                    title="https://archlinux.org/packages/extra/any/mingw-w64-crt/" rel="nofollow">12.0.0</a>
+                    title="https://archlinux.org/packages/extra/any/mingw-w64-crt/" rel="nofollow">13.0.0</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td><a href="https://aur.archlinux.org/packages/?K=mingw-w64">many</a></td>
@@ -50,9 +50,9 @@ much easier to set up than building from source.
             <td>Windows</td>
             <td>
                 <a href="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" class="urlextern"
-                    title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" rel="nofollow">12.4.0</a>/<a
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" rel="nofollow">14.2.0</a>/<a
                     href="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" class="urlextern"
-                    title="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" rel="nofollow">12.0.0</a>
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" rel="nofollow">13.0.0</a>
             </td>
             <td>C, C++, Fortran, Obj-C </td>
             <td><a href="https://cygwin.com/cgi-bin2/package-grep.cgi?grep=mingw64-x86_64&arch=x86_64"> many</a> </td>
@@ -96,9 +96,9 @@ much easier to set up than building from source.
             <td style="text-align:center;">
                 <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
             </td>
-            <td>20240518</td>
+            <td>20250613</td>
             <td>Windows, Linux, macOS</td>
-            <td>LLVM 18.1.6/trunk</td>
+            <td>LLVM 20.1.7/trunk</td>
             <td>C, C++</td>
             <td>make, Python</td>
         </tr>
@@ -116,7 +116,7 @@ much easier to set up than building from source.
                 <a href="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/x86_64-w64-mingw32-gcc/Portfile"
-                    rel="nofollow">14.2.0</a>/<a
+                    rel="nofollow">15.1.0</a>/<a
                     href="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
                     class="urlextern"
                     title="https://github.com/macports/macports-ports/blob/master/cross/mingw-w64/Portfile"
@@ -131,7 +131,7 @@ much easier to set up than building from source.
             </td>
             <td>Rolling </td>
             <td>Windows</td>
-            <td>13.1.0/11.0.0 </td>
+            <td>15.1.0/12.0.0 </td>
             <td>C, C++, Fortran </td>
             <td>4 (gdb, libiconf, python, zlib) </td>
         </tr>
@@ -147,7 +147,7 @@ much easier to set up than building from source.
             <td>
                 <a href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD" class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD"
-                    rel="nofollow">14.2.0</a>/<a
+                    rel="nofollow">15.1.0</a>/<a
                     href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
                     class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
@@ -183,9 +183,9 @@ much easier to set up than building from source.
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>2.0.0</td>
+            <td>2.3.0</td>
             <td>Windows</td>
-            <td>14.2.0/12.0.0</td>
+            <td>15.1.0/13.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
                 8
@@ -208,7 +208,7 @@ much easier to set up than building from source.
             <td>
                 <a href="https://winlibs.com/#download-release" class="urlextern"
                     title="https://winlibs.com/"
-                    rel="nofollow">13.2.0</a>
+                    rel="nofollow">15.1.0</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, Assembler</td>
             <td>Package manager: work in progress (will offer > 2500 packages)</td>
