@@ -94,6 +94,25 @@ much easier to set up than building from source.
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#homebrew">Homebrew</a></strong>
+            </td>
+            <td>Rolling </td>
+            <td>macOS</td>
+            <td>
+                <a href="https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/m/mingw-w64.rb"
+                    class="urlextern"
+                    title="https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/m/mingw-w64.rb"
+                    rel="nofollow">15.1.0</a>/<a
+                    href="https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/m/mingw-w64.rb"
+                    class="urlextern"
+                    title="https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/m/mingw-w64.rb"
+                    rel="nofollow">13.0.0</a>
+            </td>
+            <td>C, C++, Fortran, Obj-C, Obj-C++ </td>
+            <td>1 (nsis)</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#llvm-mingw">LLVM-MinGW</a></strong>
             </td>
             <td>20250613</td>
@@ -250,6 +269,12 @@ Installation: through integrated package manager.
 #### Fedora
 
 Installation: through integrated package manager.
+
+#### Homebrew
+
+```
+brew install mingw-w64
+```
 
 #### LLVM-MinGW
 
