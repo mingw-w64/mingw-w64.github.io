@@ -207,13 +207,11 @@ much easier to set up than building from source.
             <td>15.1.0/13.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                8
+                6
                 (busybox,
-                cppcheck,
                 ctags,
                 gdb,
                 make,
-                nasm,
                 pkg-config,
                 vim)
             </td>
@@ -329,8 +327,6 @@ Included tools:
 * [busybox-w32][bb] : standard unix utilities, including sh
 * [Vim][vim] : powerful text editor
 * [Universal Ctags][ctags] : source navigation
-* [NASM][nasm] : x86 assembler
-* [Cppcheck][cppcheck] : static code analysis
 
 The toolchain includes pthreads, C++11 threads, and OpenMP. All included
 runtime components are static.
@@ -338,11 +334,9 @@ runtime components are static.
 Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 
 [bb]: https://frippery.org/busybox/
-[cppcheck]: https://cppcheck.sourceforge.io/
 [ctags]: https://github.com/universal-ctags/ctags
 [gdb]: https://www.gnu.org/software/gdb/
 [make]: https://www.gnu.org/software/make/
-[nasm]: https://www.nasm.us/
 [vim]: https://www.vim.org/
 [w64devkit]: https://github.com/skeeto/w64devkit
 
