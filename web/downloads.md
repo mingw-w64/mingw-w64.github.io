@@ -50,7 +50,7 @@ much easier to set up than building from source.
             <td>Windows</td>
             <td>
                 <a href="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" class="urlextern"
-                    title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" rel="nofollow">13.4.0</a>/<a
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-src.html" rel="nofollow">14.2.0</a>/<a
                     href="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" class="urlextern"
                     title="https://cygwin.com/packages/summary/mingw64-x86_64-runtime-src.html" rel="nofollow">13.0.0</a>
             </td>
@@ -63,34 +63,34 @@ much easier to set up than building from source.
                 <br>
                 <a href="#debian">Debian</a></strong>
             </td>
-            <td colspan="2">Debian 11 (Bullseye) </td>
-            <td>10.2.1/8.0.0 </td>
+            <td colspan="2">Debian 10 (Buster) </td>
+            <td>8.3.0/6.0.0 </td>
             <td rowspan="3">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td rowspan="3">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
+        </tr>
+        <tr>
+            <td colspan="2">Debian 11 (Bullseye) </td>
+            <td>10.2.1/8.0.0 </td>
         </tr>
         <tr>
             <td colspan="2">Debian 12 (Bookworm) </td>
             <td>12.0.0/10.0.0 </td>
         </tr>
         <tr>
-            <td colspan="2">Debian 13 (Trixie) </td>
-            <td>14.2.0/12.0.0 </td>
-        </tr>
-        <tr>
             <td style="text-align:center;" rowspan="2">
                 <strong><a href="#fedora"><img
                             src="../logos/fedora-logo.png"
                             title="Fedora Linux logo" alt="Fedora Linux logo" width="32"></a><br><a
-                        href="#fedora">Fedora</a></strong>
+                        href="#fedora" > Fedora</a></strong>
             </td>
-            <td colspan="2">Fedora 41</td>
-            <td>14.2.1/12.0.0</td>
+            <td colspan="2">Fedora 40 </td>
+            <td>14.1.1/11.0.1 </td>
             <td rowspan="2">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td rowspan="2"><a href="https://packages.fedoraproject.org/search?query=mingw64"> many</td>
         </tr>
         <tr>
-            <td colspan="2">Fedora 42</td>
-            <td>14.2.1/12.0.0</td>
+            <td colspan="2">Fedora 41 </td>
+            <td>14.2.1/12.0.0 </td>
         </tr>
         <tr>
             <td style="text-align:center;">
@@ -176,23 +176,27 @@ much easier to set up than building from source.
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
-            <td style="text-align:center;" rowspan="3">
+            <td style="text-align:center;" rowspan="4">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
                             title="Ubuntu logo" alt="Ubuntu logo" width="32"></a><br><a href="#ubuntu"> Ubuntu</a></strong>
             </td>
-            <td colspan="2">22.04 Jammy Jellyfish </td>
-            <td>10.3.0/8.0.0 </td>
+            <td colspan="2"> 20.04 Focal Fossa </td>
+            <td>9.3.0/7.0.0 </td>
             <td rowspan="4">Ada, C, C++, Fortran, Obj-C, Obj-C++ </td>
             <td rowspan="4">9 (gdb, libassuan, libgcrypt, libgpg-error, libksba, libnpth, nsis, win-iconv, zlib) </td>
         </tr>
         <tr>
-            <td colspan="2">24.04 Noble Numbat </td>
+            <td colspan="2"> 22.04 Jammy Jellyfish </td>
+            <td>10.3.0/8.0.0 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 24.04 Noble Numbat </td>
             <td>13.2.0/11.0.1 </td>
         </tr>
         <tr>
-            <td colspan="2">25.04 Plucky Puffin </td>
-            <td>13.2.0/12.0.0 </td>
+            <td colspan="2"> 24.10 Oracular Oriole </td>
+            <td>14.1.0/12.0.0 </td>
         </tr>
         <tr>
             <td style="text-align:center;">
