@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.mingw-w64.org/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/changelog/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/contribute/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/donate/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/downloads/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/source/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/support/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/build-systems/cmake/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/build-systems/meson/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/getting-started/archlinux/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/getting-started/debian/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/getting-started/fedora/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/getting-started/msys2-llvm/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/getting-started/msys2/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/tools/gendef/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/tools/genidl/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/tools/genpeimg/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
     <url>
          <loc>https://www.mingw-w64.org/tools/widl/</loc>
-         <lastmod>2025-07-19</lastmod>
+         <lastmod>2025-07-28</lastmod>
     </url>
 </urlset>
