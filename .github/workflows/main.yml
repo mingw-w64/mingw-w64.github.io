@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Setup Python (pip)
         uses: actions/setup-python@v5
@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: .github/workflows/main.yml
 
       - name: Install codespell and poetry
-        run: python3 -m pip install --upgrade codespell poetry==1.8.3
+        run: python3 -m pip install --upgrade codespell poetry==2.1.4
 
       - name: Find typos with codespell
         run: codespell --ignore-words-list=seh
