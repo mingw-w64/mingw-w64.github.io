@@ -81,6 +81,7 @@ forward. Contributions have been going to and coming from these projects:
 - [Boost](https://www.boost.org/)
 - [Botan](https://botan.randombit.net/)
 - [Code::Blocks](https://www.codeblocks.org/)
+- [Crown Engine](https://www.crownengine.org/)
 - [DAE Tools](https://daetools.sourceforge.net)
 - [devkitPro](https://devkitpro.org/)
 - [Disk Based HashTables](https://sourceforge.net/projects/dbh/)
