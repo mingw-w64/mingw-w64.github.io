@@ -7,11 +7,17 @@ on:
     branches-ignore:
       - main
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Setup Python (pip)
         uses: actions/setup-python@v6
