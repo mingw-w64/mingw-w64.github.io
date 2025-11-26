@@ -11,10 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Setup Python (pip)
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
           architecture: 'x64'
@@ -28,7 +28,7 @@ jobs:
         run: codespell --ignore-words-list=seh
       
       - name: Setup Python (poetry)
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
           architecture: 'x64'
@@ -40,7 +40,7 @@ jobs:
       - run: poetry run mkdocs build
 
       - name: Upload Results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: website
           path: ./site
@@ -54,7 +54,7 @@ jobs:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/source'
     steps:
       - name: Download Results
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: website
           path: ./site
