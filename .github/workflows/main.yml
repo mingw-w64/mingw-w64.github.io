@@ -22,28 +22,15 @@ jobs:
       - name: Setup Python (pip)
         uses: actions/setup-python@v6
         with:
-          python-version: '3.x'
-          architecture: 'x64'
-          cache: 'pip'
-          cache-dependency-path: .github/workflows/main.yml
+          python-version-file: "pyproject.toml"
 
-      - name: Install codespell and poetry
-        run: python3 -m pip install --upgrade codespell poetry==2.2.1
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
 
       - name: Find typos with codespell
-        run: codespell --ignore-words-list=seh
-      
-      - name: Setup Python (poetry)
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.x'
-          architecture: 'x64'
-          cache: 'poetry'
+        run: uvx codespell --ignore-words-list=seh
 
-      - name: Install dependencies
-        run: poetry install
-
-      - run: poetry run mkdocs build
+      - run: uv run mkdocs build
 
       - name: Upload Results
         uses: actions/upload-artifact@v5

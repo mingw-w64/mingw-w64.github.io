@@ -1,15 +1,20 @@
-[tool.poetry]
+[project]
 name = "mingw-w64.org"
 version = "1.0"
 description = ""
-authors = ["Christoph Reiter <reiter.christoph@gmail.com>"]
+authors = [{ name = "Christoph Reiter", email = "reiter.christoph@gmail.com" }]
+requires-python = ">=3.11,<4"
+dependencies = [
+    "mkdocs>=1.5,<2",
+    "mkdocs-material>=9.5,<10",
+]
+
+[tool.poetry]
 package-mode = false
 
-[tool.poetry.dependencies]
-python = "^3.11"
-mkdocs = "^1.5"
-mkdocs-material = "^9.5"
+[tool.uv]
+package = false
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
