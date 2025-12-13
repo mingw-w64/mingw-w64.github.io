@@ -37,7 +37,7 @@ $ x86_64-w64-mingw32-gcc hello.c -o hello.exe
 
 ## Testing
 
-For installing wine, the multilib repo has to be enabled first. See the [Arch Wiki](https://wiki.archlinux.org/title/Official_repositories#multilib) for more information. After that is done:
+Install Wine:
 
 ```console
 $ sudo pacman -S wine
