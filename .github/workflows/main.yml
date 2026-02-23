@@ -30,7 +30,7 @@ jobs:
       - name: Find typos with codespell
         run: uvx codespell --ignore-words-list=seh
 
-      - run: uv run mkdocs build
+      - run: uv run zensical build
 
       - name: Upload Results
         uses: actions/upload-artifact@v5
