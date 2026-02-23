@@ -1,4 +1,4 @@
-# MSYS2 (GCC)
+# Windows / MSYS2 (GCC)
 
 ## Installation
 

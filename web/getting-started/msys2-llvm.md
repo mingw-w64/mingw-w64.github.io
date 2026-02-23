@@ -1,4 +1,4 @@
-# MSYS2 (Clang/LLVM)
+# Windows / MSYS2 (Clang/LLVM)
 
 ## Installation
 
