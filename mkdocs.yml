@@ -68,15 +68,15 @@ markdown_extensions:
 nav:
   - 'Introduction': index.md
   - changelog.md
-  - Downloads:
-    - downloads.md
-    - source.md
   - Getting Started:
     - getting-started/archlinux.md
     - getting-started/debian.md
     - getting-started/fedora.md
     - getting-started/msys2.md
     - getting-started/msys2-llvm.md
+  - Downloads:
+    - downloads.md
+    - source.md
   - Build Systems:
     - build-systems/meson.md
     - build-systems/cmake.md
