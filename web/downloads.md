@@ -77,6 +77,17 @@ much easier to set up than building from source.
             <td>14.2.0/12.0.0 </td>
         </tr>
         <tr>
+            <td style="text-align:center;">
+                <strong><a href="#gcc-mcf">GCC-MCF</a></strong>
+            </td>
+            <td>Rolling</td>
+            <td>Windows</td>
+            <td>trunk/trunk</td>
+            <td>C, C++, Fortran, Obj-C, Obj-C++</td>
+            <td>20 (boost, bzip2, cmake, curl, gdb, iconv, lua, make, meson, muon, ncurses, ninja,
+                openssl, python, sqlite3, upx, xmake, yasm, zlib, zstd) </td>
+        </tr>
+        <tr>
             <td style="text-align:center;" rowspan="2">
                 <strong><a href="#fedora"><img
                             src="../logos/fedora-logo.png"
@@ -264,6 +275,20 @@ Installation: through integrated package manager.
 
 Installation: through integrated package manager.
 
+#### GCC-MCF
+
+[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
+x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
+merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
+GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
+`std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
+invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
+implements them on Windows syscalls in a more standard-compliant and more
+efficient way, outperforming even native slim reader/write locks (SRW) since
+Windows Vista.
+
+Installation: [7-Zip archives](https://gcc-mcf.lhmouse.com/)
+
 #### Homebrew
 
 ```
@@ -363,18 +388,6 @@ Flavors:
 Installation: Download from [winlibs.com](https://winlibs.com/) and extract archive (no installation needed).
 
 ## Unsorted complementary list
-
-### GCC with the MCF thread model
-
-[GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
-x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
-merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
-GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
-`std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
-invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
-implements them on Windows syscalls in a more standard-compliant and more
-efficient way, outperforming even native slim reader/write locks (SRW) since
-Windows Vista.
 
 ### OpenSUSE
 
