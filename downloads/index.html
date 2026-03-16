@@ -1692,16 +1692,19 @@ much easier to set up than building from source.</p>
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>2.5.0</td>
+            <td>2.6.0</td>
             <td>Windows</td>
             <td>15.2.0/13.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                6
+                9
                 (busybox,
+                ccache,
+                cmake,
                 ctags,
                 gdb,
                 make,
+                ninja,
                 pkg-config,
                 vim)
             </td>
@@ -1791,9 +1794,11 @@ sudo port install x86_64-w64-mingw32-gcc
 <li>mingw-w64 GCC : compilers, linker, assembler</li>
 <li><a href="https://www.gnu.org/software/gdb/">GDB</a> : debugger</li>
 <li><a href="https://www.gnu.org/software/make/">GNU Make</a> : standard build tool</li>
+<li><a href="https://cmake.org/">CMake</a> with <a href="https://ninja-build.org/">Ninja</a>: build system</li>
 <li><a href="https://frippery.org/busybox/">busybox-w32</a> : standard unix utilities, including sh</li>
 <li><a href="https://www.vim.org/">Vim</a> : powerful text editor</li>
 <li><a href="https://github.com/universal-ctags/ctags">Universal Ctags</a> : source navigation</li>
+<li><a href="https://ccache.dev/">Ccache</a> : compiler cache</li>
 </ul>
 <p>The toolchain includes pthreads, C++11 threads, and OpenMP. All included
 runtime components are static.</p>
