@@ -36,7 +36,7 @@ jobs:
           path: ./site
 
       - name: Find typos with codespell
-        run: uvx codespell --ignore-words-list=seh --exclude-file=web/changelog.md
+        run: uvx codespell
 
   deploy:
     runs-on: ubuntu-latest
