@@ -2,9 +2,29 @@
 
 The releases are sorted by date, with the most recent release at the top.
 
-## v14.0.0: [2026-03-27](https://github.com/mingw-w64/mingw-w64//v14.0.0)
+## v14.0.0: [2026-03-27](https://sourceforge.net/p/mingw-w64/mailman/message/59314196/)
 
-TBA
+Notable changes:
+
+* Various fixes to `stat()` family
+* Various fixes to `mbstowcs`/`wcstomb`
+* Added C23 binary `mingw_pformat` specifiers `%b` and `%B`
+* Add support for `mingw_pformat` `%ws`, `%wS`, `%wc` and `%wC`
+* Added C23 half-revolution trigonometric math functions
+* Sync against Wine version 11.5
+* `gendef`: Print `--kill-at` information only for i386
+* Initial support for `arm64ec-w64-mingw32`
+* Fix stack guard function when built with GCC `-fstack-protector-strong`
+* Removed the armv7 experimental softmath code
+* Removed `MINGW_HAS_SECURE_API`, secure APIs are always provided
+* Removed `MINGW_HAS_DDK_H`
+
+And many other additions thanks to, but not limited to (in Alphabetical order):
+
+Biswapriyo Nath, David Grayson, Egor Pugin, Erez Geva, Hugo Beauzée-Luyssen,
+Igor Kostenko, Jacek Caban, Kirill Makurin, Lasse Collin, LIU Hao, Luca Bacci,
+Markus Mützel, Martin Storsjö, Oleg Tolmatcev, Pali Rohár, Peter Damianov,
+Yan-Jie Wang, Zhiyi Zhang
 
 ## v13.0.0: [2025-06-08](https://sourceforge.net/p/mingw-w64/mailman/message/59192665/)
 
