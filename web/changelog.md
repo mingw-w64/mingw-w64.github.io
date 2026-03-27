@@ -2,6 +2,10 @@
 
 The releases are sorted by date, with the most recent release at the top.
 
+## v14.0.0: [2026-03-27](https://github.com/mingw-w64/mingw-w64//v14.0.0)
+
+TBA
+
 ## v13.0.0: [2025-06-08](https://sourceforge.net/p/mingw-w64/mailman/message/59192665/)
 
 Notable changes:
