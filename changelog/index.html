@@ -1614,8 +1614,27 @@
 
 <h1 id="changelog">Changelog</h1>
 <p>The releases are sorted by date, with the most recent release at the top.</p>
-<h2 id="v1400-2026-03-27">v14.0.0: <a href="https://github.com/mingw-w64/mingw-w64//v14.0.0">2026-03-27</a></h2>
-<p>TBA</p>
+<h2 id="v1400-2026-03-27">v14.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/59314196/">2026-03-27</a></h2>
+<p>Notable changes:</p>
+<ul>
+<li>Various fixes to <code>stat()</code> family</li>
+<li>Various fixes to <code>mbstowcs</code>/<code>wcstomb</code></li>
+<li>Added C23 binary <code>mingw_pformat</code> specifiers <code>%b</code> and <code>%B</code></li>
+<li>Add support for <code>mingw_pformat</code> <code>%ws</code>, <code>%wS</code>, <code>%wc</code> and <code>%wC</code></li>
+<li>Added C23 half-revolution trigonometric math functions</li>
+<li>Sync against Wine version 11.5</li>
+<li><code>gendef</code>: Print <code>--kill-at</code> information only for i386</li>
+<li>Initial support for <code>arm64ec-w64-mingw32</code></li>
+<li>Fix stack guard function when built with GCC <code>-fstack-protector-strong</code></li>
+<li>Removed the armv7 experimental softmath code</li>
+<li>Removed <code>MINGW_HAS_SECURE_API</code>, secure APIs are always provided</li>
+<li>Removed <code>MINGW_HAS_DDK_H</code></li>
+</ul>
+<p>And many other additions thanks to, but not limited to (in Alphabetical order):</p>
+<p>Biswapriyo Nath, David Grayson, Egor Pugin, Erez Geva, Hugo Beauzée-Luyssen,
+Igor Kostenko, Jacek Caban, Kirill Makurin, Lasse Collin, LIU Hao, Luca Bacci,
+Markus Mützel, Martin Storsjö, Oleg Tolmatcev, Pali Rohár, Peter Damianov,
+Yan-Jie Wang, Zhiyi Zhang</p>
 <h2 id="v1300-2025-06-08">v13.0.0: <a href="https://sourceforge.net/p/mingw-w64/mailman/message/59192665/">2025-06-08</a></h2>
 <p>Notable changes:</p>
 <ul>
