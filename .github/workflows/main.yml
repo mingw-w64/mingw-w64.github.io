@@ -30,7 +30,7 @@ jobs:
       - run: uv run zensical build
 
       - name: Upload Results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: website
           path: ./site
@@ -47,7 +47,7 @@ jobs:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/source'
     steps:
       - name: Download Results
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: website
           path: ./site
