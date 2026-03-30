@@ -1188,6 +1188,10 @@
 <span class="c"># for libraries and headers in the target directories</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH_MODE_LIBRARY</span><span class="w"> </span><span class="s">ONLY</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_FIND_ROOT_PATH_MODE_INCLUDE</span><span class="w"> </span><span class="s">ONLY</span><span class="p">)</span>
+
+<span class="c"># CMake determines how to examine dependencies based on the *host* system, leading to</span>
+<span class="c"># a `file unknown error` unless the target platform is explicitly specified.</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_GET_RUNTIME_DEPENDENCIES_PLATFORM</span><span class="w"> </span><span class="s2">&quot;windows+pe&quot;</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>cmake<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>toolchain-mingw64.cmake
 <span class="gp">$ </span>cmake<span class="w"> </span>--build<span class="w"> </span>build
