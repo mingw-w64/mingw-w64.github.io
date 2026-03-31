@@ -1,0 +1,3 @@
+[codespell]
+skip = ./web/changelog.md,./site/*
+ignore-words-list = seh

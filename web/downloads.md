@@ -209,16 +209,19 @@ much easier to set up than building from source.
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>2.5.0</td>
+            <td>2.6.0</td>
             <td>Windows</td>
             <td>15.2.0/13.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                6
+                9
                 (busybox,
+                ccache,
+                cmake,
                 ctags,
                 gdb,
                 make,
+                ninja,
                 pkg-config,
                 vim)
             </td>
@@ -345,9 +348,11 @@ Included tools:
 * mingw-w64 GCC : compilers, linker, assembler
 * [GDB][gdb] : debugger
 * [GNU Make][make] : standard build tool
+* [CMake][cmake] with [Ninja][ninja]: build system
 * [busybox-w32][bb] : standard unix utilities, including sh
 * [Vim][vim] : powerful text editor
 * [Universal Ctags][ctags] : source navigation
+* [Ccache][ccache] : compiler cache
 
 The toolchain includes pthreads, C++11 threads, and OpenMP. All included
 runtime components are static.
@@ -355,9 +360,12 @@ runtime components are static.
 Installation: [GitHub](https://github.com/skeeto/w64devkit/releases)
 
 [bb]: https://frippery.org/busybox/
+[ccache]: https://ccache.dev/
+[cmake]: https://cmake.org/
 [ctags]: https://github.com/universal-ctags/ctags
 [gdb]: https://www.gnu.org/software/gdb/
 [make]: https://www.gnu.org/software/make/
+[ninja]: https://ninja-build.org/
 [vim]: https://www.vim.org/
 [w64devkit]: https://github.com/skeeto/w64devkit
 
