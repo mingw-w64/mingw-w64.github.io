@@ -258,8 +258,8 @@ provides POSIX functionality on top of the Win32 API. It can be used as a build
 environment which targets Windows directly and for which output doesn't depend
 on cygwin1.dll.
 
-Installation is done through cygwin's package manager:
-[setup.exe](https://cygwin.com/install.html).
+Installation is done through Cygwin's package manager:
+[setup-x86_64.exe](https://cygwin.com/install.html).
 
 As part of the numerous packages in cygwin, there are cross-compilation
 toolchains which target both 32 bits and 64 bits; their names start with
@@ -331,7 +331,7 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
-Installation: [GitHub](https://www.msys2.org/)
+Installation: [Homepage](https://www.msys2.org/)
 
 #### Ubuntu
 
