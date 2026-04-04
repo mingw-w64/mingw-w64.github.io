@@ -245,7 +245,7 @@ much easier to set up than building from source.
 
 #### Arch Linux
 
-Installation:
+Installation: through integrated package manager; see [Getting Started](./getting-started/archlinux.md).
 
 * [Extra repository (toolchain)](https://www.archlinux.org/packages/?q=mingw-w64)
 * [AUR repository (additional packages)](https://aur.archlinux.org/packages/?SeB=n&K=mingw-w64&SB=c&PP=250)
@@ -270,13 +270,13 @@ cross-compilation approach.
 
 #### Debian
 
-Installation: through integrated package manager.
+Installation: through integrated package manager; see [Getting Started](./getting-started/debian.md).
 
-[mingw-w64 packages on Debian](https://packages.debian.org/mingw-w64)
+Here is the list of [mingw-w64 packages on Debian](https://packages.debian.org/mingw-w64).
 
 #### Fedora
 
-Installation: through integrated package manager.
+Installation: through integrated package manager; see [Getting Started](./getting-started/fedora.md).
 
 #### GCC-MCF
 
@@ -331,13 +331,27 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
-Installation: [Homepage](https://www.msys2.org/)
+You can download and install MSYS2 from their [homepage](https://www.msys2.org/).
+MSYS2 has a package manager, and provides separate environments (shells):
+
+* `MSYS` is for programs that are linked against the MSYS2 (Cygwin) runtime, and not mingw-w64.
+* `MINGW32` is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x86.
+* `MINGW64` is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x64.
+* `UCRT64` is for programs that are compiled by GCC and linked against mingw-w64 and UCRT on x64.
+* `CLANG64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on x64.
+* `CLANGARM64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on ARM64.
+
+Installation: through integrated package manager; see [Getting Started for UCRT64](./getting-started/msys2.md)
+or [Getting Started for CLANG64](./getting-started/msys2-llvm.md).
+
+Here is the list of [mingw-w64 packages in UCRT64](https://packages.msys2.org/packages/?repo=ucrt64)
+and [mingw-w64 packages in CLANG64](https://packages.msys2.org/packages/?repo=clang64).
 
 #### Ubuntu
 
-Installation: through integrated package manager.
+Installation: through integrated package manager; see [Getting Started](./getting-started/debian.md).
 
-[mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64)
+Here is the list of [mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64).
 
 #### w64devkit
 
