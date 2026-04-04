@@ -1501,7 +1501,7 @@ much easier to set up than building from source.</p>
 </table>
 
 <h4 id="arch-linux">Arch Linux</h4>
-<p>Installation:</p>
+<p>Installation: through integrated package manager; see <a href=".././getting-started/archlinux/">Getting Started</a>.</p>
 <ul>
 <li><a href="https://www.archlinux.org/packages/?q=mingw-w64">Extra repository (toolchain)</a></li>
 <li><a href="https://aur.archlinux.org/packages/?SeB=n&amp;K=mingw-w64&amp;SB=c&amp;PP=250">AUR repository (additional packages)</a></li>
@@ -1520,10 +1520,10 @@ toolchains which target both 32 bits and 64 bits; their names start with
 <p>Once they are installed, they should be used according to the general
 cross-compilation approach.</p>
 <h4 id="debian">Debian</h4>
-<p>Installation: through integrated package manager.</p>
-<p><a href="https://packages.debian.org/mingw-w64">mingw-w64 packages on Debian</a></p>
+<p>Installation: through integrated package manager; see <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>Here is the list of <a href="https://packages.debian.org/mingw-w64">mingw-w64 packages on Debian</a>.</p>
 <h4 id="fedora">Fedora</h4>
-<p>Installation: through integrated package manager.</p>
+<p>Installation: through integrated package manager; see <a href=".././getting-started/fedora/">Getting Started</a>.</p>
 <h4 id="gcc-mcf">GCC-MCF</h4>
 <p><a href="https://gcc-mcf.lhmouse.com/">GCC with the MCF thread model</a> is a series of
 x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
@@ -1557,10 +1557,23 @@ sudo port install x86_64-w64-mingw32-gcc
 <h4 id="mingw-w64-builds">MinGW-W64-builds</h4>
 <p>Installation: <a href="https://github.com/niXman/mingw-builds-binaries/releases">GitHub</a></p>
 <h4 id="msys2">MSYS2</h4>
-<p>Installation: <a href="https://www.msys2.org/">Homepage</a></p>
+<p>You can download and install MSYS2 from their <a href="https://www.msys2.org/">homepage</a>.
+MSYS2 has a package manager, and provides separate environments (shells):</p>
+<ul>
+<li><code>MSYS</code> is for programs that are linked against the MSYS2 (Cygwin) runtime, and not mingw-w64.</li>
+<li><code>MINGW32</code> is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x86.</li>
+<li><code>MINGW64</code> is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x64.</li>
+<li><code>UCRT64</code> is for programs that are compiled by GCC and linked against mingw-w64 and UCRT on x64.</li>
+<li><code>CLANG64</code> is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on x64.</li>
+<li><code>CLANGARM64</code> is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on ARM64.</li>
+</ul>
+<p>Installation: through integrated package manager; see <a href=".././getting-started/msys2/">Getting Started for UCRT64</a>
+or <a href=".././getting-started/msys2-llvm/">Getting Started for CLANG64</a>.</p>
+<p>Here is the list of <a href="https://packages.msys2.org/packages/?repo=ucrt64">mingw-w64 packages in UCRT64</a>
+and <a href="https://packages.msys2.org/packages/?repo=clang64">mingw-w64 packages in CLANG64</a>.</p>
 <h4 id="ubuntu">Ubuntu</h4>
-<p>Installation: through integrated package manager.</p>
-<p><a href="https://launchpad.net/ubuntu/+source/mingw-w64">mingw-w64 packages on Ubuntu</a></p>
+<p>Installation: through integrated package manager; see <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>Here is the list of <a href="https://launchpad.net/ubuntu/+source/mingw-w64">mingw-w64 packages on Ubuntu</a>.</p>
 <h4 id="w64devkit">w64devkit</h4>
 <p><a href="https://github.com/skeeto/w64devkit">w64devkit</a> is a portable C and C++ development kit for x64 (and x86) Windows.</p>
 <p>Included tools:</p>
