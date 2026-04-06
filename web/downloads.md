@@ -331,7 +331,6 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
-You can download and install MSYS2 from their [homepage](https://www.msys2.org/).
 MSYS2 has a package manager, and provides separate environments (shells):
 
 * `MSYS` is for programs that are linked against the MSYS2 (Cygwin) runtime, and not mingw-w64.
@@ -341,7 +340,8 @@ MSYS2 has a package manager, and provides separate environments (shells):
 * `CLANG64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on x64.
 * `CLANGARM64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on ARM64.
 
-Installation: through integrated package manager; see [Getting Started for UCRT64](./getting-started/msys2.md)
+Installation: MSYS2 can be downloaded from their [homepage](https://www.msys2.org/). Mingw-w64 packages
+can be installed through its integrated package manager; see [Getting Started for UCRT64](./getting-started/msys2.md)
 or [Getting Started for CLANG64](./getting-started/msys2-llvm.md).
 
 Here is the list of [mingw-w64 packages in UCRT64](https://packages.msys2.org/packages/?repo=ucrt64)
