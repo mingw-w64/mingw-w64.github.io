@@ -1501,7 +1501,9 @@ much easier to set up than building from source.</p>
 </table>
 
 <h4 id="arch-linux">Arch Linux</h4>
-<p>Installation: through integrated package manager; see <a href=".././getting-started/archlinux/">Getting Started</a>.</p>
+<p>On Arch Linux, mingw-w64 headers and runtime libraries for cross-compilation can
+be installed with the integrated package manager, <code>pacman</code>. Usually they are
+installed as dependencies of <code>mingw-w64-gcc</code>. See <a href=".././getting-started/archlinux/">Getting Started</a>.</p>
 <ul>
 <li><a href="https://www.archlinux.org/packages/?q=mingw-w64">Extra repository (toolchain)</a></li>
 <li><a href="https://aur.archlinux.org/packages/?SeB=n&amp;K=mingw-w64&amp;SB=c&amp;PP=250">AUR repository (additional packages)</a></li>
@@ -1512,39 +1514,51 @@ interface for Microsoft Windows. Its core is the cygwin1.dll library which
 provides POSIX functionality on top of the Win32 API. It can be used as a build
 environment which targets Windows directly and for which output doesn't depend
 on cygwin1.dll.</p>
-<p>Installation is done through Cygwin's package manager:
-<a href="https://cygwin.com/install.html">setup-x86_64.exe</a>.</p>
 <p>As part of the numerous packages in cygwin, there are cross-compilation
 toolchains which target both 32 bits and 64 bits; their names start with
-“mingw64-”.</p>
+“mingw64-”, and can be installed with Cygwin's package manager,
+<a href="https://cygwin.com/install.html">setup-x86_64.exe</a>.</p>
 <p>Once they are installed, they should be used according to the general
 cross-compilation approach.</p>
 <h4 id="debian">Debian</h4>
-<p>Installation: through integrated package manager; see <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>On Debian and systems that derive from Debian, mingw-w64 headers and runtime
+libraries for cross-compilation can be installed with the integrated package
+manager, <code>apt</code> or <code>aptitude</code>. Usually they are installed as dependencies of
+<code>g++-mingw-w64</code>. See <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>Debian provides separate packages for <code>gcc</code> and <code>g++</code>, and separate packages
+for <code>posix</code> and <code>win32</code> thread models, and (since Debian Trixie) also separate
+packages for UCRT.</p>
 <p>Here is the list of <a href="https://packages.debian.org/mingw-w64">mingw-w64 packages on Debian</a>.</p>
 <h4 id="fedora">Fedora</h4>
-<p>Installation: through integrated package manager; see <a href=".././getting-started/fedora/">Getting Started</a>.</p>
+<p>On Fedora, mingw-w64 headers and runtime libraries for cross-compilation can be
+installed with the integrated package manager, <code>dnf</code>. Usually they are installed
+as dependencies of <code>mingw64-gcc-c++</code>. See <a href=".././getting-started/fedora/">Getting Started</a>.</p>
+<p>Fedora provides separate packages for UCRT on x86-64.</p>
 <h4 id="gcc-mcf">GCC-MCF</h4>
 <p><a href="https://gcc-mcf.lhmouse.com/">GCC with the MCF thread model</a> is a series of
-x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
-merged into GCC 13, and can be enabled by passing <code>--enable-threads=mcf</code> to
+x86-32 and x86-64 native toolchains built by LH_Mouse. The MCF thread model has
+been merged into GCC 13, and can be enabled by passing <code>--enable-threads=mcf</code> to
 GCC's <em>configure</em> script. C++11 threading facilities, such as <code>std::thread</code>,
 <code>std::mutex</code>, <code>std::condition_variable</code>, <code>std::call_once</code>, <code>thread_local</code> etc.
 invoke the <a href="https://github.com/lhmouse/mcfgthread/">mcfgthread</a> library, which
 implements them on Windows syscalls in a more standard-compliant and more
 efficient way, outperforming even native slim reader/write locks (SRW) since
-Windows Vista.</p>
-<p>Installation: <a href="https://gcc-mcf.lhmouse.com/">7-Zip archives</a></p>
+Windows 7.</p>
+<p>GCC-MCF provides standalone <a href="https://gcc-mcf.lhmouse.com/">7-Zip archives</a> of
+complete toolchains, including mingw-w64 headers, libraries, compilers and
+linkers.</p>
 <h4 id="homebrew">Homebrew</h4>
-<div class="highlight"><pre><span></span><code>brew install mingw-w64
-</code></pre></div>
+<p>With Homebrew, mingw-w64 headers, libraries, compilers and linkers can be
+installed with just <code>brew install mingw-w64</code>.</p>
 <h4 id="llvm-mingw">LLVM-MinGW</h4>
 <p>LLVM-MinGW is a toolchain built with Clang, LLD, libc++, targeting
-i686, x86_64, arm and aarch64 (ARM64), with releases both for running
+i686, x86-64, ARM and AArch64 (ARM64), with releases both for running
 as a cross compiler from Linux and for running on Windows. It supports
-Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
+AddressSanitizer, UndefinedBehaviorSanitizer, and generating debug
 info in PDB format.</p>
-<p>Installation: <a href="https://github.com/mstorsjo/llvm-mingw/releases">GitHub</a></p>
+<p>LLVM-MinGW provides <a href="https://github.com/mstorsjo/llvm-mingw/releases">standalone tarballs</a>
+of complete toolchains, including mingw-w64 headers, libraries, compilers and
+linkers.</p>
 <h4 id="macports">MacPorts</h4>
 <p>To install just the 32-bit or just 64-bit compiler with dependencies, use:</p>
 <div class="highlight"><pre><span></span><code>sudo port install i686-w64-mingw32-gcc
@@ -1557,7 +1571,8 @@ sudo port install x86_64-w64-mingw32-gcc
 <h4 id="mingw-w64-builds">MinGW-W64-builds</h4>
 <p>Installation: <a href="https://github.com/niXman/mingw-builds-binaries/releases">GitHub</a></p>
 <h4 id="msys2">MSYS2</h4>
-<p>MSYS2 has a package manager, and provides separate environments (shells):</p>
+<p><a href="https://www.msys2.org/">MSYS2</a> is a series of Unix-like environments on
+Windows. It has a package manager, and provides separate environments (shells):</p>
 <ul>
 <li><code>MSYS</code> is for programs that are linked against the MSYS2 (Cygwin) runtime, and not mingw-w64.</li>
 <li><code>MINGW32</code> is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x86.</li>
@@ -1566,13 +1581,19 @@ sudo port install x86_64-w64-mingw32-gcc
 <li><code>CLANG64</code> is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on x64.</li>
 <li><code>CLANGARM64</code> is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on ARM64.</li>
 </ul>
-<p>Installation: MSYS2 can be downloaded from their <a href="https://www.msys2.org/">homepage</a>. Mingw-w64 packages
-can be installed through its integrated package manager; see <a href=".././getting-started/msys2/">Getting Started for UCRT64</a>
+<p>Mingw-w64 headers, libraries, compilers and linkers can be installed with the
+MSYS2 package manager, <code>pacman</code>. Each environment has its own naming schemes of
+packages. See <a href=".././getting-started/msys2/">Getting Started for UCRT64</a>
 or <a href=".././getting-started/msys2-llvm/">Getting Started for CLANG64</a>.</p>
 <p>Here is the list of <a href="https://packages.msys2.org/packages/?repo=ucrt64">mingw-w64 packages in UCRT64</a>
 and <a href="https://packages.msys2.org/packages/?repo=clang64">mingw-w64 packages in CLANG64</a>.</p>
 <h4 id="ubuntu">Ubuntu</h4>
-<p>Installation: through integrated package manager; see <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>On Ubuntu and Linux Mint, mingw-w64 headers and runtime libraries for
+cross-compilation can be installed with the integrated package
+manager, <code>apt</code> or <code>aptitude</code>. Usually they are installed as dependencies of
+<code>g++-mingw-w64</code>. See <a href=".././getting-started/debian/">Getting Started</a>.</p>
+<p>Ubuntu provides separate packages for <code>gcc</code> and <code>g++</code>, and separate packages
+for <code>posix</code> and <code>win32</code> thread models.</p>
 <p>Here is the list of <a href="https://launchpad.net/ubuntu/+source/mingw-w64">mingw-w64 packages on Ubuntu</a>.</p>
 <h4 id="w64devkit">w64devkit</h4>
 <p><a href="https://github.com/skeeto/w64devkit">w64devkit</a> is a portable C and C++ development kit for x64 (and x86) Windows.</p>
