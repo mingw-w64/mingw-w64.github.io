@@ -245,7 +245,9 @@ much easier to set up than building from source.
 
 #### Arch Linux
 
-Installation: through integrated package manager; see [Getting Started](./getting-started/archlinux.md).
+On Arch Linux, mingw-w64 headers and runtime libraries for cross-compilation can
+be installed with the integrated package manager, `pacman`. Usually they are
+installed as dependencies of `mingw-w64-gcc`. See [Getting Started](./getting-started/archlinux.md).
 
 * [Extra repository (toolchain)](https://www.archlinux.org/packages/?q=mingw-w64)
 * [AUR repository (additional packages)](https://aur.archlinux.org/packages/?SeB=n&K=mingw-w64&SB=c&PP=250)
@@ -258,55 +260,67 @@ provides POSIX functionality on top of the Win32 API. It can be used as a build
 environment which targets Windows directly and for which output doesn't depend
 on cygwin1.dll.
 
-Installation is done through Cygwin's package manager:
-[setup-x86_64.exe](https://cygwin.com/install.html).
-
 As part of the numerous packages in cygwin, there are cross-compilation
 toolchains which target both 32 bits and 64 bits; their names start with
-“mingw64-”.
+“mingw64-”, and can be installed with Cygwin's package manager,
+[setup-x86_64.exe](https://cygwin.com/install.html).
 
 Once they are installed, they should be used according to the general
 cross-compilation approach.
 
 #### Debian
 
-Installation: through integrated package manager; see [Getting Started](./getting-started/debian.md).
+On Debian and systems that derive from Debian, mingw-w64 headers and runtime
+libraries for cross-compilation can be installed with the integrated package
+manager, `apt` or `aptitude`. Usually they are installed as dependencies of
+`g++-mingw-w64`. See [Getting Started](./getting-started/debian.md).
+
+Debian provides separate packages for `gcc` and `g++`, and separate packages
+for `posix` and `win32` thread models, and (since Debian Trixie) also separate
+packages for UCRT.
 
 Here is the list of [mingw-w64 packages on Debian](https://packages.debian.org/mingw-w64).
 
 #### Fedora
 
-Installation: through integrated package manager; see [Getting Started](./getting-started/fedora.md).
+On Fedora, mingw-w64 headers and runtime libraries for cross-compilation can be
+installed with the integrated package manager, `dnf`. Usually they are installed
+as dependencies of `mingw64-gcc-c++`. See [Getting Started](./getting-started/fedora.md).
+
+Fedora provides separate packages for UCRT on x86-64.
 
 #### GCC-MCF
 
 [GCC with the MCF thread model](https://gcc-mcf.lhmouse.com/) is a series of
-x86 and x64 native toolchains built by LH_Mouse. The MCF thread model has been
-merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
+x86-32 and x86-64 native toolchains built by LH_Mouse. The MCF thread model has
+been merged into GCC 13, and can be enabled by passing `--enable-threads=mcf` to
 GCC's _configure_ script. C++11 threading facilities, such as `std::thread`,
 `std::mutex`, `std::condition_variable`, `std::call_once`, `thread_local` etc.
 invoke the [mcfgthread](https://github.com/lhmouse/mcfgthread/) library, which
 implements them on Windows syscalls in a more standard-compliant and more
 efficient way, outperforming even native slim reader/write locks (SRW) since
-Windows Vista.
+Windows 7.
 
-Installation: [7-Zip archives](https://gcc-mcf.lhmouse.com/)
+GCC-MCF provides standalone [7-Zip archives](https://gcc-mcf.lhmouse.com/) of
+complete toolchains, including mingw-w64 headers, libraries, compilers and
+linkers.
 
 #### Homebrew
 
-```
-brew install mingw-w64
-```
+With Homebrew, mingw-w64 headers, libraries, compilers and linkers can be
+installed with just `brew install mingw-w64`.
 
 #### LLVM-MinGW
 
 LLVM-MinGW is a toolchain built with Clang, LLD, libc++, targeting
-i686, x86\_64, arm and aarch64 (ARM64), with releases both for running
+i686, x86-64, ARM and AArch64 (ARM64), with releases both for running
 as a cross compiler from Linux and for running on Windows. It supports
-Address Sanitizer, Undefined Behaviour Sanitizer, and generating debug
+AddressSanitizer, UndefinedBehaviorSanitizer, and generating debug
 info in PDB format.
 
-Installation: [GitHub](https://github.com/mstorsjo/llvm-mingw/releases)
+LLVM-MinGW provides [standalone tarballs](https://github.com/mstorsjo/llvm-mingw/releases)
+of complete toolchains, including mingw-w64 headers, libraries, compilers and
+linkers.
 
 #### MacPorts
 
@@ -331,7 +345,8 @@ Installation: [GitHub](https://github.com/niXman/mingw-builds-binaries/releases)
 
 #### MSYS2
 
-MSYS2 has a package manager, and provides separate environments (shells):
+[MSYS2](https://www.msys2.org/) is a series of Unix-like environments on
+Windows. It has a package manager, and provides separate environments (shells):
 
 * `MSYS` is for programs that are linked against the MSYS2 (Cygwin) runtime, and not mingw-w64.
 * `MINGW32` is for programs that are compiled by GCC and linked against mingw-w64 and MSVCRT.DLL on x86.
@@ -340,8 +355,9 @@ MSYS2 has a package manager, and provides separate environments (shells):
 * `CLANG64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on x64.
 * `CLANGARM64` is for programs that are compiled by Clang and linked against mingw-w64 and UCRT on ARM64.
 
-Installation: MSYS2 can be downloaded from their [homepage](https://www.msys2.org/). Mingw-w64 packages
-can be installed through its integrated package manager; see [Getting Started for UCRT64](./getting-started/msys2.md)
+Mingw-w64 headers, libraries, compilers and linkers can be installed with the
+MSYS2 package manager, `pacman`. Each environment has its own naming schemes of
+packages. See [Getting Started for UCRT64](./getting-started/msys2.md)
 or [Getting Started for CLANG64](./getting-started/msys2-llvm.md).
 
 Here is the list of [mingw-w64 packages in UCRT64](https://packages.msys2.org/packages/?repo=ucrt64)
@@ -349,7 +365,13 @@ and [mingw-w64 packages in CLANG64](https://packages.msys2.org/packages/?repo=cl
 
 #### Ubuntu
 
-Installation: through integrated package manager; see [Getting Started](./getting-started/debian.md).
+On Ubuntu and Linux Mint, mingw-w64 headers and runtime libraries for
+cross-compilation can be installed with the integrated package
+manager, `apt` or `aptitude`. Usually they are installed as dependencies of
+`g++-mingw-w64`. See [Getting Started](./getting-started/debian.md).
+
+Ubuntu provides separate packages for `gcc` and `g++`, and separate packages
+for `posix` and `win32` thread models.
 
 Here is the list of [mingw-w64 packages on Ubuntu](https://launchpad.net/ubuntu/+source/mingw-w64).
 
