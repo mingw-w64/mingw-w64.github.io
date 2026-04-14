@@ -209,12 +209,12 @@ much easier to set up than building from source.
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>2.6.0</td>
+            <td>2.7.0</td>
             <td>Windows</td>
-            <td>15.2.0/13.0.0</td>
+            <td>15.2.0/14.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
-                9
+                10
                 (busybox,
                 ccache,
                 cmake,
@@ -223,7 +223,8 @@ much easier to set up than building from source.
                 make,
                 ninja,
                 pkg-config,
-                vim)
+                vim,
+                zstd)
             </td>
         </tr>
         <tr>
