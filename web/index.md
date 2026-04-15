@@ -114,6 +114,7 @@ forward. Contributions have been going to and coming from these projects:
 - [Libxml2](https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home)
 - [MAME (Yes, the arcade emulator!)](https://mamedev.org/)
 - [ManKai Common Lisp](https://common-lisp.net/project/mkcl/)
+- [MPC-QT](https://mpc-qt.github.io/)
 - [mpg123](https://www.mpg123.de/)
 - [MS MPI](https://www.symscape.com/configure-msmpi-for-mingw-w64)
 - [OCaml](https://www.ocaml.org)
