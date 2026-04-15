@@ -138,7 +138,7 @@ forward. Contributions have been going to and coming from these projects:
 - [VSXu](https://www.vsxu.com/)
 - [Woo](https://www.woodem.eu/)
 - [wxWidgets](https://www.wxwidgets.org/)
-- [YafaRay](https://www.yafaray.org/)
+- [YafaRay](https://github.com/YafaRay/libYafaRay)
 - [zlib](https://www.zlib.net/)
 
 *Feel free to add your project to this list!*
