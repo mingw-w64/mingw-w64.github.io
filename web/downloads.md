@@ -167,6 +167,18 @@ much easier to set up than building from source.
         </tr>
         <tr>
             <td style="text-align:center;">
+                <strong><a href="#mingw-gcc-cross">mingw-gcc-cross</a></strong>
+            </td>
+            <td>Rolling</td>
+            <td>Linux, macOS, BSD, Android</td>
+            <td>
+                <a href="https://github.com/AmanoTeam/mingw-gcc-cross/releases/tag/gcc-15" class="urlextern" rel="nofollow">15.2.0</a>/<a href="https://github.com/AmanoTeam/mingw-gcc-cross/releases/tag/sysroot" class="urlextern" rel="nofollow">trunk</a>
+            </td>
+            <td>C, C++</td>
+            <td><a href="https://github.com/AmanoTeam/MinGW-w64/blob/master/README.md#software-availability">many</a></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
                 <strong><a href="#msys2" class="media" title="download:msys2"><img
                             src="../logos/msys2-logo.png"
                             title="MSYS2 logo" alt="MSYS2 logo" width="32"></a><br>
@@ -322,6 +334,14 @@ info in PDB format.
 LLVM-MinGW provides [standalone tarballs](https://github.com/mstorsjo/llvm-mingw/releases)
 of complete toolchains, including mingw-w64 headers, libraries, compilers and
 linkers.
+
+#### mingw-gcc-cross
+
+The toolchain is primarily based on GCC, but also supports cross-compilation with Clang as a frontend. In that case, GCC’s standard libraries are still used during linking.
+
+It does not include external third-party libraries beyond MinGW itself. However, it provides a self-contained, APT-like package manager that can fetch packages from remote repositories (such as MSYS2) and make them available for use during cross-compilation.
+
+Installation: [GitHub](https://github.com/AmanoTeam/mingw-gcc-cross/releases)
 
 #### MacPorts
 
