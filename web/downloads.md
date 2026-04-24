@@ -98,7 +98,7 @@ much easier to set up than building from source.
             </td>
             <td>Rolling</td>
             <td>Windows</td>
-            <td>trunk/trunk</td>
+            <td>16.x.x/trunk</td>
             <td>C, C++, Fortran, Obj-C, Obj-C++</td>
             <td>20 (boost, bzip2, cmake, curl, gdb, iconv, lua, make, meson, muon, ncurses, ninja,
                 openssl, python, sqlite3, upx, xmake, yasm, zlib, zstd) </td>
