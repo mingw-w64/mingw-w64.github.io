@@ -178,9 +178,9 @@ much easier to set up than building from source.
                 <a href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD" class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-gcc/PKGBUILD"
                     rel="nofollow">15.2.0</a>/<a
-                    href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
+                    href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt/PKGBUILD"
                     class="urlextern"
-                    title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt-git/PKGBUILD"
+                    title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt/PKGBUILD"
                     rel="nofollow">trunk</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
