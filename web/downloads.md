@@ -98,7 +98,7 @@ much easier to set up than building from source.
             </td>
             <td>Rolling</td>
             <td>Windows</td>
-            <td>16.x.x/trunk</td>
+            <td>16.x.x/master</td>
             <td>C, C++, Fortran, Obj-C, Obj-C++</td>
             <td>20 (boost, bzip2, cmake, curl, gdb, iconv, lua, make, meson, muon, ncurses, ninja,
                 openssl, python, sqlite3, upx, xmake, yasm, zlib, zstd) </td>
@@ -128,7 +128,7 @@ much easier to set up than building from source.
             </td>
             <td>20251202</td>
             <td>Windows, Linux, macOS</td>
-            <td>LLVM 21.1.7/trunk</td>
+            <td>LLVM 21.1.7/master</td>
             <td>C, C++</td>
             <td>make, Python</td>
         </tr>
@@ -181,7 +181,7 @@ much easier to set up than building from source.
                     href="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt/PKGBUILD"
                     class="urlextern"
                     title="https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-crt/PKGBUILD"
-                    rel="nofollow">trunk</a>
+                    rel="nofollow">master</a>
             </td>
             <td>Ada, C, C++, Fortran, Obj-C, Obj-C++, OCaml </td>
             <td><a href="https://packages.msys2.org">many</a></td>
