@@ -219,9 +219,9 @@ much easier to set up than building from source.
             <td style="text-align:center;">
                 <strong><a href="#w64devkit">w64devkit</a></strong>
             </td>
-            <td>2.7.0</td>
+            <td>2.8.0</td>
             <td>Windows</td>
-            <td>15.2.0 / - / 14.0.0</td>
+            <td>16.1.0 / - / 14.0.0</td>
             <td>C, C++, Fortran</td>
             <td>
                 10
