@@ -141,5 +141,6 @@ forward. Contributions have been going to and coming from these projects:
 - [wxWidgets](https://www.wxwidgets.org/)
 - [YafaRay](https://github.com/YafaRay/libYafaRay)
 - [zlib](https://www.zlib.net/)
+- [TextHandwriting](https://texthandwriting.app/)
 
 *Feel free to add your project to this list!*
