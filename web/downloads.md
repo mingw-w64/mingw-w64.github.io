@@ -53,7 +53,7 @@ much easier to set up than building from source.
                 <a href="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-core.html" class="urlextern"
                     title="https://cygwin.com/packages/summary/mingw64-x86_64-gcc-core.html" rel="nofollow">14.4.0</a>
                   / <a href="https://cygwin.com/packages/summary/mingw64-x86_64-clang.html" class="urlextern"
-                    title="https://cygwin.com/packages/summary/mingw64-x86_64-clang.html" rel="nofollow">22.1.8</a>
+                    title="https://cygwin.com/packages/summary/mingw64-x86_64-clang.html" rel="nofollow">20.1.8</a>
                   / <a
                     href="https://cygwin.com/packages/summary/mingw64-x86_64-runtime.html" class="urlextern"
                     title="https://cygwin.com/packages/summary/mingw64-x86_64-runtime.html" rel="nofollow">14.0.0</a>
