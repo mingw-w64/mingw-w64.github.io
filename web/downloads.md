@@ -197,6 +197,18 @@ much easier to set up than building from source.
             <td><a href="https://packages.msys2.org">many</a></td>
         </tr>
         <tr>
+            <td style="text-align:center;">
+                <strong><a href="#stls-mingw-distro">STL's MinGW Distro</a></strong>
+            </td>
+            <td>20.0</td>
+            <td>Windows</td>
+            <td>15.2.0 / - / 11.0.1</td>
+            <td>C, C++</td>
+            <td>21 (Boost, FreeType, gdb, glbinding, GLFW, GLM, libjpeg-turbo, libogg, libpng,
+                libvorbis, make, OptiPNG, pngcheck, ripgrep, SDL, SDL_mixer, sed, uutils/coreutils,
+                vorbis-tools, zlib, zstd)</td>
+        </tr>
+        <tr>
             <td style="text-align:center;" rowspan="3">
                 <strong><a href="#ubuntu"><img
                             src="../logos/ubuntu-logo.png"
@@ -373,6 +385,17 @@ or [Getting Started for CLANG64](./getting-started/msys2-llvm.md).
 
 Here is the list of [mingw-w64 packages in UCRT64](https://packages.msys2.org/packages/?repo=ucrt64)
 and [mingw-w64 packages in CLANG64](https://packages.msys2.org/packages/?repo=clang64).
+
+#### STL's MinGW Distro
+
+[Stephan T. Lavavej](https://github.com/StephanTLavavej), who maintains the Microsoft C++
+standard library that is shipped with Visual Studio, also has his own
+[MinGW Distro](https://nuwen.net/mingw.html) which is a native x86-64 toolchain. Its build
+scripts are [available on GitHub](https://github.com/StephanTLavavej/mingw-distro).
+
+The MinGW Distro provides a [standalone self-extracting archive](https://nuwen.net/mingw.html)
+of a complete toolchain, including mingw-w64 headers, libraries, compiler, linker,
+as well as some other useful libraries and utilities.
 
 #### Ubuntu
 
