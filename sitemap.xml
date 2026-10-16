@@ -4,7 +4,22 @@
         <loc>https://www.mingw-w64.org/</loc>
       </url>
       <url>
+        <loc>https://www.mingw-w64.org/build-systems/cmake/</loc>
+      </url>
+      <url>
+        <loc>https://www.mingw-w64.org/build-systems/meson/</loc>
+      </url>
+      <url>
         <loc>https://www.mingw-w64.org/changelog/</loc>
+      </url>
+      <url>
+        <loc>https://www.mingw-w64.org/contribute/</loc>
+      </url>
+      <url>
+        <loc>https://www.mingw-w64.org/donate/</loc>
+      </url>
+      <url>
+        <loc>https://www.mingw-w64.org/downloads/</loc>
       </url>
       <url>
         <loc>https://www.mingw-w64.org/getting-started/archlinux/</loc>
@@ -16,22 +31,16 @@
         <loc>https://www.mingw-w64.org/getting-started/fedora/</loc>
       </url>
       <url>
-        <loc>https://www.mingw-w64.org/getting-started/msys2/</loc>
-      </url>
-      <url>
         <loc>https://www.mingw-w64.org/getting-started/msys2-llvm/</loc>
       </url>
       <url>
-        <loc>https://www.mingw-w64.org/downloads/</loc>
+        <loc>https://www.mingw-w64.org/getting-started/msys2/</loc>
       </url>
       <url>
         <loc>https://www.mingw-w64.org/source/</loc>
       </url>
       <url>
-        <loc>https://www.mingw-w64.org/build-systems/meson/</loc>
-      </url>
-      <url>
-        <loc>https://www.mingw-w64.org/build-systems/cmake/</loc>
+        <loc>https://www.mingw-w64.org/support/</loc>
       </url>
       <url>
         <loc>https://www.mingw-w64.org/tools/gendef/</loc>
@@ -44,14 +53,5 @@
       </url>
       <url>
         <loc>https://www.mingw-w64.org/tools/widl/</loc>
-      </url>
-      <url>
-        <loc>https://www.mingw-w64.org/support/</loc>
-      </url>
-      <url>
-        <loc>https://www.mingw-w64.org/contribute/</loc>
-      </url>
-      <url>
-        <loc>https://www.mingw-w64.org/donate/</loc>
       </url>
 </urlset>
